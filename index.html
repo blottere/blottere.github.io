@@ -641,6 +641,14 @@ $(function() {
   });
 });
 </script>
+    
+<!-- Image Copy Block -->
+<script type="text/javascript">
+     document.oncontextmenu = function(e) {
+     e = e || window.event;
+     if (/^img$/i.test((e.target || e.srcElement).nodeName)) return false;
+     };
+</script>
 </body>
 
 </html>
