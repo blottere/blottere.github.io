@@ -35,32 +35,25 @@
 #u143 {
     border-style: none;
     border-color: transparent;
-    background-color: #558922;
+    background-color: #456b1d;
     -khtml-border-radius: 1000px;
     border-radius: 1000px;
     position: relative;
 }
 
-#u143:hover {
-    background-color: #5D912A;
-}
-
-#u143:hover + #Cwarpedspan{
-    color: #fff;
-}
 #u131 {
     border-style: none;
     border-color: transparent;
-    background-color: #8E5125;
-    -khtml-border-radius: 1000px;
-    border-radius: 1000px;
+    background: #8E5125 url('/images/circle-projects.png');
+    background-size: contain;
     position: relative;
 }
 
 #u120 {
     border-style: none;
     border-color: transparent;
-    background-color: #D3D335;
+    background: #D3D335 url('/images/circle-pfolio.png');
+    background-size: contain;
     -khtml-border-radius: 1000px;
     border-radius: 1000px;
     position: relative;
@@ -69,7 +62,8 @@
 #u101 {
     border-style: none;
     border-color: transparent;
-    background-color: #CC6600;
+    background: #CC6600 url('/images/circle-about.png');
+    background-size: contain;
     -khtml-border-radius: 1000px;
     border-radius: 1000px;
     position: relative;
@@ -669,17 +663,11 @@
     position: relative;
 }
 #u719 {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
     position: relative;
     background: transparent url("../images/penguins_2-u719-fr.png") no-repeat center center;
     background-size: contain;
 }
 #u720 {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
     position: relative;
     background: transparent url("../images/htooth-u720-fr.png") no-repeat center center;
     background-size: contain;
@@ -732,33 +720,21 @@
     font-style: italic;
 }
 #u721 {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
     position: relative;
     background: transparent url("../images/alvinn_forweb-u721-fr.png") no-repeat center center;
     background-size: contain;
 }
 #u722 {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
     position: relative;
     background: transparent url("../images/sofia_balancing_a_book-u722-fr.png") no-repeat center center;
     background-size: contain;
 }
 #u723 {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
     position: relative;
     background: transparent url("../images/barb_pinkshoes2_forweb-u723-fr.png") no-repeat center center;
     background-size: contain;
 }
 #u724 {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
     position: relative;
     background: transparent url("../images/barbie_2-u724-fr.png") no-repeat center center;
     background-size: contain;
@@ -831,4 +807,4 @@
 #project-section,
 #contact-section {
     position: relative;
-}
+}s
