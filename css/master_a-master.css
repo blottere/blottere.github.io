@@ -35,10 +35,18 @@
 #u143 {
     border-style: none;
     border-color: transparent;
-    background-color: #5D912A;
+    background-color: #558922;
     -khtml-border-radius: 1000px;
     border-radius: 1000px;
     position: relative;
+}
+
+#u143:hover {
+    background-color: #5D912A;
+}
+
+#u143:hover + #Cwarpedspan{
+    color: #fff;
 }
 #u131 {
     border-style: none;
@@ -48,9 +56,7 @@
     border-radius: 1000px;
     position: relative;
 }
-#u131:hover {
-    background-color: #804317;
-}
+
 #u120 {
     border-style: none;
     border-color: transparent;
@@ -60,9 +66,6 @@
     position: relative;
 }
 
-#u120:hover {
-    background-color: #bbbb1d;
-}
 #u101 {
     border-style: none;
     border-color: transparent;
@@ -72,9 +75,6 @@
     position: relative;
 }
 
-#u101:hover{
-    background-color: #bc5606;
-}
 #u166 {
     background-color: transparent;
     -webkit-transform: matrix(0.4226, -0.9063, 0.9063, 0.4226, 16, 53);
@@ -639,8 +639,8 @@
     visibility: inherit;
 }
 .MenuItem
-
 /* unifiedNavBar */
+
 {
     cursor: pointer;
 }

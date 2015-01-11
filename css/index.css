@@ -1,5 +1,5 @@
-.version.index /* version checker */
-{
+.version.index
+/* version checker */ {
 	color: #00000F;
 	background-color: #6B3760;
 }
@@ -70,10 +70,14 @@
 	z-index: 4;
 	width: 600px;
     height: 600px;
-	padding-bottom: 0px;
     display: inline-block;
-    position: absolute;
+    position: relative;
+    -webkit-transform-origin: 50% 50% 0;
+    -ms-transform-origin: 50% 50% 0;
     transform-origin: 50% 50% 0;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
 }
 
 #u131
@@ -81,28 +85,21 @@
 	z-index: 5;
 	width: 500px;
     height: 500px;
-	padding-bottom: 0px;
-	margin-right: -10000px;
-	margin-top: 50px;
-	left: 50px;
     display: inline-block;
     position: relative;
+    top:-550px;
+    left: 50px;
 }
 
-#u131:hover
-{
-	margin: 50px -10000px 0px 0px;
-}
+
 
 #u120
 {
 	z-index: 6;
 	width: 400px;
     height: 400px;
-	padding-bottom: 0px;
-	margin-left: 50px;
-	margin-top: 100px;
-	left: 50px;
+	left: 100px;
+    top: -1000px;
     position: relative;
     display: inline-block;
 }
@@ -121,17 +118,12 @@
 	z-index: 7;
 	width: 300px;
 	height: 300px;
-	margin-right: -10000px;
     display: inline-block;
     position: relative;
-    top: 150px;
-    right: 300px;
+    top: -1350px;
+    left: 150px;
     
-}
-
-#u101:hover
-{
-	margin: 0px -10000px 0px 0px;
+    
 }
 
 #u166
@@ -141,11 +133,6 @@
 	margin-right: -10000px;
 	margin-top: 84px;
 	left: -11px;
-}
-
-#u166:hover
-{
-	margin: 84px -10000px 0px 0px;
 }
 
 #pu330
@@ -160,11 +147,6 @@
 	z-index: 19;
 	width: 64px;
 	margin-right: -10000px;
-}
-
-#u101:active,#u330:hover
-{
-	margin: 0px -10000px 0px 0px;
 }
 
 #u321-4
@@ -299,29 +281,30 @@
 #u112
 {
 	z-index: 7;
+    position: relative;
 	width: 221px;
 	height: 221px;
-    margin-right: -10000px;
-	top: 187px;
-    right: 263px;
-    border: 2px solid #D88B8B;
-	
+	top: -1310px;
+    left: -110px;
+    
+    display: inline-block;
 }
 
 #u90
 {
 	z-index: 8;
-	width: 225px;
-    height: 225px;
-	margin-right: -10000px;
+	width: 219px;
+    height: 219px;
+    position: relative;
     border-radius:50%;
     background: url(../images/website_header_01.png);
     background-repeat:no-repeat;
     background-size:auto;
     background-position: center center;
     background-size:contain;
-    top: 185px;
-    right: 263px;
+    top: -1532px;
+    left: -112px;
+    border: 3px solid #D88B8B;
 }
 
 #u90_img
@@ -1174,12 +1157,6 @@ body
 {
 	position: relative;
 	min-width: 960px;
-}
-
-
-#u143:hover {
-    background-color: #4e811c;
-    transform: scale(1.02);
 }
 
 .circle-menu-cont {
