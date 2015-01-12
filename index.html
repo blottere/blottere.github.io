@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css?258684768" id="pagesheet" />
     <link rel="stylesheet" href="css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="css/cssWarp.css">
+    <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <!-- Other scripts -->
     <script type="text/javascript">
         document.documentElement.className += ' js';
@@ -136,8 +137,9 @@
                                     <p>About</p>
                                 </div>
                                 <div class="clearfix colelem" id="u388-4">
-                                    <!-- content -->
-                                    <p>Lorem ipsum dolor sit amet, diam eros sit mollis nibh cursus. Ipsum mi vel curabitur. Eleifend in, id in malesuada felis, pellentesque potenti sit porttitor odio turpis, elit ornare risus ullamcorper sagittis, nibh cubilia nisl. Venenatis et dignissim sapien vestibulum enim ligula. Eget suspendisse pharetra mi scelerisque, consectetuer eget magna tempor rutrum, nulla lorem eu velit dolor, vivamus venenatis magnis sapien, elit enim integer ante posuere risus eu.</p>
+                                    <p class="about" id="about-l1">Welcome to my page. I am a <b>visual artist.</b></p>
+                                    <p class="about" id="about-l2"> I <b>design</b> and <b>build</b> visual art for your personal and prefessional requirements.</p>
+                                    <p class="about" id="about-l3"> Scroll down to know more about me and the mediums I use to create my artwork.</p>
                                 </div>
                             </div>
                         </div>
@@ -359,7 +361,7 @@
                     <img src="./assets/photographs/thumbnails/Image-52.jpg" alt="Image-52">
                 </a>
                  <a href="./assets/photographs/Image-56.jpg" data-gallery="photo" title="Om">
-                    <img src="./assets/photographs/thumbnails/Image-56.jpg" alt="Image-56">
+                     <img src="./assets/photographs/thumbnails/Image-56.jpg" alt="Image-56"></a>
             </div>
                 
                 <!-- Art -->
@@ -810,22 +812,6 @@
             }], $('#blueimp-gallery').data());
         });
         
-        
-        $('#sfilm-gallery-button').on('click', function(event) {
-            event.preventDefault();
-            blueimp.Gallery([{
-                title: 'Devaka Pada',
-                type: 'text/html',
-                vimeo: '91010073',
-                poster: 'http://i.vimeocdn.com/video/470429842_960.jpg'
-            },
-            {
-                title: 'That Phase of Childbirth',
-                type: 'text/html',
-                vimeo: '116462649',
-                poster: 'https://i.vimeocdn.com/video/502851359_960.jpg'
-            }], $('#blueimp-gallery').data())});
-
          //Animation
 
         $('#animation-gallery-button').on('click', function(event) {
@@ -867,3 +853,4 @@
 </body>
 
 </html>
+497d16
