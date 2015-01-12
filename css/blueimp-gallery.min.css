@@ -96,7 +96,7 @@
     border-radius: 23px;
     opacity: .5;
     cursor: pointer;
-    display: none
+    display: inline-block;
 }
 .blueimp-gallery>.next {
     left: auto;
@@ -184,7 +184,7 @@
 }
 
 .blueimp-gallery>.slides>.slide>.slide-content{
-    box-shadow: 0px 0px 150px #333;
+    box-shadow: 0px 0px 150px #000;
     border: 2px solid black;
 }
 
@@ -218,21 +218,21 @@ body:last-child .blueimp-gallery-playing>.play-pause {
     list-style: none;
     text-align: center;
     line-height: 10px;
-    display: none
+    display: none;
 }
 .blueimp-gallery>.indicator>li {
     display: inline-block;
-    width: 9px;
-    height: 9px;
+    width: 32px;
+    height: 32px;
     margin: 6px 3px 0;
     box-sizing: content-box;
     border: 1px solid transparent;
     background: #ccc;
     background: rgba(255, 255, 255, .25)center no-repeat;
-    border-radius: 5px;
+    border-radius: 50%;
     box-shadow: 0 0 2px #000;
     opacity: .5;
-    cursor: pointer
+    cursor: pointer;
 }
 .blueimp-gallery>.indicator>li:hover,
 .blueimp-gallery>.indicator>.active {
