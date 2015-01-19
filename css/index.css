@@ -62,23 +62,23 @@
     top: 0px;
     left: 0px;
     overflow: hidden;
-    background: #558922 url(/images/circle-contact.png);
+    background: #bed600 url(/images/circle-contact.png);
     background-size: contain;
 }
 
 #u143:hover {
-    background-color: #3f730c;
-    box-shadow: 0px 0px 4px #2a5e00;
+    background-color: #ca5b13;
+    box-shadow: 0px 0px 4px #3b6f11;
 }
 
 #u131:hover {
-    background-color: #773a0e;
+    background-color: #ca5b13;
     box-shadow: 0px 0px 4px #5e2100;
 }
 
 #u120:hover {
-    background-color: #e6e648;
-    box-shadow: 0px 0px 4px #cdab1e;
+    background-color: #ca5b13;
+    box-shadow: 0px 0px 4px #ca5b13;
 }
 
 #u101:hover {

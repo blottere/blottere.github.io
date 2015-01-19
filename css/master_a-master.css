@@ -26,7 +26,7 @@
     border-color: #5D912A;
     background-color: transparent;
     font-size: 40px;
-    color: #5D912A;
+    color: #8cb216;
     line-height: 48px;
     font-family: original-surfer, fantasy;
     font-weight: 400;
@@ -35,7 +35,6 @@
 #u143 {
     border-style: none;
     border-color: transparent;
-    background-color: #456b1d;
     -khtml-border-radius: 1000px;
     border-radius: 1000px;
     position: relative;
@@ -44,7 +43,7 @@
 #u131 {
     border-style: none;
     border-color: transparent;
-    background: #8E5125 url('/images/circle-projects.png');
+    background: #ec8620 url('/images/circle-projects.png');
     background-size: contain;
     position: relative;
 }
@@ -52,7 +51,7 @@
 #u120 {
     border-style: none;
     border-color: transparent;
-    background: #D3D335 url('/images/circle-pfolio.png');
+    background: #ffcd67 url('/images/circle-pfolio.png');
     background-size: contain;
     -khtml-border-radius: 1000px;
     border-radius: 1000px;
@@ -62,7 +61,7 @@
 #u101 {
     border-style: none;
     border-color: transparent;
-    background: #CC6600 url('/images/circle-about.png');
+    background: #fa8072 url('/images/circle-about.png');
     background-size: contain;
     -khtml-border-radius: 1000px;
     border-radius: 1000px;
@@ -100,7 +99,7 @@
     background-color: transparent;
     line-height: 22px;
     font-size: 18px;
-    color: #F2F2AF;
+    color: #fff9e5;
     text-align: center;
     font-family: original-surfer, fantasy;
     font-weight: 400;
@@ -127,7 +126,7 @@
     background-color: transparent;
     line-height: 22px;
     font-size: 18px;
-    color: #F2F2AF;
+    color: #fff9e5;
     text-align: center;
     font-family: original-surfer, fantasy;
     font-weight: 400;
@@ -154,7 +153,7 @@
     background-color: transparent;
     line-height: 22px;
     font-size: 18px;
-    color: #F2F2AF;
+    color: #fff9e5;
     text-align: center;
     font-family: original-surfer, fantasy;
     font-weight: 400;
@@ -181,7 +180,7 @@
     background-color: transparent;
     line-height: 22px;
     font-size: 18px;
-    color: #F2F2AF;
+    color: #fff9e5;
     text-align: center;
     font-family: original-surfer, fantasy;
     font-weight: 400;
@@ -208,7 +207,7 @@
     background-color: transparent;
     line-height: 22px;
     font-size: 18px;
-    color: #F2F2AF;
+    color: #fff9e5;
     text-align: center;
     font-family: original-surfer, fantasy;
     font-weight: 400;
@@ -219,13 +218,13 @@
 #u359-4:hover p,
 #u360-4:hover p,
 #u361-4:hover p {
-    color: #5D912A;
+    color: #8cb216;
     visibility: inherit;
 }
 #u112 {
     border-style: none;
     border-color: transparent;
-    background-color: #F2F2AF;
+    background-color: #fff9e5;
     -khtml-border-radius: 500px;
     border-radius: 500px;
     position: relative;
@@ -272,13 +271,13 @@
 #u541 {
     border-style: none;
     border-color: transparent;
-    background-color: #F2F2AF;
+    background-color:#fff9e5;    
 }
 #u543-4,
 #u387-4 {
     background-color: transparent;
     font-size: 36px;
-    color: #5D912A;
+    color: #8cb216;
     text-align: center;
     line-height: 43px;
     font-family: original-surfer, fantasy;
@@ -443,7 +442,7 @@
 #u525 {
     border-style: none;
     border-color: transparent;
-    background-color: #5D912A;
+    background-color: #8cb216;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -486,7 +485,7 @@
     position: relative;
 }
 #u456:hover {
-    background-color: #456B1D;
+    background-color: #597f00;
     -khtml-border-radius: 10px;
     border-radius: 10px;
 }
@@ -513,7 +512,7 @@
     position: relative;
 }
 #u512:hover {
-    background-color: #456B1D;
+    background-color: #597f00;
     -khtml-border-radius: 10px;
     border-radius: 10px;
 }
@@ -540,7 +539,7 @@
     position: relative;
 }
 #u505:hover {
-    background-color: #456B1D;
+    background-color: #597f00;
     -khtml-border-radius: 10px;
     border-radius: 10px;
 }
@@ -567,7 +566,7 @@
     position: relative;
 }
 #u498:hover {
-    background-color: #456B1D;
+    background-color: #597f00;
     -khtml-border-radius: 10px;
     border-radius: 10px;
 }
@@ -594,7 +593,7 @@
     position: relative;
 }
 #u491:hover {
-    background-color: #456B1D;
+    background-color: #597f00;
     -khtml-border-radius: 10px;
     border-radius: 10px;
 }
