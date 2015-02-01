@@ -88,13 +88,22 @@ a, a:hover, a:active, a:visited, a:focus {
     white-space: nowrap;
 }
 
+.navbar-default .navbar-brand:focus{
+    font-family:'Montez', cursive;
+    font-size: 30px;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
 .navbar-default .navbar-brand:hover{
     color: #60330C;
 }
 
 .navbar-default .navbar-right >li {
-    margin: 10px 2px;
-    padding: 0px;
+    margin: 10px 0px;
+    padding: 0;
 }
 .navbar-default .navbar-right > li > a{
     font-family: 'Original Surfer', cursive;
@@ -105,6 +114,7 @@ a, a:hover, a:active, a:visited, a:focus {
     width: 100px;
     border-radius: 7px;
 }
+
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     color: #ffd771;
@@ -342,9 +352,13 @@ a, a:hover, a:active, a:visited, a:focus {
 
 
 #about-l3 {
-    margin-top:  40px;
+    margin-top:  70px;
     font-size: 16px;
-    color: #333;
+    color: grey;
+}
+
+p.about{
+    color: grey;
 }
 
 /* PORTFOLIO SECTION */

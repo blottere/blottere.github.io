@@ -259,8 +259,6 @@
                     <div class="pr-image" id="barb-c"></div>
                 </div>
             </div>
-
-
         </div>
     </div>
     <div id="contact">
@@ -282,6 +280,9 @@
     
     </div>
 
+    
+    
+    
     <!-- Photography -->
     <div id="photo-links" style="display:none;">
         <a href="./assets/photographs/Image-1.jpg" data-gallery="photo" title="Rishi">
@@ -420,7 +421,6 @@
            <img src="./assets/photographs/thumbnails/Image-56.jpg" alt="Image-56">
         </a>
     </div>
-                
     <!-- Art -->
     <div id="art-links" style="display:none;">
         <a href="./assets/art/corn.jpg" data-gallery="photo" title="Watercolor_corn">
@@ -645,9 +645,13 @@
     </script>
     <!-- Auto Close NavBar -->
     <script type="text/javascript">
-    $('.nav-collapse').click('li', function() {
-        $('.navbar-collapse').collapse('hide');
-    });
+        $('.nav a').on('click', function(){
+            $(".navbar-toggle").click()
+        });
+        
+        $('.navbar-default .navbar-brand').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
     </script>
 </body>
 
