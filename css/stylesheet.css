@@ -30,6 +30,21 @@ a, a:hover, a:active, a:visited, a:focus {
 
 /* Navigation Bar */
 
+.navbar-default .navbar-toggle {
+  border:none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: #8cb216;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:hover{
+  background-color: #63890a;
+}
+
 .navbar-fixed-top {
     background-color: rgba(140,178,22,1);
     border-radius: 0;
@@ -382,7 +397,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 #anim-gallery > div{
     height: 100%;
-    width: 100px;
+    width: 50%;
     position:absolute;
     display: inline-block;
     background-repeat: no-repeat;
@@ -392,10 +407,10 @@ a, a:hover, a:active, a:visited, a:focus {
 #anim-left{
     background: #004E49 url(/img/gallery-res/peng-lf.png);
     background-position: right;
-    right: 100px;
+    left: 0;
 }
 #anim-right{
-    right:0px;
+    right:0;
     background:#004E49 url(/img/gallery-res/peng-rt.png);
     
 }
@@ -404,7 +419,7 @@ a, a:hover, a:active, a:visited, a:focus {
     background-color:#1A6041;
 }
 #anim-gallery:hover #anim-left {
-    right: 130px;
+    left: -30px;
 }
 
 #anim-gallery:hover #anim-right {
