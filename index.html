@@ -127,7 +127,7 @@
             </div>
          </div>
     </div>
-    <div class="container pf-container" id="portfolio">
+    <div id="portfolio" class="container pf-container">
         <div class="row" id="pf1">
             <div class="col-xs-6" id="pf-anim">
                 <div class="pf-shell">
@@ -592,7 +592,7 @@
 
     <!--Custom Javascripts -->
     
-    <!-- NavBar Hiding -->
+    <!-- NavBar Hiding & AutoClose -->
     <script type="text/javascript">
         $(window).scroll(function() {
             if($(this).scrollTop() > 500) {
@@ -602,6 +602,14 @@
                 $('.navbar-fixed-top').removeClass('shownav');
                 $('.nav > li').removeClass('shownav');
             }
+        });
+        
+        $('.nav a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        
+        $('.navbar-default .navbar-brand').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
         });
     </script>
     <!-- Image Copy Block -->
@@ -628,12 +636,6 @@
             });
         });
     </script>
-    <!-- Auto Close NavBar -->
-    <script type="text/javascript">
-    $('.nav-collapse').click('li', function(){
-        $('.nav-collapse').collapse('hide');
-    });
-    </script>
     <!-- Image Preloader -->
     <script type="text/javascript">
     $.preloadImages = function() {
@@ -642,16 +644,6 @@
         }
     }
     $.preloadImages("/img/social-icons/res-logo-hover.png");
-    </script>
-    <!-- Auto Close NavBar -->
-    <script type="text/javascript">
-        $('.nav a').on('click', function(){
-            $(".navbar-toggle").click()
-        });
-        
-        $('.navbar-default .navbar-brand').on('click', function(){
-            $('.navbar-collapse').collapse('hide');
-        });
     </script>
 </body>
 
