@@ -368,7 +368,7 @@ body:last-child .blueimp-gallery-playing>.play-pause {
 }
 
 .blueimp-gallery>.slides>.slide>.video-loading>a {
-    background: #000 url(../img/loading.gif) center no-repeat;
+    background: url(../img/loading.gif) center no-repeat;
     background-size: 64px 64px
 }
 
