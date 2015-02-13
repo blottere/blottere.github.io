@@ -342,9 +342,9 @@ body:last-child .blueimp-gallery-playing>.play-pause {
     left: 0;
     bottom: 0;
     margin: auto;
-    width: 60px;
-    height: 60px;
-    background: #044 url(../img/video-play.png) center no-repeat;
+    width: 64px;
+    height: 64px;
+    background: url(../img/video-play.png) center no-repeat;
     border-radius: 50%;
     opacity: .8;
     cursor: pointer
@@ -373,6 +373,7 @@ body:last-child .blueimp-gallery-playing>.play-pause {
 }
 
 body:last-child .blueimp-gallery>.slides>.slide>.video-content:not(.video-loading)>a {
+    background: #044;
     background-image: url(../img/video-play.svg);
 }
 
