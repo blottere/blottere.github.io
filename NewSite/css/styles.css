@@ -1,0 +1,261 @@
+/* color pallete
+
+cyan: #00bcd4
+Black: #000000
+
+*/
+
+
+/*General*/
+
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 1032px;
+}
+
+
+body #hero {
+	background: url('../images/Hero_bg.jpg') top center no-repeat;
+	background-size: cover;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   height: 900px;
+}
+
+body{
+	padding: 0;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+   text-rendering: optimizelegibility;
+}
+
+.container #img_me{
+	background: url('../images/me_hero.png') top left no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 344px;
+	position: relative;
+	top: -761px;
+	left: -80px;
+}
+
+/*Typography*/
+
+h1, h2, h3, h4{
+	font-family: 'Intro', 'Merriweather', 'optima', 'Helvetica' 'sans-serif';
+	font-size: 18px;
+	color: #00bcd4;
+	text-transform: capitalize;
+	text-align: center;
+	padding: 2.5em;
+	margin: 10px auto;
+}
+
+#navbar, #sidebar{
+	font-family: 'Mensch', 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif, Arial;
+	font-size: 22px;
+	color: #000;
+}
+
+#sidebar{
+	padding-right: 0;
+	line-height: 2em;
+	padding-top: 30px;
+}
+
+#content-area #main-content p, footer p{
+	font-family: 'lato','Helvetica Neue', 'Helvetica', sans-serif, 'open sans';
+	font-size: 18px;
+}
+
+#content-area #main-content p strong, footer p strong{
+	font-family: 'lato bold','Helvetica Neue', 'Helvetica', sans-serif, 'open sans';
+	font-size: 18px;
+	font-weight: 700px;
+}
+#content-area #main-content p strong{
+	color: #00bcd4;
+}
+
+footer #contact p{
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+/*Header*/
+
+header nav{
+	text-align: center;
+}
+
+
+header nav ul{
+   margin: 0;
+   padding: 10px;
+   list-style: none;
+   line-height: 141px;  
+}
+
+
+nav ul li a{
+	color: black;
+	padding: 40px 10px 10px;
+	margin: 0 30px;
+	position: relative;
+    color: #000; 
+}
+
+
+nav ul li a:hover{
+	color:#000;
+	text-decoration: none;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+nav ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#sidebar{
+	display: inline-block;
+}
+
+
+#about{
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: justify;
+	padding: 10px 20px 30px;
+	display: block;
+	color: #333;
+}
+
+.container #content-area{
+	max-width: 1032px;
+	position: relative;
+	text-align: center;
+	top: -1024px;
+	margin: 0 auto;
+	background-color: #fff;
+	max-height: 100%;
+	margin-bottom: -1024px;
+}
+
+
+#content-area #main-content #Portfolio{
+	margin: 0 auto;
+	display: block;
+}
+
+#content-area #main-content #Portfolio ul{
+	margin: 10px;
+	padding: 5em 20px 2em;
+}
+
+#content-area #main-content #Portfolio ul li{
+	margin: 20px -50px;
+}
+
+#Resume{
+	margin: 10px auto;
+	padding: 30px;
+}
+
+.button, .button:visited
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  margin: 2em auto; 
+  padding: 15px 40px;
+  background: #FFF;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+  overflow: hidden;
+  box-shadow: -4px -3px #00bcd4;
+  -ms-transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover, .button:active 
+{
+  text-decoration: none;
+  color: #00bcd4;
+  border-color: #00bcd4;
+  background: #FFF;
+  box-shadow: none;
+  transform: translate(-4px, -5px);
+}
+
+.button span 
+{
+  display: inline-block;
+  position: relative;
+}
+
+
+footer #contact{
+	padding-bottom: 50px;
+	margin: 10px auto;
+}
+
+footer p{
+	color: #333;
+}
+
+footer #contact p a{
+	border-bottom: 1px solid #000;
+	padding-bottom: 3px;
+	color: #333;
+}
+
+footer #contact p a:hover{
+	color: #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+footer #contact p a, a:hover,a:visited:hover,a:visited{
+	text-decoration: none;
+}
+
+footer #contact #social-icons ul li img{
+	height: 24px;
+	width: auto;
+}
+
+footer #contact #social-icons ul li{
+	padding: 10px 20px;
+}
+
+
+footer #copywrite{
+	margin: 0 auto;
+}
+
+
+
+
