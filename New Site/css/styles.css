@@ -10,23 +10,23 @@ Black: #000000
 
 @font-face {
     font-family: 'Mensch';
-    src: url('fonts/mensch webfont/mensch-wf.eot');
-    src: url('fonts/mensch webfont/mensch-wf.eot?#iefix') format('embedded-opentype'),
-         url('fonts/mensch webfont/mensch-wf.woff') format('woff'),
-         url('fonts/mensch webfont/mensch-wf.ttf') format('truetype'),
-         url('fonts/mensch webfont/mensch-wf.svg#MenschMenschRegular') format('svg');
+    src: url('../fonts/mensch/mensch-wf.eot');
+    src: url('../fonts/mensch/mensch-wf.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mensch/mensch-wf.woff') format('woff'),
+         url('../fonts/mensch/mensch-wf.ttf') format('truetype'),
+         url('../fonts/mensch/mensch-wf.svg#MenschMenschRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Intro';
-    src: url('fonts/Intro/intro-webfont.eot');
-    src: url('fonts/Intro/intro-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Intro/intro-webfont.woff2') format('woff2'),
-         url('fonts/Intro/intro-webfont.woff') format('woff'),
-         url('fonts/Intro/intro-webfont.ttf') format('truetype'),
-         url('fonts/Intro/intro-webfont.svg#intro_regular') format('svg');
+    src: url('../fonts/Intro/intro-webfont.eot');
+    src: url('../fonts/Intro/intro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Intro/intro-webfont.woff2') format('woff2'),
+         url('../fonts/Intro/intro-webfont.woff') format('woff'),
+         url('../fonts/Intro/intro-webfont.ttf') format('truetype'),
+         url('../fonts/Intro/intro-webfont.svg#intro_regular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -97,6 +97,10 @@ h1, h2, h3, h4{
 	padding-right: 0;
 	line-height: 2em;
 	padding-top: 30px;
+}
+
+.strong{
+  font-weight: bold;
 }
 
 #content-area #main-content p, footer p{
@@ -317,7 +321,7 @@ nav ul li a:hover:before {
 	    width: auto;
     }
 }
-
+@media only screen and (min-width:501px) and (max-width:1199px){
 #film img{
 	   height: 150px;
 	   width: auto;
@@ -342,12 +346,9 @@ nav ul li a:hover:before {
 	   height: 270px;
 	   width: auto;
     }
+}
 
-
-@media only screen 
-    and (min-width : 300px) 
-    and (max-width : 500px) 
-    {
+@media only screen and (min-width : 300px) and (max-width : 500px) {
 
     	.container #img_me{
 	    background: none;
