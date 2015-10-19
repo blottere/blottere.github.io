@@ -121,6 +121,10 @@ footer #contact p{
 	font-size: 30px;
 	padding-bottom: 20px;
 }
+
+footer #copywrite p, footer #copywrite p strong{
+  font-size: 16px;
+}
 /*Header*/
 
 header nav{
@@ -442,15 +446,15 @@ footer #contact p a{
 	border-bottom: 1px solid #bbb;
 	padding-bottom: 3px;
 	color: #bbb;
-  transition: all 0.1s ease-in-out;
-  -ms-transition: 0.1s ease-in-out;
-  -webkit-transition: 0.1s ease-in-out;
-  -mos-transition: 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -mos-transition: 0.3s ease-in-out;
 }
 
 footer #contact p a:hover{
-	color: #eee;
-	border-bottom: 1px solid #eee;
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
 footer #contact p a, a:hover,a:visited:hover,a:visited{
@@ -458,62 +462,97 @@ footer #contact p a, a:hover,a:visited:hover,a:visited{
 }
 
 
-footer #contact #social-icons ul li #Behance{
-  background-image: url('../images/Behance.png');
-  height: 24px;
-  width: 36px;
-  background-size: contain;
+/* --------------- LINKEDIN */
+
+.linkedin {
   display: inline-block;
-  transition: all 0.1s ease-in-out;
-  -ms-transition: 0.1s ease-in-out;
-  -webkit-transition: 0.1s ease-in-out;
-  -mos-transition: 0.1s ease-in-out;
+  position: relative;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  background:url(../icons/social_icons_dark.svg) no-repeat;
+  background-position:0 -30px;
 }
-footer #contact #social-icons ul li #Behance:hover{
-  background-image: url('../images/Behance_grey.png');
-  height: 24px;
-  width: 36px;
+
+.linkedin span {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background:url(../icons/social_icons_dark.svg) no-repeat;
+  background-position: -30px -30px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition:    opacity 0.5s;
+  -o-transition:      opacity 0.5s;
 }
-footer #contact #social-icons ul li #facebook{
-  background-image: url('../images/facebook.png');
-  height: 24px;
-  width: 13px;
+
+.linkedin:hover span {
+  opacity: 1;
+}
+
+/* --------------- Facebook */
+
+.facebook {
   display: inline-block;
-  background-size: contain;
-  transition: all 0.1s ease-in-out;
-  -ms-transition: 0.1s ease-in-out;
-  -webkit-transition: 0.1s ease-in-out;
-  -mos-transition: 0.1s ease-in-out;
+  position: relative;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  background:url(../icons/social_icons_dark.svg) no-repeat;
+  background-position:0 -180px;
 }
 
-footer #contact #social-icons ul li #facebook:hover{
-  background-image: url('../images/facebook_grey.png');
-  height: 24px;
-  width: 13px;
+.facebook span {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background:url(../icons/social_icons_dark.svg) no-repeat;
+  background-position: -30px -180px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition:    opacity 0.5s;
+  -o-transition:      opacity 0.5s;
 }
 
-footer #contact #social-icons ul li #linkedin{
-  background-image: url('../images/linkedin.png');
-  height: 24px;
-  width: 24px;
+.facebook:hover span {
+  opacity: 1;
+}
+
+/* --------------- Behance */
+
+.behance{
   display: inline-block;
-  background-size: contain;
-  transition: all 0.1s ease-in-out;
-  -ms-transition: 0.1s ease-in-out;
-  -webkit-transition: 0.1s ease-in-out;
-  -mos-transition: 0.1s ease-in-out;
+  position: relative;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  background:url(../icons/social_icons_dark.svg) no-repeat;
+  background-position:0 -720px;
 }
 
-footer #contact #social-icons ul li #linkedin:hover{
-  background-image: url('../images/linkedin_grey.png');
-  height: 24px;
-  width: 24px;
+.behance span {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background:url(../icons/social_icons_dark.svg) no-repeat;
+  background-position: -30px -720px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition:    opacity 0.5s;
+  -o-transition:      opacity 0.5s;
 }
 
-footer #contact #social-icons ul li{
-	padding: 40px 30px 20px;
+.behance:hover span {
+  opacity: 1;
 }
 
+
+footer #contact #social-icons table{
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#social-icons table tr td{
+  margin: 20px auto;
+  padding: 0 10px;
+}
 
 footer #copywrite{
 	margin: 0 auto;
