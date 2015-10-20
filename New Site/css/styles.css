@@ -468,17 +468,16 @@ footer #contact p a, a:hover,a:visited:hover,a:visited{
   display: inline-block;
   position: relative;
   text-indent: -9999px;
-  width: 30px;
-  height: 30px;
-  background:url(../icons/social_icons_dark.svg) no-repeat;
-  background-position:0 -30px;
+  width: 35px;
+  height: 35px;
+  background:url(../icons/linkedin_bw.svg) no-repeat;
+  
 }
 
 .linkedin span {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background:url(../icons/social_icons_dark.svg) no-repeat;
-  background-position: -30px -30px;
+  background:url(../icons/linkedin_color.svg) no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   -moz-transition:    opacity 0.5s;
@@ -495,17 +494,15 @@ footer #contact p a, a:hover,a:visited:hover,a:visited{
   display: inline-block;
   position: relative;
   text-indent: -9999px;
-  width: 30px;
-  height: 30px;
-  background:url(../icons/social_icons_dark.svg) no-repeat;
-  background-position:0 -180px;
+  width: 35px;
+  height: 35px;
+  background:url(../icons/facebook_bw.svg) no-repeat;
 }
 
 .facebook span {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background:url(../icons/social_icons_dark.svg) no-repeat;
-  background-position: -30px -180px;
+  background:url(../icons/facebook_color.svg) no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   -moz-transition:    opacity 0.5s;
@@ -522,17 +519,15 @@ footer #contact p a, a:hover,a:visited:hover,a:visited{
   display: inline-block;
   position: relative;
   text-indent: -9999px;
-  width: 30px;
-  height: 30px;
-  background:url(../icons/social_icons_dark.svg) no-repeat;
-  background-position:0 -720px;
+  width: 35px;
+  height: 35px;
+  background:url(../icons/Behance_bw.svg) no-repeat;
 }
 
 .behance span {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background:url(../icons/social_icons_dark.svg) no-repeat;
-  background-position: -30px -720px;
+  background:url(../icons/Behance_color.svg) no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   -moz-transition:    opacity 0.5s;
