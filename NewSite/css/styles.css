@@ -46,7 +46,7 @@ Black: #000000
 
 
 body #hero {
-	background: url('../images/Hero_bg.jpg') top center no-repeat;
+	background: url('../images/Hero_bg_optimized.jpg') top center no-repeat;
 	background-size: cover;
 	 -webkit-background-size: cover;
   -moz-background-size: cover;
