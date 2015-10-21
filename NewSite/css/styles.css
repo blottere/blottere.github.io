@@ -470,14 +470,14 @@ footer #contact p a, a:hover,a:visited:hover,a:visited{
   text-indent: -9999px;
   width: 35px;
   height: 35px;
-  background:url(../icons/linkedin_bw.svg) no-repeat;
+  background:url(../icons/Linkedin_bw.svg) no-repeat;
   
 }
 
 .linkedin span {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background:url(../icons/linkedin_color.svg) no-repeat;
+  background:url(../icons/Linkedin_color.svg) no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   -moz-transition:    opacity 0.5s;
@@ -496,13 +496,13 @@ footer #contact p a, a:hover,a:visited:hover,a:visited{
   text-indent: -9999px;
   width: 35px;
   height: 35px;
-  background:url(../icons/facebook_bw.svg) no-repeat;
+  background:url(../icons/Facebook_bw.svg) no-repeat;
 }
 
 .facebook span {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background:url(../icons/facebook_color.svg) no-repeat;
+  background:url(../icons/Facebook_color.svg) no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   -moz-transition:    opacity 0.5s;
