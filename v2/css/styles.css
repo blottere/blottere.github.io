@@ -67,7 +67,7 @@ body{
 	height: 600px;
 	width: 344px;
 	position: relative;
-	top: -761px;
+	top: -800px;
 	left: -80px;
 }
 
@@ -83,20 +83,26 @@ h1, h2, h3, h4{
 	margin: 10px auto;
 }
 
-#navbar, #sidebar, .desc p{
-	font-family: 'Mensch', 'Lato', 'Helvetica Neue', 'Helvetica', serif, Arial;
-	font-size: 22px;
+#navbar{
+	font-family: 'Merienda One', 'Lato', 'Helvetica Neue', 'Helvetica', serif, Arial;
+	font-size: 24px;
 	color: #000;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.15);
 }
 
 .desc p{
   color: #333;
+  font-size: 22px;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans serif;
 }
 
 #sidebar{
-	padding-right: 0;
-	line-height: 2em;
-	padding-top: 30px;
+	padding-right: 50px;
+	line-height: 1em;
+  padding-top: 150px;
+  font-family: 'Lato', 'optima', 'Helvetica Neue', 'Helvetica';
+  font-size: 22px;
+  color: #111;
 }
 
 .strong{
@@ -128,13 +134,13 @@ footer #copywrite p, footer #copywrite p strong{
 /*Header*/
 
 header nav{
-	text-align: center;
+	text-align: right;
 }
 
 
 header nav ul{
    margin: 0;
-   padding: 10px;
+   padding: 30px 20px;
    list-style: none;
    line-height: 141px;  
 }
@@ -145,7 +151,7 @@ nav ul li a{
 	padding: 40px 10px 10px;
 	margin: 0 30px;
 	position: relative;
-    color: #000; 
+  color: #000; 
 }
 
 
@@ -184,7 +190,7 @@ nav ul li a:hover:before {
 	max-width: 650px;
 	margin: 0 auto;
 	text-align: justify;
-	padding: 10px 20px 30px;
+	padding: 10px 20px 50px;
 	display: block;
 	color: #333;
 }
@@ -193,23 +199,27 @@ nav ul li a:hover:before {
 	max-width: 1032px;
 	position: relative;
 	text-align: center;
-	top: -1024px;
+	top: -1063px;
 	margin: 0 auto;
 	background-color: #fff;
 	max-height: 100%;
-	margin-bottom: -1024px;
+	margin-bottom: -1063px;
 }
-
 
 #Portfolio{
 	margin: 0 auto;
 	display: block;
-  padding-top: 10px; 
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  position: relative;
+  top: -120px; 
+  margin-bottom: -120px;
 }
 
 #Portfolio ul{
 	margin: 5px 20px;
-	padding: 5px 30px 2em;
+	padding: 10px 30px 2em;
 }
 
 #Portfolio ul li{
@@ -378,7 +388,7 @@ nav ul li a:hover:before {
     }
 
 #Resume{
-     margin: 20px auto 70px;
+     margin: 35px auto 70px;
      padding: 40px;
     }
 
@@ -387,7 +397,7 @@ nav ul li a:hover:before {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "lato", sans-serif;
   font-weight: 500;
   margin: 2em auto; 
@@ -425,12 +435,13 @@ nav ul li a:hover:before {
 
 footer{
   margin: 0 auto;
-  height: 580px;
+  height: auto;
   width: auto;
   background: #222;
 }
+
 footer #contact{
-  padding: 30px 0 50px;
+  padding: 20px 0 0;
 	margin: 10px auto;
 }
 
@@ -439,7 +450,7 @@ footer p{
 }
 
 footer #contactchunk{
-  padding: 60px 0 10px;
+  padding: 0 0 10px;
 }
 
 footer #contact p a{
