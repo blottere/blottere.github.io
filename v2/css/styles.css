@@ -406,7 +406,7 @@ nav ul li a:hover:before {
   border: 1px solid #00bcd4;
   color: #00bcd4;
   overflow: hidden;
-  box-shadow: -5px -3px #00bcd4;
+  box-shadow: -5px -3px #00abc1;
   position: relative;
   top: 0;  
   left: 0;
