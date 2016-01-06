@@ -81,6 +81,14 @@ h1, h2, h3{
   text-align: center;
 }
 
+@media only screen and (min-width: 640px){
+  #portfolio{
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 70px;
+  }
+
+}
 #portfolio .row img{
   width: 87%;
 }
@@ -181,7 +189,7 @@ opacity: 1;
   color: #FFF;
   font-family: 'lato','Helvetica','sans-serif';
   font-size: 18px;
-  padding: 6em 0;
+  padding: 4em 0;
   text-decoration: none;
   opacity: 0;
   filter: alpha(opacity=0);
