@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pavithra Ram || Portfolio</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<meta name="Keywords" content="Pavithra Ramamurthy portfolio UX designer interaction design IxD webdesign">
+<meta name="description" content="I'm a UX Designer, Illustrator and Front-End Developer. I design and build usable web based platforms for several companies based on their intrinsic requirements, while focusing on achieving a fluid, minimalistic and stylish user experience for the product.">
+<meta name="title" content="Pavithra Ramamurthy - UX Portfolio">
+<meta name="url" content="http://www.pavithraram.com">
+
+
+    <title>Pavithra Ramamurthy</title>
+
+<!--font-->
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,900,300' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
-    <!-- BlueImp CSS -->
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <!--custom stylesheet-->
 
-    <!--Respond.css-->
-    <link href="css/respond.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-    <link href="css/respond.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/dark.css"  />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,646 +40,93 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Customs -->
-
-    <link href='http://fonts.googleapis.com/css?family=Montez|Original+Surfer|Slabo+27px' rel='stylesheet' type='text/css'>
-</head>
-
-<body data-spy="scroll" data-target=".navbar-collapse" data-offset="200">
-    <!-- Google Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-59768469-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <nav class="navbar navbar-default navbar-fixed-top">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div id="hero" class="clearfix">
+          <header>
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">Pavithra Ramamurthy</a>
-            </div>
+          <div id="navbar" class="row">
+          <nav>
+           <ul class="list-inline text-right">
+          <li><a href="#img_me">About</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+       </div><!--end of navbar-->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a>
-                    </li>
-                    <li><a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li><a href="#projects">Projects</a>
-                    </li>
-                    <li><a href="#contact">Contact</a>
-                    </li>
-                    <li><a href="/assets/pavithraramamurthy_resume.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div class="container main-container" id="home">
-        <div class="row main-section">
-
-            <div class="col-md-6 col-md-push-6 circle-menu">
-                <div class="circle-menu-container">
-                    <!--Contact-->
-                    <a href="#contact">
-                        <div id="contact-circle"></div>
-                    </a>
-                    <!--Project-->
-                    <a href="#projects">
-                        <div id="project-circle"></div>
-                    </a>
-                    <!--Portfolio-->
-                    <a href="#portfolio">
-                        <div id="pfolio-circle"></div>
-                    </a>
-                    <!--About-->
-                    <a href="#about">
-                        <div id="about-circle"></div>
-                    </a>
-                    <!--Cream-Image-BG-->
-                    <div id="bg-circle"></div>
-                    <!--Center-Image-->
-                    <div id="pavster-img"></div>
-                </div>
-
-                <div class="social-container">
-                    <a href="/assets/pavithraramamurthy_resume.pdf" target="_blank">
-                        <div class="social social-resume round">
-                            <div class="social-hover">Resume</div>
-                        </div>
-                    </a>
-                    <a href='mailto:pavithraram.8@gmail.com'>
-                        <div class="social social-email round">
-                            <div class="social-hover social-hover-email">Email</div>
-                        </div>
-                    </a>
-                    <a href='https://www.behance.net/Blottere' target="_blank">
-                        <div class="social social-behance round">
-                            <div class="social-hover">Behance</div>
-                        </div>
-                    </a>
-
-                    <a href='http://in.linkedin.com/in/pavithraram' target="_blank">
-                        <div class="social social-linkedin round">
-                            <div class="social-hover">LinkedIn</div>
-                        </div>
-                    </a>
-                    <a href='https://www.facebook.com/blottere' target="_blank">
-                        <div class="social social-facebook round">
-                            <div class="social-hover">Facebook</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-md-pull-6 nameplate">
-                <span id="nametag">Pavithra Ramamurthy</span>
-            </div>
-        </div>
-    </div>
-    <div class="about-bg">
-        <div class="container">
-            <div class="row" id="about">
-                <div class="col-md-12">
-                    <h1> </h1>
-                    <p class="about" id="about-l1">Welcome to my page.
-                    </p>
-                    <p class="about" id="about-l2"> I <b>design</b> and <b>build</b> visual art for your personal and professional requirements.</p>
-                    <p class="about" id="about-l3"> Scroll down to know more about me and the mediums I use to create my artwork.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="portfolio" class="container pf-container">
-        <div class="row" id="pf1">
-            <div class="col-xs-6" id="pf-anim">
-                <div class="pf-shell">
-                    <a href="#" class="pf-link" id="anim-gallery">
-                        <div id="anim-left"></div>
-                        <div id="anim-right"></div>
-                    </a>
-                    <div class="pf-title">Animation</div>
-                </div>
-            </div>
-            <div class="col-xs-6" id="pf-sflm">
-                <div class="pf-shell pf-rt">
-                    <a href="#" class="pf-link" id="sfilm-gallery">
-                        <div id="sfm-bg"></div>
-                        <div id="sfm-top"></div>
-                        <div id="sfm-botm"></div>
-                    </a>
-                    <div class="pf-title">Short Films</div>
-                </div>
-            </div>
-        </div>
-        <div class="row" id="pf2">
-            <div class="col-xs-6" id="pf-photo">
-                <div class="pf-shell">
-                    <a href="#" class="pf-link" id="photo-gallery">
-                        <div id="photo-bg0"></div>
-                        <div id="photo-bg"></div>
-                        <div id="photo-hover"></div>
-                    </a>
-                    <div class="pf-title">Photography</div>
-                </div>
-            </div>
-            <div class="col-xs-6" id="pf-art">
-                <div class="pf-shell pf-rt">
-                    <a href="#" class="pf-link" id="art-gallery">
-                        <div id="art-bg"></div>
-                        <div id="art-left"></div>
-                        <div id="art-right"></div>
-                    </a>
-                    <div class="pf-title">Art</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="projects">
-        <div class="container">
-            <h1>Projects</h1>
-
-            <!-- Penguins -->
-            <div class="row proj-row">
-                <div class="col-xs-6">
-                    <div class="pr-image" id="pengu"></div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="pr-text pr-text-l">
-                        <h2>Penguins of Madagascar</h2>
-                        <p class="pr-sub">Season 2, 3</p>
-                        <p class="pr-sub">Nickelodeon</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dragons -->
-            <div class="row proj-row">
-                <div class="col-xs-6">
-                    <div class="pr-text pr-text-r">
-                        <h2>Dragons: Riders Of Berk</h2>
-                        <p class="pr-sub">Season 1</p>
-                        <p class="pr-sub">DreamWorks TV</p>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="pr-image" id="drgns"></div>
-                </div>
-            </div>
-
-            <!-- Alvinnn -->
-            <div class="row proj-row">
-                <div class="col-xs-6">
-                    <div class="pr-image" id="alvin"></div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="pr-text pr-text-l">
-                        <h2>Alvinnn!!! & The Chipmunks</h2>
-                        <p class="pr-sub">Season 1, 2</p>
-                        <p class="pr-sub">Bagdasarian Productions</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sofia -->
-            <div class="row proj-row">
-                <div class="col-xs-6">
-                    <div class="pr-text pr-text-r">
-                        <h2>Sofia The First</h2>
-                        <p class="pr-sub">Project Test</p>
-                        <p class="pr-sub">Disney</p>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="pr-image" id="sofia"></div>
-                </div>
-            </div>
-
-            <!-- Barbie Shoe -->
-            <div class="row proj-row">
-                <div class="col-xs-6">
-                    <div class="pr-image" id="barb-s"></div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="pr-text pr-text-l">
-                        <h2>Barbie in The Pink Shoes</h2>
-                        <p class="pr-sub">DVD Movie</p>
-                        <p class="pr-sub">Mattel</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Barbie Christmas -->
-            <div class="row proj-row">
-                <div class="col-xs-6">
-                    <div class="pr-text pr-text-r">
-                        <h2>Barbie: A Perfect Christmas</h2>
-                        <p class="pr-sub">DVD Movie</p>
-                        <p class="pr-sub">Mattel</p>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="pr-image" id="barb-c"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="contact">
-        <div class="contact-container">
-            <a href='mailto:pavithraram.8@gmail.com'>
-                <div class="contact social-email round"></div>
-            </a>
-            <a href='https://www.behance.net/Blottere' target="_blank">
-                <div class="contact social-behance round"></div>
-            </a>
-
-            <a href='http://in.linkedin.com/in/pavithraram' target="_blank">
-                <div class="contact social-linkedin round"></div>
-            </a>
-            <a href='https://www.facebook.com/blottere' target="_blank">
-                <div class="contact social-facebook round"></div>
-            </a>
-        </div>
-
-    </div>
-
-
-
-
-    <!-- Photography -->
-    <div id="photo-links" style="display:none;">
-        <a href="./assets/photographs/Image-47.jpg" data-gallery="photo" title="Monkey">
-            <img src="./assets/photographs/thumbnails/Image-47.jpg" alt="Image-47">
-        </a>
-        <a href="./assets/photographs/Image-44.jpg" data-gallery="photo" title="fire">
-            <img src="./assets/photographs/thumbnails/Image-44.jpg" alt="Image-44">
-        </a>
-        <a href="./assets/photographs/Image-57.jpg" data-gallery="photo" title="Baby">
-            <img src="./assets/photographs/thumbnails/Image-57.jpg" alt="Image-57">
-        </a>
-        <a href="./assets/photographs/Image-34.jpg" data-gallery="photo" title="Playball">
-            <img src="./assets/photographs/thumbnails/Image-34.jpg" alt="Image-34">
-        </a>
-        <a href="./assets/photographs/Image-37.jpg" data-gallery="photo" title="Church">
-            <img src="./assets/photographs/thumbnails/Image-37.jpg" alt="Image-37">
-        </a>
-        <a href="./assets/photographs/Image-32.jpg" data-gallery="photo" title="Playball">
-            <img src="./assets/photographs/thumbnails/Image-32.jpg" alt="Image-32">
-        </a>
-        <a href="./assets/photographs/Image-28.jpg" data-gallery="photo" title="Poovar">
-            <img src="./assets/photographs/thumbnails/Image-28.jpg" alt="Image-28">
-        </a>
-        <a href="./assets/photographs/Image-14.jpg" data-gallery="photo" title="Crab">
-            <img src="./assets/photographs/thumbnails/Image-14.jpg" alt="Image-14">
-        </a>
-        <a href="./assets/photographs/Image-17.jpg" data-gallery="photo" title="Seed">
-            <img src="./assets/photographs/thumbnails/Image-17.jpg" alt="Image-17">
-        </a>
-        <a href="./assets/photographs/Image-41.jpg" data-gallery="photo" title="web">
-            <img src="./assets/photographs/thumbnails/Image-41.jpg" alt="Image-41">
-        </a>
-        <a href="./assets/photographs/Image-19.jpg" data-gallery="photo" title="Pot">
-            <img src="./assets/photographs/thumbnails/Image-19.jpg" alt="Image-19">
-        </a>
-        <a href="./assets/photographs/Image-22.jpg" data-gallery="photo" title="Peacock">
-            <img src="./assets/photographs/thumbnails/Image-22.jpg" alt="Image-22">
-        </a>
-        <a href="./assets/photographs/Image-4.jpg" data-gallery="photo" title="Rishi">
-            <img src="./assets/photographs/thumbnails/Image-4.jpg" alt="Image-4">
-        </a>
-        <a href="./assets/photographs/Image-6.jpg" data-gallery="photo" title="Shell">
-            <img src="./assets/photographs/thumbnails/Image-6.jpg" alt="Image-6">
-        </a>
-        <a href="./assets/photographs/Image-3.jpg" data-gallery="photo" title="Diya">
-            <img src="./assets/photographs/thumbnails/Image-3.jpg" alt="Image-3">
-        </a>
-        <a href="./assets/photographs/Image-24.jpg" data-gallery="photo" title="Fishes">
-            <img src="./assets/photographs/thumbnails/Image-24.jpg" alt="Image-24">
-        </a>
-        <a href="./assets/photographs/Image-42.jpg" data-gallery="photo" title="fireworks">
-            <img src="./assets/photographs/thumbnails/Image-42.jpg" alt="Image-42">
-        </a>
-
-        <a href="./assets/photographs/Image-36.jpg" data-gallery="photo" title="Boat">
-            <img src="./assets/photographs/thumbnails/Image-36.jpg" alt="Image-36">
-        </a>
-        <a href="./assets/photographs/Image-39.jpg" data-gallery="photo" title="Firworks">
-            <img src="./assets/photographs/thumbnails/Image-39.jpg" alt="Image-39">
-        </a>
-
-        <a href="./assets/photographs/Image-49.jpg" data-gallery="photo" title="Squirell">
-            <img src="./assets/photographs/thumbnails/Image-49.jpg" alt="Image-49">
-        </a>
-        <a href="./assets/photographs/Image-58.jpg" data-gallery="photo" title="Baby">
-            <img src="./assets/photographs/thumbnails/Image-58.jpg" alt="Image-58">
-        </a>
-        <a href="./assets/photographs/Image-48.jpg" data-gallery="photo" title="Flower">
-            <img src="./assets/photographs/thumbnails/Image-48.jpg" alt="Image-48">
-        </a>
-        <a href="./assets/photographs/Image-16.jpg" data-gallery="photo" title="Crab">
-            <img src="./assets/photographs/thumbnails/Image-16.jpg" alt="Image-16">
-        </a>
-        <a href="./assets/photographs/Image-55.jpg" data-gallery="photo" title="Fish">
-            <img src="./assets/photographs/thumbnails/Image-55.jpg" alt="Image-55">
-        </a>
-        <a href="./assets/photographs/Image-51.jpg" data-gallery="photo" title="Sculptor">
-            <img src="./assets/photographs/thumbnails/Image-51.jpg" alt="Image-51">
-        </a>
-        <a href="./assets/photographs/Image-1.jpg" data-gallery="photo" title="Rishi">
-            <img src="./assets/photographs/thumbnails/Image-1.jpg" alt="Image-1">
-        </a>
-        <a href="./assets/photographs/Image-50.jpg" data-gallery="photo" title="Nik">
-            <img src="./assets/photographs/thumbnails/Image-50.jpg" alt="Image-50">
-        </a>
-        <a href="./assets/photographs/Image-12.jpg" data-gallery="photo" title="Fishing">
-            <img src="./assets/photographs/thumbnails/Image-12.jpg" alt="Image-12">
-        </a>
-        <a href="./assets/photographs/Image-43.jpg" data-gallery="photo" title="fire">
-            <img src="./assets/photographs/thumbnails/Image-43.jpg" alt="Image-43">
-        </a>
-        <a href="./assets/photographs/Image-56.jpg" data-gallery="photo" title="Om">
-            <img src="./assets/photographs/thumbnails/Image-56.jpg" alt="Image-56">
-        </a>
-        <a href="./assets/photographs/Image-5.jpg" data-gallery="photo" title="Diya">
-            <img src="./assets/photographs/thumbnails/Image-5.jpg" alt="Image-5">
-        </a>
-        <a href="./assets/photographs/Image-20.jpg" data-gallery="photo" title="Dog">
-            <img src="./assets/photographs/thumbnails/Image-20.jpg" alt="Image-20">
-        </a>
-
-        <a href="./assets/photographs/Image-26.jpg" data-gallery="photo" title="Moss">
-            <img src="./assets/photographs/thumbnails/Image-26.jpg" alt="Image-26">
-        </a>
-        <a href="./assets/photographs/Image-27.jpg" data-gallery="photo" title="Poovar">
-            <img src="./assets/photographs/thumbnails/Image-27.jpg" alt="Image-27">
-        </a>
-        <a href="./assets/photographs/Image-10.jpg" data-gallery="photo" title="Puppet">
-            <img src="./assets/photographs/thumbnails/Image-10.jpg" alt="Image-10">
-        </a>
-        <a href="./assets/photographs/Image-33.jpg" data-gallery="photo" title="Playball">
-            <img src="./assets/photographs/thumbnails/Image-33.jpg" alt="Image-33">
-        </a>
-        <a href="./assets/photographs/Image-38.jpg" data-gallery="photo" title="Doggie">
-            <img src="./assets/photographs/thumbnails/Image-38.jpg" alt="Image-38">
-        </a>
-
-        <a href="./assets/photographs/Image-46.jpg" data-gallery="photo" title="Buddah">
-            <img src="./assets/photographs/thumbnails/Image-46.jpg" alt="Image-46">
-        </a>
-        <a href="./assets/photographs/Image-59.jpg" data-gallery="photo" title="Baby">
-            <img src="./assets/photographs/thumbnails/Image-59.jpg" alt="Image-59">
-        </a>
-        <a href="./assets/photographs/Image-8.jpg" data-gallery="photo" title="Light">
-            <img src="./assets/photographs/thumbnails/Image-8.jpg" alt="Image-8">
-        </a>
-        <a href="./assets/photographs/Image-52.jpg" data-gallery="photo" title="Face">
-            <img src="./assets/photographs/thumbnails/Image-52.jpg" alt="Image-52">
-        </a>
-
-    </div>
-    <!-- Art -->
-    <div id="art-links" style="display:none;">
-        <a href="./assets/art/corn.jpg" data-gallery="photo" title="Watercolor_corn">
-            <img src="./assets/art/thumbnails/corn.jpg" alt="corn">
-        </a>
-        <a href="./assets/art/img016.jpg" data-gallery="photo" title="Pencil_Deep">
-            <img src="./assets/art/thumbnails/img016.jpg" alt="img016">
-        </a>
-        <a href="./assets/art/Pastel_breathe.jpg" data-gallery="photo" title="Pastel_breathe">
-            <img src="./assets/art/thumbnails/Pastel_breathe.jpg" alt="Pastel_breathe">
-        </a>
-        <a href="./assets/art/pencil-artasian.jpg" data-gallery="photo" title="Pencil-anticipate">
-            <img src="./assets/art/thumbnails/pencil-artasian.jpg" alt="Pencil-artasian">
-        </a>
-        <a href="./assets/art/fawn.jpg" data-gallery="photo" title="fawn">
-            <img src="./assets/art/thumbnails/fawn.jpg" alt="Fawn">
-        </a>
-        <a href="./assets/art/dancer.jpg" data-gallery="photo" title="Pencil_Dancer">
-            <img src="./assets/art/thumbnails/dancer.jpg" alt="dancer">
-        </a>
-        <a href="./assets/art/ninja.jpg" data-gallery="photo" title="Pencil_Ninja">
-            <img src="./assets/art/thumbnails/ninja.jpg" alt="ninja">
-        </a>
-        <a href="./assets/art/frog.jpg" data-gallery="photo" title="Pencil_frog">
-            <img src="./assets/art/thumbnails/frog.jpg" alt="frog">
-        </a>
-        <a href="./assets/art/lady.jpg" data-gallery="photo" title="Pencil_lady">
-            <img src="./assets/art/thumbnails/lady.jpg" alt="lady">
-        </a>
-        <a href="./assets/art/girl2.jpg" data-gallery="photo" title="Girl">
-            <img src="./assets/art/thumbnails/girl2.jpg" alt="girl2">
-        </a>
-        <a href="./assets/art/man_smoke.jpg" data-gallery="photo" title="Pencil_Contemplate">
-            <img src="./assets/art/thumbnails/man_smoke.jpg" alt="man_smoke">
-        </a>
-        <a href="./assets/art/pot_pencil.jpg" data-gallery="photo" title="Pencil_still-life">
-            <img src="./assets/art/thumbnails/pot_pencil.jpg" alt="pot-pencil">
-        </a>
-        <a href="./assets/art/girl.jpg" data-gallery="photo" title="Charcoal-girl">
-            <img src="./assets/art/thumbnails/girl.jpg" alt="girl">
-        </a>
-        <a href="./assets/art/boy.jpg" data-gallery="photo" title="Charcoal-boy">
-            <img src="./assets/art/thumbnails/boy.jpg" alt="boy">
-        </a>
-        <a href="./assets/art/Nakedlady.jpg" data-gallery="photo" title="NakedLady">
-            <img src="./assets/art/thumbnails/Nakedlady.jpg" alt="Nakedlady">
-        </a>
-        <a href="./assets/art/xia-yui-valley.jpg" data-gallery="photo" title="xia-yui-valley">
-            <img src="./assets/art/thumbnails/xia-yui-valley.jpg" alt="xia-yui-valley">
-        </a>
-        <a href="./assets/art/faces.jpg" data-gallery="photo" title="Pencil-Faces">
-            <img src="./assets/art/thumbnails/faces.jpg" alt="faces">
-        </a>
-        <a href="./assets/art/Northeastguy.jpg" data-gallery="photo" title="Pencil-NorthEast">
-            <img src="./assets/art/thumbnails/Northeastguy.jpg" alt="Northeastguy">
-        </a>
-        <a href="./assets/art/dragons2.jpg" data-gallery="photo" title="Dragons">
-            <img src="./assets/art/thumbnails/dragons2.jpg" alt="Dragons">
-        </a>
-        <a href="./assets/art/women.jpg" data-gallery="photo" title="Women">
-            <img src="./assets/art/thumbnails/women.jpg" alt="Women">
-        </a>
-        <a href="./assets/art/quicksketches.jpg" data-gallery="photo" title="Pencil-Quicksketches">
-            <img src="./assets/art/thumbnails/quicksketches.jpg" alt="quicksketches">
-        </a>
-        <a href="./assets/art/quicksketches2.jpg" data-gallery="photo" title="Pencil-Quicksketches">
-            <img src="./assets/art/thumbnails/quicksketches2.jpg" alt="quicksketches">
-        </a>
-        <a href="./assets/art/whistler.jpg" data-gallery="photo" title="Water-whistler">
-            <img src="./assets/art/thumbnails/whistler.jpg" alt="whistler">
-        </a>
-        <a href="./assets/art/scenery.jpg" data-gallery="photo" title="Water-scenery">
-            <img src="./assets/art/thumbnails/scenery.jpg" alt="scenery">
-        </a>
-    </div>
-
-    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-    <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
-        <!-- The container for the modal slides -->
-        <div class="slides"></div>
-        <!-- Controls for the borderless lightbox -->
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-        <!-- The modal dialog, which will be used to wrap the lightbox content -->
-        <div class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title"></h4>
-                    </div>
-                    <div class="modal-body next"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default pull-left prev">
-                            <i class="glyphicon glyphicon-chevron-left"></i> Previous
-                        </button>
-                        <button type="button" class="btn btn-primary next">
-                            Next
-                            <i class="glyphicon glyphicon-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+      <div class="text-right">
+        <aside id="sidebar">
+         <div>I <strong>Think</strong>, <strong>Innovate</strong> and <strong>Design</strong> a more user friendly world</div>
+        </aside>
+       </div><!--end of text-right-->
+       </div><!--end of container--> 
+        </div><!--end of hero-->
+     </header>
+      
+  
+   <div class="container" class="clearfix">
+     <div id="img_me" class="clearfix">      
+        <!--<img class="img-responsive" class="pull-left" src="images/me_hero.png" alt="" width="344" height="600"> -->
+        </div><!--end of img-->
+    <div id="content-area" class="clearfix">
+      <div id="main-content" class="clearfix">
+        <div id="about">
+          <h1>What I Do</h1>
+          <p>
+            
+I am a Bangalore based User Experience Design consultant, Illustrator and Front-End Developer. I design and build usable web based platforms for several companies based on their intrinsic requirements, while focusing on achieving a fluid, minimalistic and stylish user experience for the product.
+            <br><br>
+I also innovate and research on several platforms that provide people with simplified solutions to their everyday lives and routines.</p>
+        </div><!--end of about-->
+           </div><!--end of main-content-->
+    </div><!--end of content-area--> 
+    </div><!--end of container--> 
+        <div id="Portfolio" class="text-center">
+          <h1>My Work</h1>
+          <ul class="list-inline">
+           <li><div id="photography" class="hvr-float-shadow"><div class="desc"><p>Photography</p></div><a href="https://500px.com/pavithraram" target="/_blank"><img src="images/photography_color.png"></a></div></li>
+           <li><div id="art" class="hvr-float-shadow"><div class="desc"><p>Art</p></div><a href="art.html"><img src="images/art_color.png"></a></div></li>
+            <li><div id="Animation" class="hvr-float-shadow"><div class="desc"><p>Animation</p></div><a href="animation.html"><img src="images/animation_color.svg"></a></div></li>
+            <li><div id="UIUX" class="hvr-float-shadow"><div class="desc"><p>UI/UX</p></div><a href="uxui.html"><img src="images/UIUX_Color_1.png"></a></div></li>
+          </ul>
+        </div><!--end of Portfolio-->
+        <div id="Resume" class="text-center">
+          <a href="asset/resume.pdf" target="/blank" class="button">
+            <span>Resume</span>
+          </a>
+        </div><!--end of Resume-->
+   <footer>
+    <div id="contact" class="text-center">
+          <h1>Get In Touch!</h1>
+          <div id="contactchunk">
+          <p>
+            <!--+1 (925) 875 8307
+            <br>-->
+            <a href="mailto:pavithraram.8@gmail.com">pavithraram.8@gmail.com</a>
+          </p>
+          <div id="social-icons">
+            <div style="width:200px; margin:0 auto; padding-top:25px; padding-bottom:25px;">
+            <table width="200" height="30">
+          <tr>
+                 <td width="48" height="48"><a href="#" class="behance">Behance<span></span></a></td>
+                 <td width="48" height="48"><a href="#" class="facebook">Facebook<span></span></a></td>
+                 <td width="48" height="48"><a href="#" class="linkedin">Linkedin<span></span></a></td>
+           </tr>
+           </table>
+           </div><!--end of style-->      
+          </div><!--end of social-icons-->
+        </div><!--end of contactchunk-->
+        </div><!--end of contact-->
+        <div id="copywrite">
+      <p class="text-center">&copy; 2015 <strong>Pavithra Ramamurthy</strong></p>
+    </div><!--end of copywrite-->
+   </footer><!--end of footer-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- BlueImp Gallery Scripts -->
-    <script src="js/jquery.blueimp-gallery.min.js"></script>
-    <script src="js/bootstrap-image-gallery.min.js"></script>
-
-    <!-- Gallery Lightbox Linking -->
-    <script>
-        // Photographs
-
-        $('#photo-gallery').on('click', function (event) {
-            event.preventDefault();
-            blueimp.Gallery($('#photo-links a'), $('#blueimp-gallery').data());
-        });
-
-        //Art
-
-        $('#art-gallery').on('click', function (event) {
-            event.preventDefault();
-            blueimp.Gallery($('#art-links a'), $('#blueimp-gallery').data());
-        });
-
-        // Shortfilm
-
-        $('#sfilm-gallery').on('click', function (event) {
-            event.preventDefault();
-
-            blueimp.Gallery([{
-                    title: 'That Phase of Childbirth',
-                    type: 'text/html',
-                    vimeo: '116462649',
-                    poster: 'https://i.vimeocdn.com/video/502851359_960.jpg'
-            },
-                {
-                    title: 'Devaka Pada',
-                    type: 'text/html',
-                    vimeo: '91010073',
-                    poster: 'http://i.vimeocdn.com/video/470429842_960.jpg'
-            }], $('#blueimp-gallery').data());
-        });
-
-        //Animation
-
-        $('#anim-gallery').on('click', function (event) {
-            event.preventDefault();
-
-            blueimp.Gallery([{
-                title: 'Animation Demoreel',
-                type: 'text/html',
-                vimeo: '94690942',
-                poster: 'https://i.vimeocdn.com/video/474625806_960.jpg'
-            }], $('#blueimp-gallery').data());
-        });
-    </script>
-
-    <!--Custom Javascripts -->
-
-    <!-- NavBar Hiding & AutoClose -->
-    <script type="text/javascript">
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 500) {
-                $('.navbar-fixed-top').addClass('shownav');
-                $('.nav > li').addClass('shownav');
-            } else {
-                $('.navbar-fixed-top').removeClass('shownav');
-                $('.nav > li').removeClass('shownav');
-            }
-        });
-
-        $('.nav a').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
-        });
-
-        $('.navbar-default .navbar-brand').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
-        });
-    </script>
-    <!-- Image Copy Block -->
-    <script type="text/javascript">
-        document.oncontextmenu = function (e) {
-            e = e || window.event;
-            if (/^img$/i.test((e.target || e.srcElement).nodeName)) return false;
-        };
-    </script>
-    <!-- Sitewide Smooth Scroll -->
-    <script type="text/javascript">
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 800);
-                        return false;
-                    }
-                }
-            });
-        });
-    </script>
-    <!-- Image Preloader -->
-    <script type="text/javascript">
-        $.preloadImages = function () {
-            for (var i = 0; i < arguments.length; i++) {
-                $("<img />").attr("src", arguments[i]);
-            }
-        }
-        $.preloadImages("/img/social-icons/res-logo-hover.png");
-    </script>
-</body>
-
+      </div><!--end of container-fluid-->
+  </body>
 </html>
