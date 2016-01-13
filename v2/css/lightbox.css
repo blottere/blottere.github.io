@@ -13,9 +13,9 @@ body.lb-disable-scrolling {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: black;
+  background-color: white;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  opacity: .9;
   display: none;
 }
 
@@ -33,7 +33,7 @@ body.lb-disable-scrolling {
   display: block;
   height: auto;
   max-width: inherit;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 .lightbox a img {
@@ -47,7 +47,7 @@ body.lb-disable-scrolling {
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 .lb-outerContainer:after {
@@ -57,7 +57,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-container {
-  padding: 4px;
+  padding: 0px;
 }
 
 .lb-loader {
@@ -72,8 +72,8 @@ body.lb-disable-scrolling {
 
 .lb-cancel {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 50px;
   margin: 0 auto;
   background: url(../images/loading.gif) no-repeat;
 }
@@ -157,6 +157,10 @@ body.lb-disable-scrolling {
   clear: both;
 }
 
+.lb-details{
+  opacity: 0;
+}
+
 .lb-data {
   padding: 0 4px;
   color: #ccc;
@@ -186,9 +190,6 @@ body.lb-disable-scrolling {
 .lb-data .lb-close {
   display: block;
   float: right;
-  width: 30px;
-  height: 30px;
-  background: url(../images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
