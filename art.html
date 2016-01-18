@@ -32,6 +32,7 @@
 
 <link rel="stylesheet" href="css/lightbox.css">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,8 +56,11 @@
 <h1>ArtFolio</h1>
 </div><!--end of heading-->
 </div><!--end of mainblock-->
-<div id="portfolio">
 
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up fa-5"></i></a>
+
+<div id="portfolio">
 <ul class="grid effect-6" id="grid">
                 <li><a href="images/art/girl.jpg" data-lightbox="art" data-toggle="lightbox"><img src="images/art/girl.jpg"></a></li>
 
@@ -126,7 +130,7 @@
           </div><!--end of social-icons-->
           <div id="Resume" class="text-center col-lg-3 col-md-3 col-sm-12 col-xs-12">
           <a href="asset/resume.pdf" target="/blank" class="button">
-            <span>Resume</span>
+            <span>Resumé</span>
           </a>
         </div><!--end of Resume-->
       </div><!--end of row-->
@@ -149,9 +153,21 @@
                 viewportFactor : 0.2
             } );
         </script>
-
+<script type="text/javascript">
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
 </script>
-
     </body>
 </html>
 </body>
