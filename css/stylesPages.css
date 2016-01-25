@@ -48,7 +48,7 @@ h1, h2, h3{
 
 #home_button{
   top: 0;
-  left: 10em;
+  left: 12%;
   position: relative;
   width: 32px;
   height: 32px;
@@ -81,13 +81,13 @@ h1, h2, h3{
   text-align: center;
 }
 
+
 @media only screen and (min-width: 640px){
   #portfolio{
   margin: 0 auto;
   text-align: center;
   padding: 0 70px;
   }
-
 }
 #portfolio .row img{
   width: 87%;
@@ -272,14 +272,13 @@ opacity: 1;
 footer{
 	background-color: #777;
 	margin: 20px auto 0;
-	padding: 0 auto;
 	width: 100%;
+  padding: 0 12%;
 }
 
 footer .row{
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 13em;
 }
 
 footer #Resume{
