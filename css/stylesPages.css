@@ -60,11 +60,11 @@ h1, h2, h3{
 #home_button span {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background: url('../icons/home_bg.svg') no-repeat center center;
+  background: url('../icons/home_bg.svg') no-repeat center left;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
-  -moz-transition:    opacity 0.3s;
-  -o-transition:      opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
 }
 
 #home_button:hover span {
