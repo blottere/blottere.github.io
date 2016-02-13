@@ -31,10 +31,177 @@ h1, h2, h3{
 
 /*Header*/
 
-#headline{
-  background-color: #fff;
+nav{
+  text-align: right;
+  padding-right: 20%;
 }
 
+
+nav ul{
+   margin: 0 auto;
+   list-style: none;
+}
+
+
+nav ul li embed{
+  color: black;
+  margin: 0 10px;
+  position: relative;
+  width: 52px;
+  height: 90px;
+}
+
+.paint{
+  position: relative;
+  top:23px;
+}
+
+.campo{
+  top: -18px; 
+  height: 40px;
+}
+
+.hand{
+  height:60px; 
+  top:-18px;
+}
+
+nav ul li a:hover{
+  color:#000;
+  text-decoration: none;
+}
+
+#headline{
+  background-color: #fff;
+  height: 90px;
+  width: 100%;
+}
+
+#identity{
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 58px;
+  left: 8%;
+  top: 15px;
+}
+/*
+#titles ul{
+  list-style: none;
+  margin: 0 auto;
+}
+
+#titles{
+  position: absolute;
+  left: 42em;
+  top: 40px;
+  font-family: 'Merienda One', 'Lato', 'Helvetica Neue', 'Helvetica', serif, Arial;
+  font-size: 22px;
+}
+
+#uxover{
+  display: none;
+}
+
+#hand:hover #uxover{
+  display: inherit;
+}
+*/
+
+.over{
+  font-family: 'Lato', 'Helvetica', 'serif';
+  font-size: 20px;
+  width: 200px;
+  position: absolute;
+  text-align: left;
+  right:0;
+  top: 45px;
+  display: block;
+  opacity: 0;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+-ms-transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+}
+
+.over:hover{
+ display: none;
+}
+
+li:hover .over{
+  opacity: 1;
+}
+
+li .over:after {
+  border-top: solid transparent 5px;
+  border-bottom: solid transparent 5px;
+  border-right: solid #000 5px;
+  top: 10px;
+  right:105%;
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+
+@media only screen and (max-width: 640px){
+
+.over{
+  display: none;
+}
+.over:after{
+  display: none;
+}
+  nav{
+  text-align: right;
+  padding-right: 5%;
+}
+
+nav ul li embed{
+  color: black;
+  margin: 5px;
+  position: relative;
+  width: 32px;
+  height: 60px;
+}
+
+.paint{
+  position: relative;
+  top: 13px;
+}
+
+.campo{
+  position: relative;
+  top:-6px;
+}
+
+.hand{
+  position: relative;
+  top: -13px;
+  height: 38px;
+}
+
+  #identity{
+    width: 38px;
+  }
+  #headline{
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    z-index: 1;
+  }
+  header{
+  position: relative;
+  top: 50px;
+}
+
+footer{
+  position: relative;
+  top: 50px;
+}
+}
 
 #mainblock{
   margin: 0 auto;
@@ -46,6 +213,7 @@ h1, h2, h3{
   position: relative;
 }
 
+/* button option
 #home_button{
   top: 0;
   left: 12%;
@@ -71,6 +239,8 @@ h1, h2, h3{
   opacity: 1;
 }
 
+*/
+
 #portfolio .row{
   margin: 0 auto; 
 }
@@ -83,12 +253,14 @@ h1, h2, h3{
 
 
 @media only screen and (min-width: 640px){
+
   #portfolio{
   margin: 0 auto;
   text-align: center;
   padding: 0 70px;
   }
 }
+
 #portfolio .row img{
   width: 87%;
 }
@@ -259,9 +431,15 @@ opacity: 1;
     right: 5%;
     top: 45%;
   }
+
+  .over{
+    width: 100px;
+    right: 30px;
+  }
 }
 
 @media only screen and (max-width: 700px){
+
   #return-to-top i{
     display: none;
   }

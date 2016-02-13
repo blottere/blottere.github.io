@@ -71,6 +71,18 @@ body{
 	left: -80px;
 }
 
+#identity{
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 58px;
+  clear: both;
+  float: left;
+  left: 30px;
+  top: 20px;
+}
+
+
 /*Typography*/
 
 h1, h2, h3, h4{

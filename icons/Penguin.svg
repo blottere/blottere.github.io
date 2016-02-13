@@ -1,0 +1,160 @@
+<svg id="penguin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 153.67 155.42">
+
+<a xlink:href="../animation.html" target="_top">
+	<defs>
+		<style>
+			.cls-1{
+			fill:#fff;
+			}
+			.cls-2{
+			fill:#f90;
+			}
+			.eyecolor{
+			stroke:#000;
+			stroke-miterlimit:10;
+			}
+
+			#penguin:hover #eye circle{
+			-webkit-animation: openlid 2s infinite;
+			animation: openlid 2s infinite;
+			}
+
+			@-webkit-keyframes openlid{
+			0%{
+			opacity:1;
+			}
+			15%{
+			opacity:1;
+			}
+			17%{
+			opacity:0;
+			}
+			23%{
+			opacity:0;
+			}
+			25%{
+			opacity:1;
+			}
+			50%{
+			opacity:1;
+			}
+			85%{
+			opacity:1;
+			}
+			87%{
+			opacity:0;
+			}
+			90%{
+			opacity:0;
+			}
+			93%{
+			opacity:1;
+			}
+			}
+
+			#penguin:hover #eye ellipse{
+			-webkit-animation: midlid 2s infinite;
+			animation: midlid 2s infinite;
+			}
+
+			@-webkit-keyframes midlid{
+			0%{
+			opacity:1;
+			}
+			15%{
+			opacity:1;
+			}
+			18%{
+			opacity:1;
+			}
+			20%{
+			opacity:0;
+			}
+			23%{
+			opacity:1;
+			}
+			50%{
+			oapcity:1;
+			}
+			85%{
+			opacity:1;
+			}
+			87%{
+			opacity:0;
+			}
+			90%{
+			opacity:.8;
+			}
+			93%{
+			opacity:1;
+			}
+			95%{
+			opacity:1;
+			}
+			}
+
+			#penguin:hover #eye #closed_left, #penguin:hover #eye #closed_right{
+			-webkit-animation: closelid 2s infinite;
+			animation: closelid 2s infinite;
+			}
+
+			@-webkit-keyframes closelid{
+			0%{
+			opacity:0;
+			}
+			18%{
+			opacity:0;
+			}
+			20%{
+			opacity:1;
+			}
+			23%{
+			opacity:1;
+			}
+			90%{
+			opacity:1;
+			}
+			93%{
+			opacity:0;
+			}
+			100%{
+			opacity:0;
+			}
+			}
+		</style>
+	</defs>
+<path d="M39,147.66s-53.72-32,0-116.24C39,31.42,34.27.32,75.74,0s38.64,31.42,38.64,31.42,47.52,70.37,0,116.24c0,0,35.37,5.6,10.33,7.23-18.67,1.21-102.42,0-102.42,0S13.53,149.23,39,147.66Z"/>
+
+<path class="cls-1" d="M107.59,26.29c0,11.7-14,21.19-31.36,21.19S44.87,38,44.87,26.29c0-10.14,7.38-20.43,21.64-20.7,9.29-.18,7.41,24.64,9.72,24.64,1.83,0,.91-24.82,8.38-24.82C99.48,5.42,107.59,15.83,107.59,26.29Z"/>
+
+<path class="cls-1" d="M48.83,148.48c-8.74-3.92-20.88-19.29-23-40.71-1.26-12.85,2-31.39,12-43.91,20.55-25.72,54.86-24.47,75.49,0,8.91,10.55,12.54,29.48,11.36,43.08-1.67,19.3-9.18,35.32-18.48,40.6-6.66,3.78-22.66,5.76-30.41,5.73C68.41,153.22,56.06,151.72,48.83,148.48Z"/>
+
+<path id="beak" class="cls-2" d="M68.13,35.11c0.36-3.91,5.86-4.3,8.11-4.26s8,0.64,8.12,4.64c0.12,3.21-1.74,9.93-8.11,10.51S67.84,38.33,68.13,35.11Z"/>
+  <path id="beak-2" data-name="beak" class="cls-1" d="M75.24,31.85s-6.84,4.47-3,10.14C73.5,43.84,63.1,31.67,75.24,31.85Z"/>
+
+<path d="M39.67,30.17S14.5,61.27,0,78c0,0,8.87,6,18.6-3.07S39.67,30.17,39.67,30.17Z"/>
+
+<path d="M114,31.17S139.17,62.27,153.67,79c0,0-8.87,6-18.6-3.07S114,31.17,114,31.17Z"/>
+
+<g id="eye">
+
+<circle id="open_left" class="eyecolor" cx="63.66" cy="23.37" r="8.35"/>
+
+<circle id="open_right" class="eyecolor" cx="89" cy="23.37" r="8.35"/>
+
+<ellipse id="mid_right" class="cls-3" cx="89" cy="25.05" rx="8.35" ry="5.48"/>
+    <ellipse id="mid_left" class="cls-3" cx="63.66" cy="25.05" rx="8.35" ry="5.48"/>
+    <path id="closed_left" d="M72,26.37a26.53,26.53,0,0,0-16.7,0s3.74,0.35,8.35.35S72,26.37,72,26.37Z"/>
+    <path id="closed_right" d="M97,26.37a25.29,25.29,0,0,0-16.29,0s3.65,0.35,8.14.35S97,26.37,97,26.37Z"/>
+
+<path id="eyeshine" class="cls-1" d="M68.58,26.45s-3.63,4.4-7.63,3.59C60.94,30,66.49,32.77,68.58,26.45Z"/>
+
+<path id="eyeshine-2" data-name="eyeshine" class="cls-1" d="M94.58,26.45s-3.63,4.4-7.63,3.59C86.94,30,92.49,32.77,94.58,26.45Z"/>
+
+<circle id="eyeshine-3" data-name="eyeshine" class="cls-1" cx="60.59" cy="18.92" r="1.36"/>
+
+<circle id="eyeshine-4" data-name="eyeshine" class="cls-1" cx="85.46" cy="18.92" r="1.36"/>
+
+</g>
+</a>
+</svg>
