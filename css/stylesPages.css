@@ -426,20 +426,32 @@ opacity: 1;
     top: 5px;
 }
 
+
+@media only screen and (max-width: 1000px){
+ .over{
+    width: 100px;
+    right: 50px;
+  }
+}
+
 @media only screen and (max-width: 800px){
   #return-to-top{
     right: 5%;
     top: 45%;
   }
-
   .over{
     width: 100px;
     right: 30px;
   }
+
 }
 
 @media only screen and (max-width: 700px){
 
+.over{
+    width: 100px;
+    right: 20px;
+  }
   #return-to-top i{
     display: none;
   }
