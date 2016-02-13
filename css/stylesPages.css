@@ -427,21 +427,21 @@ opacity: 1;
 }
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
  .over{
     width: 100px;
-    right: 50px;
+    right: 7%;
   }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
   #return-to-top{
     right: 5%;
     top: 45%;
   }
   .over{
     width: 100px;
-    right: 30px;
+    right: 5%;
   }
 
 }
