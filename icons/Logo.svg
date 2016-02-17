@@ -1,6 +1,7 @@
 <svg class="pav_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147.26 143.301">               
-	<a xlink:href="../index.html" target="_top">     
-	<style>
+	<a xlink:href="../index.html" target="_top"> 
+	<defs>    
+	<style type="text/css">
 		.pav_logo{
 			height: 500px;
 			cursor:pointer;
@@ -37,13 +38,9 @@
 		.pav_logo:hover .house{
 			stroke-dashoffset: 0;
 		}
+
 	</style>
-	 <script type="text/javascript">
-        var clicker = document.querySelector('#identity');
-        clicker.addEventListener('click', function(){
-          this.classList.toggle('clickit');
-        });
-        </script>
+</defs>
 
 	<g class="cntn">
 		<polyline class="logo house" points="34.46 138.03 95.46 138.03 95.46 93.03 109.35 93.03 55.38 43.46 3.5 93.03 16.46 93.03 16.46 138.03 34.46 138.03"/>
