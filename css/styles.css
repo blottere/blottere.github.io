@@ -425,7 +425,7 @@ header nav ul{
     }
 }
 
-@media only screen and (min-width : 300px) and (max-width : 700px) {
+@media only screen and (max-width : 700px) {
       
       #identity{
   position: fixed;
@@ -437,6 +437,7 @@ header nav ul{
   left: 10px;
   top: 20px;
   }
+
 
 
       #navbar{
@@ -524,8 +525,8 @@ header nav ul{
         padding-bottom: 10px;
         background-color: #fff;
         position: relative;
-        top: -310px; 
-        margin-bottom: -310px;
+        top: -390px; 
+        margin-bottom: -390px;
       }
       
 
@@ -615,6 +616,53 @@ header nav ul{
        padding-bottom: 20px;
       }
 
+    }
+ 
+@media only screen and (max-width : 450px) {
+ #navbar{
+        font-family: 'Lato', 'Helvetica', 'serif';
+        text-transform: uppercase;
+        font-size: 12px;
+        margin: 0 auto;
+        font-weight: 700;
+        text-shadow: none;
+        } 
+
+        header nav ul{
+        padding: 0 5px;
+        margin: 0 auto;
+        line-height: 100px;
+      }
+nav ul li a{
+  color: black;
+  padding: 0;
+  margin: 0 5px;
+  position: relative;
+  color: #000; 
+}
+#about{
+  text-align: left;
+}
+
+#Portfolio{
+        padding-top: 0;
+        padding-bottom: 10px;
+        background-color: #fff;
+        position: relative;
+        top: -300px; 
+        margin-bottom: -300px;
+      }
+}
+
+   @media only screen and (max-width : 350px){
+      #Portfolio{
+        padding-top: 0;
+        padding-bottom: 10px;
+        background-color: #fff;
+        position: relative;
+        top: -220px; 
+        margin-bottom: -220px;
+      }
     }
 
 
