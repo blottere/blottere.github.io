@@ -438,8 +438,6 @@ header nav ul{
   top: 20px;
   }
 
-
-
       #navbar{
         font-family: 'Lato', 'Helvetica', 'serif';
         text-transform: uppercase;
@@ -462,7 +460,6 @@ header nav ul{
         padding: 0 20px;
         margin: 0 auto;
         line-height: 100px;
-
       }
 
       nav ul li a:before {
@@ -615,7 +612,6 @@ header nav ul{
       font-size: 24px;
        padding-bottom: 20px;
       }
-
     }
  
 @media only screen and (max-width : 450px) {
@@ -651,6 +647,9 @@ nav ul li a{
         position: relative;
         top: -300px; 
         margin-bottom: -300px;
+      }
+
+      #Portfolio ul li{
       }
 }
 
