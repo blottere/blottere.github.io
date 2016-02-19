@@ -526,10 +526,14 @@ header nav ul{
         margin-bottom: -390px;
       }
       
+      #Portfolio ul{
+        padding: 0 10px;
+      }
 
       #Portfolio ul li{
-        margin: 0 -25px;
-        display: block;
+        margin: 0 20px;
+        display: inline-block;
+        padding: 20px 0;
       }
 
        #Portfolio ul li .desc{
@@ -649,8 +653,15 @@ nav ul li a{
         margin-bottom: -300px;
       }
 
-      #Portfolio ul li{
+     #Portfolio ul li .desc{
+        padding: 20px 0;
       }
+
+       #Portfolio ul li img{
+          height: 280px;
+          width: auto;
+        }
+
 }
 
    @media only screen and (max-width : 350px){
