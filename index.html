@@ -42,6 +42,8 @@
 
     <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
 
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,6 +51,14 @@
     <!--custom stylesheet-->
 
     <link rel="stylesheet" href="css/styles.css">
+
+      <!--for the masonry grid-->
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+
+<link rel="stylesheet" href="css/lightbox.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!--browser tab-->
 
@@ -64,69 +74,80 @@
   </head>
   <body>
     <div class="container-fluid">
+      <header>
       <div id="identity">
-        <object>
+        <object class="scroldis">
           <embed src="icons/Logo.svg">
+            </object>
+            <object class="scrolappy">
+          <embed src="icons/Logo1.svg" style="position: absolute; top: 0; left: 0;">
         </object>
           </div><!--end of identity-->
-        <div id="hero" class="clearfix">
-          <header>
-        <div class="container">
+          
           <div id="navbar" class="row">
           <nav>
-           <ul class="list-inline text-right">
+           <ul class="list-inline">
           <li><a href="#img_me">About</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#Portfolio">Work</a></li>
+          <li><a href="../pavram.github.io/art.html">Gallery</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </nav>
        </div><!--end of navbar-->
-
-      <div class="text-right">
-        <aside id="sidebar">
-         <div>I <strong>Think</strong>, <strong>Innovate</strong> and <strong>Design</strong> a more user friendly world</div>
-        </aside>
-       </div><!--end of text-right-->
-       </div><!--end of container--> 
-        </div><!--end of hero-->
-     </header>
-      
-   <div class="container" class="clearfix">
-     <div id="img_me" class="clearfix">      
+<div class="container">
+       <div id="topcontent">
+        <div id="img_me" class="img-responsive">    
         <!--<img class="img-responsive" class="pull-left" src="images/me_hero.png" alt="" width="344" height="600"> -->
         </div><!--end of img-->
-    <div id="content-area" class="clearfix">
-      <div id="main-content" class="clearfix">
-        <div id="about">
-          <h1>What I Do</h1>
-          <p>
-            
-I am Pavithra Ramamurthy, a Bangalore based User Experience Design consultant, Illustrator and Front-End Developer. I design and build usable web based platforms for several companies based on their intrinsic requirements while focusing on achieving a fluid, minimalistic and stylish user experience for the product.
-            <br><br>
-I also innovate and research on several platforms that provide people with simplified solutions to their everyday lives and routines.</p>
-        </div><!--end of about-->
-           </div><!--end of main-content-->
-    </div><!--end of content-area--> 
-    </div><!--end of container--> 
-        <div id="Portfolio" class="text-center">
-          <h1>My Work</h1>
+        <aside id="mainbar" class="carousel-caption">
+          <div id="hello">HELLO!</div>
+         <div>I am Pavithra Ramamurthy. <br> <br>I am an <i><strong>explorative </strong></i> designer. <br>To me, a great design does the thinking, <br> so you don't have to.</div>
+        </aside>
+        </div><!--end of topcontent-->
+       </div><!--end of container--> 
+     </header>
+<div>
+        <ul id="cd-vertical-nav">
+      <li>
+        <a href="#top" data-number="1">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Intro</span>
+        </a>
+      </li>
+      <li>
+        <a href="#Portfolio" data-number="2">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Work</span>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" data-number="3">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Contact</span>
+        </a>
+      </li>
+    </ul>
+       </div>
+       <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+
+<div id="Portfolio" class="text-center">
+          <h1>Work</h1>
+          <ul class="grid effect-1" id="grid">
+
+  <li><a href="images/art/Sarav.jpg"><img src="images/art/Sarav.jpg"></a></li>
+
+   <li><a href="images/art/dad.jpg"><img src="images/art/dad.jpg"></a></li>
+
+  <li><a href="images/art/withflowers.jpg"><img src="images/art/withflowers.jpg"></a></li>
+
+   <li><a href="images/art/Hide.jpg"><img src="images/art/Hide.jpg"></a></li>
+           </ul>
         
-          <ul id="list" class="list-inline">
-           <li><div id="photography" class="hvr-float-shadow"><div class="desc"><p>Photography</p></div><a href="https://500px.com/pavithraram" target="/_blank"><img src="images/photography_color.png"></a></div></li>
-           <li><div id="art" class="hvr-float-shadow"><div class="desc"><p>Art</p></div><a href="art.html"><img src="images/art_color.png"></a></div></li>
-            <li><div id="Animation" class="hvr-float-shadow"><div class="desc"><p>Animation</p></div><a href="animation.html"><img src="images/Animation_color_1.png"></a></div></li>
-            <li><div id="UIUX" class="hvr-float-shadow"><div class="desc"><p>UI/UX</p></div><a href="uxui.html"><img src="images/UIUX_Color_1.png"></a></div></li>
-          </ul>
-       
         </div><!--end of Portfolio-->
-        <div id="Resume" class="text-center">
-          <a href="asset/resume.pdf" target="/blank" class="button">
-            <span>Resume</span>
-          </a>
-        </div><!--end of Resume-->
    <footer>
     <div id="contact" class="text-center">
-          <h1>Get In Touch!</h1>
+          <h1>Get In Touch !</h1>
           <div id="contactchunk">
           <p>
             <!--+1 (925) 875 8307
@@ -137,9 +158,9 @@ I also innovate and research on several platforms that provide people with simpl
             <div style="width:200px; margin:0 auto; padding-top:25px; padding-bottom:25px;">
             <table width="200" height="30">
           <tr>
-                 <td width="48" height="48"><a href="https://www.behance.net/Blottere" target="/blank" class="behance">Behance<span></span></a></td>
-                 <td width="48" height="48"><a href="https://www.facebook.com/Blottere" target="/blank" class="facebook">Facebook<span></span></a></td>
-                 <td width="48" height="48"><a href="https://in.linkedin.com/in/pavithraram" target="/blank" class="linkedin">Linkedin<span></span></a></td>
+                 <td width="35" height="35"><a href="https://www.behance.net/Blottere" target="/blank" class="behance">Behance<span></span></a></td>
+                 <td width="35" height="35"><a href="https://www.facebook.com/Blottere" target="/blank" class="facebook">Facebook<span></span></a></td>
+                 <td width="35" height="35"><a href="https://in.linkedin.com/in/pavithraram" target="/blank" class="linkedin">Linkedin<span></span></a></td>
            </tr>
            </table>
            </div><!--end of style-->      
@@ -150,6 +171,24 @@ I also innovate and research on several platforms that provide people with simpl
       <p class="text-center">&copy; 2015 <strong>Pavithra Ramamurthy</strong></p>
     </div><!--end of copywrite-->
    </footer><!--end of footer-->
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+
+<script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/AnimOnScroll.js"></script>
+        <script>
+            new AnimOnScroll( document.getElementById( 'grid' ), {
+                minDuration : 0.4,
+                maxDuration : 0.7,
+                viewportFactor : 0.2
+            } );
+        </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
@@ -181,10 +220,20 @@ I also innovate and research on several platforms that provide people with simpl
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-59768469-2', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+<script type="text/javascript">
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('header').addClass('shrink');
+  } else {
+    $('header').removeClass('shrink');
+  }
+});
+</script>
+<script src="js/jquery-2.1.1.js"> </script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
   </body>
 </html>
