@@ -278,12 +278,13 @@ nav ul li a:link, nav ul li a:visited {
 #Portfolio #grid{
   margin: 0 auto;
   padding: 2em 0;
-  max-width: 65%;
+  max-width: 65s%;
 }
 
 #Portfolio #grid li{
-  padding: 15px;
+  padding: 1em;
   width: 50%;
+}
 
 /*for screens*/
 
@@ -415,17 +416,20 @@ footer{
   width: auto;
   background: #222;
   position: relative;
-  top: 10em;
-  padding: 10px 0;
+  top: 7em;
 }
 
 footer #contact{
-  padding: 10px 0 0;
+  padding: 20px 0 0;
 	margin: 10px auto;
 }
 
 footer p {
     color: #bbb;
+}
+
+footer #contactchunk{
+  padding: 0 0 10px;
 }
 
 footer #contact p a{
@@ -630,21 +634,21 @@ footer #copywrite {
 }
 
 #cd-vertical-nav .cd-dot {
-    position: relative;
-    /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-    top: 24px;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    background-color: #CCC;
-    -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
-    -moz-transition: -moz-transform 0.2s, background-color 0.5s;
-    transition: transform 0.2s, background-color 0.5s;
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 24px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #CCC;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
 #cd-vertical-nav .cd-label {
