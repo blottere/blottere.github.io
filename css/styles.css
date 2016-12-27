@@ -295,11 +295,11 @@ nav ul li a:link, nav ul li a:visited{
 #Portfolio #grid{
   margin: 0 auto;
   padding: 2em 0;
-  max-width: 65s%;
+  max-width: 65%;
 }
 
 #Portfolio #grid li{
-  padding: 1em;
+  padding: 15px;
   width: 50%;
 }
 
@@ -432,20 +432,17 @@ footer{
   width: auto;
   background: #222;
   position: relative;
-  top: 7em;
+  top: 10em;
+  padding: 10px 0;
 }
 
 footer #contact{
-  padding: 20px 0 0;
+  padding: 10px 0 0;
 	margin: 10px auto;
 }
 
 footer p{
 	color: #bbb;
-}
-
-footer #contactchunk{
-  padding: 0 0 10px;
 }
 
 footer #contact p a{
@@ -630,7 +627,7 @@ footer #copywrite{
   top: 24px;
   height: 14px;
   width: 14px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #d88683;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
