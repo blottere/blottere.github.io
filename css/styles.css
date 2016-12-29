@@ -66,29 +66,40 @@ body {
     position: fixed;
     z-index: 120;
     cursor: pointer;
-    width: 58px;
+    width: 45px;
     clear: both;
     float: left;
     left: 30px;
-    top: 20px;
+    top: 25px;
 }
 
 
 /*Typography*/
 
-h1, h2, h3, h4 {
-    font-family: 'blanch_caps', 'Merriweather-sans', 'Merriweather', 'optima', 'Helvetica', 'serif';
-    font-size: 40px;
-    color: #d88683;
-    text-transform: capitalize;
+h1{
+    font-family: 'Unica One', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
     text-align: center;
     padding: .8em;
     margin: 10px auto;
 }
 
+h2{
+  font-family: 'Unica One', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .8em;
+    margin: 10px auto;
+  color: #d88683;
+}
+
 #navbar {
-    font-family: 'blanch_caps', 'Lato', 'Helvetica Neue', 'Helvetica', serif, Arial;
-    font-size: 36px;
+    font-family: 'Unica One', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
     color: #000;
     position: fixed;
     margin: 0 auto;
@@ -110,9 +121,10 @@ h1, h2, h3, h4 {
 }
 
 #hello {
-    font-family: 'blanch_caps', 'Oswald', 'lato';
-    font-size: 40px;
+    font-family: 'Unica One', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
     color: #d88683;
+    padding: 10px;
 }
 
 #mainbar strong {
@@ -121,12 +133,12 @@ h1, h2, h3, h4 {
 
 #mainbar {
     line-height: 1.75em;
-    font-family: 'Lato', 'optima', 'Helvetica Neue', 'Helvetica';
-    font-size: 20px;
+    font-family: 'Lato', 'ubuntu', 'Helvetica Neue', 'Helvetica';
+    font-size: 18px;
     height: 100%;
     text-align: center;
     color: #ddd;
-    top: 8em;
+    top: 10em;
     text-shadow: none;
 }
 
@@ -203,7 +215,7 @@ header #identity .scrolappy {
 
 header.shrink #identity {
     margin: 10px 0;
-    width: 46px;
+    width: 40px;
     left: 30px;
     top: 5px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -278,7 +290,7 @@ nav ul li a:link, nav ul li a:visited {
 #Portfolio #grid{
   margin: 0 auto;
   padding: 2em 0;
-  max-width: 65s%;
+  max-width: 65%;
 }
 
 #Portfolio #grid li{
@@ -416,20 +428,16 @@ footer{
   width: auto;
   background: #222;
   position: relative;
-  top: 7em;
+  top: 10em;
 }
 
 footer #contact{
-  padding: 20px 0 0;
+  padding: 10px 0 0;
 	margin: 10px auto;
 }
 
 footer p {
     color: #bbb;
-}
-
-footer #contactchunk{
-  padding: 0 0 10px;
 }
 
 footer #contact p a{
