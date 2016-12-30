@@ -1,0 +1,49 @@
+//-----------------------------------------------
+// Color Palette
+//-----------------------------------------------
+
+$black:     #000;
+$grey:      #444;
+$red:       #ef5350;
+$brand-pink:#ea4c89;
+
+// Project Specific
+$td:        #53C0CC;
+
+
+$white: 	#ECEFF1;
+$blue:      #1b2737;
+$blue-alt:	#1976D2;
+
+$yellow: 	#FDD835;
+
+$twitter: 	#28AAE2;
+$facebook: 	#3C5A98;
+$email:		#DD4B38;
+$linkedin: 	#047CB7;
+$dribbble: 	#ea4c89;
+$px500:     #0099e5;
+
+//-----------------------------------------------
+// Sizes and Widths
+//-----------------------------------------------
+
+$container-width-mob: 100%;
+$container-width-tab: calc(100% - 60px);
+$container-width:     calc(100% - 60px);
+
+//-----------------------------------------------
+// Typography
+//-----------------------------------------------
+
+// Google Fonts Import
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Unica+One');
+
+
+// Font Variables
+$unica:  'Unica One', 'Helvetica Neue', Helvetica, sans-serif;
+$lato:   'Lato', 'ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
+
+// Weight Variables
+$reg:   400;
+$bold:  700;

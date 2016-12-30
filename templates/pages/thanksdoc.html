@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('templates/partials/home_metadata.html')
+
+    <title>Thanks, Doc!</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+
+    <!--browser tab-->
+    <link rel="SHORTCUT ICON" href="images/Logo1.ico" type="image/x-icon" />
+    <link rel="ICON" href="images/Logo1.ico" type="image/ico" />
+
+</head>
+
+<body>
+    <div class="project">
+        <div class="container">
+            <div class="banner">
+                <div class="banner-image">
+                    <img src="images/folio-imgs/thanksdoc/banner.png" alt="Thanks Doc Banner" title="Thanks, Doc!" />
+                </div>
+                <div class=banner-text>
+                  <div class="banner-title">ThanksDoc!</div>
+                  <div class="banner-tagline">Know When you Make a difference <br /><br /> CHI 2017</div>
+                </div>
+            </div>
+
+            <div class="project-content">
+                @@include('templates/content/thanksDoc_content.html')
+            </div>
+        </div>
+
+        @@include('templates/partials/project_footer.html',{
+            "prev":{
+                "link": "yelpy.html",
+                "title": "Yelpy!",
+                "image": "images/folio-imgs/yelpy-tile.png"
+            },
+
+            "next":{
+                "link": "citibank.html",
+                "title": "Citibank Redesign",
+                "image": "images/folio-imgs/citibank-tile.png"
+            }
+        })
+
+        @@include('templates/partials/footer.html')
+    </div>
+</body>
