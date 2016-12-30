@@ -29,20 +29,28 @@ Your Files Go Here*/
             margin: 0 auto;
             position: relative;
 
-            .banner-image > img {
-                max-width: 100%;
+            .banner-image{
+              background-color: $arts;
+              height: 350px;
+              img {
+                padding: 30px;
+                width: 50%;
+                max-width: 300px;
                 margin-bottom: 30px;
+                margin: 0 auto;
+                display: block;
+              }
             }
 
             .banner-text {
                 text-align: center;
-                position: relative;
                 width: 100%;
-                bottom: 0;
-                @include breakpoint(laptop) {
-                    position: absolute;
-                    bottom: calc(24px + 30px);
-                }
+                position: absolute;
+                bottom: calc(24px + 30px);
+            }
+
+            .light-text{
+              color: $white;
             }
 
             .banner-title {
