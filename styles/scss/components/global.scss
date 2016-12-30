@@ -129,16 +129,88 @@ footer{
 
 		h2{
 			font-family: $unica;
-			font-size: 2.4em;
+			font-size: 1.3em;
+			font-weight: lighter;
 			color: $brand-pink;
 			text-align: center;
 			text-transform: uppercase;
 		}
 
 		.email{
-			font-family: $unica;
+			font-family: $lato;
 			text-align: center;
+			padding-bottom: 12px;
+
+			a{
+				text-decoration: none;
+				color: $white;
+				opacity: 0.7;
+				font-size: 1.4em;
+				transition: 0.2s all ease-in-out;
+				position: relative;
+
+				&:after{
+					content:'';
+					display:block;
+					height: 2px;
+					width: 100%;
+					position: absolute;
+					left:0; bottom:-5px;
+					background-color: $white;
+				}
+
+				&:hover{
+					opacity: 1;
+				}
+			}
 		}
 
+		.social-icons{
+			display: flex;
+			height: 100px;
+			justify-content: center;
+			background: $blue;
+			margin-top: 20px;
+
+			.icon{
+				display: block;
+				width: 48px;
+				margin: 10px 12px;
+
+				*{
+					transition: 0.1s all ease-in-out;
+				}
+
+				svg{
+					.logo-bg{
+						fill: $black;
+					}
+
+					.logo-text{
+						fill: $grey;
+					}
+				}
+
+				&:hover{
+					svg{
+						.logo-text{
+							fill: $white;
+						}
+
+						.behance{
+							fill: $behance;
+						}
+
+						.facebook{
+							fill: $facebook;
+						}
+
+						.linkedin{
+							fill: $linkedin;
+						}
+					}
+				}
+			}
+		}
 	}
 }
