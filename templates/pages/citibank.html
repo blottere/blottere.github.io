@@ -4,7 +4,7 @@
 <head>
     @@include('templates/partials/home_metadata.html')
 
-    <title>Thanks, Doc!</title>
+    <title>Citibank Redesign</title>
 
     <link rel="stylesheet" href="styles/project.css">
 
@@ -17,21 +17,21 @@
 <body>
     <div class="project">
         @@include('templates/partials/project_nav.html')
-        <div class="container thanksDoc">
-                @@include('templates/content/thanksDoc_content.html')
+        <div class="container citibank">
+                @@include('templates/content/citibank_content.html')
         </div>
 
         @@include('templates/partials/project_footer.html',{
             "prev":{
-                "link": "yelpy.html",
-                "title": "Yelpy!",
-                "image": "images/folio-imgs/yelpy/tile.png"
-            },
-
-            "next":{
                 "link": "arts.html",
                 "title": "Auto Rapid Transit",
                 "image": "images/folio-imgs/ARTS/tile.png"
+            },
+
+            "next":{
+                "link": "yelpy.html",
+                "title": "Yelpy!",
+                "image": "images/folio-imgs/yelpy/tile.png"
             }
         })
 

@@ -254,7 +254,7 @@ Your Files Go Here*/
                     }
 
                     .cols_50 {
-                        vertical-align:middle; 
+                        vertical-align:middle;
 
                         img{
                             max-width: 100%;
@@ -470,7 +470,7 @@ Your Files Go Here*/
 
                     &:after{
                         display: block;
-                        background: $red;
+                        background: $black;
                         position: absolute;
                         width: 100%;
                         transform: translateY(0px);
@@ -519,5 +519,23 @@ Your Files Go Here*/
     }
     h3, h4{
         color: $arts-prpl;
+    }
+}
+
+.yelpy{
+    .banner-image{
+        background-color: $yelp-red;
+    }
+    h3, h4{
+        color: $yelp-red2;
+    }
+}
+
+.citibank{
+    .banner-image{
+        background-color: $citi-blue;
+    }
+    h3, h4{
+        color: $citi-red;
     }
 }
