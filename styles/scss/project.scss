@@ -28,8 +28,6 @@ Your Files Go Here*/
 
     }
 
-
-
     .container {
 
         /*
@@ -204,7 +202,8 @@ Your Files Go Here*/
                 .image-grid {
                     display: block;
 
-                    img {
+                    p,img {
+                      vertical-align: middle;
                         display: inline-block;
                         width: 42%;
                         padding: 2%;
