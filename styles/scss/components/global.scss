@@ -68,11 +68,17 @@ a{
 	display: inline-block;
 
 	@include breakpoint(tablet) {
-		width: calc(50% - 64px);
-		margin: 0 30px;
+		width: calc(25% - 4px);
 	}
-	@include breakpoint(laptop) {
-		width: calc(33.333% - 64px);
+}
+
+.cols_33 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(tablet) {
+		width: calc(33.333333% - 4px);
 	}
 }
 

@@ -191,7 +191,7 @@ Your Files Go Here*/
 
             #section-2 {
                 margin: 0 auto;
-                width: 85%;
+                width: 95%;
                 font-size: 1.15em;
                 line-height: 1.5;
 
@@ -253,30 +253,20 @@ Your Files Go Here*/
                         padding: 15px 0 0;
                     }
 
-                    .cols_50 {
+                    .cols_50, .cols_33, .cols_25 {
                         vertical-align:middle;
 
                         img{
+                            width: calc(100% - 24px);
                             max-width: 100%;
-                            width: 100%;
                             height: auto;
+                            padding: 12px;
                         }
                     }
 
                     .image-sub{
                         margin: 12px 0;
                     }
-
-                    // p,img {
-                    //   vertical-align: middle;
-                    //     display: inline-block;
-                    //     width: 42%;
-                    //     padding: 2%;
-                    //
-                    //     &.small {
-                    //         width: 22%;
-                    //     }
-                    // }
                 }
 
                 .reference {
