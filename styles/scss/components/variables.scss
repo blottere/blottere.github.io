@@ -2,29 +2,33 @@
 // Color Palette
 //-----------------------------------------------
 
-$black:     #000;
-$grey:      #444;
-$red:       #ef5350;
-$brand-pink:#d88683;
+$black      : #222222;
+$grey       : #444444;
+$red        : #ef5350;
+$brand-pink : #d88683;
 
 // Project Specific
-$td:        #53C0CC;
-$arts:       #E80277;
+$td-blue    : #53C0CC;
+$td-green   : #00FF89;
+$arts-pink  : #E80277;
+$arts-prpl  : #5F108E;
 
 
-$white: 	#ECEFF1;
-$blue:      #1b2737;
-$blue-alt:	#1976D2;
+$white      : #ECEFF1;
+$blue       : #1b2737;
+$blue-alt   : #1976D2;
 
-$yellow: 	#FDD835;
+$yellow     : #FDD835;
 
-$twitter: 	#28AAE2;
-$facebook: 	#3C5A98;
-$email:		#DD4B38;
-$linkedin: 	#047CB7;
-$dribbble: 	#ea4c89;
-$behance:   #40BFEF;
-$px500:     #0099e5;
+
+// Social Icons
+$twitter    : #28AAE2;
+$facebook   : #3C5A98;
+$email      : #DD4B38;
+$linkedin   : #047CB7;
+$dribbble   : #ea4c89;
+$behance    : #40BFEF;
+$px500      : #0099e5;
 
 //-----------------------------------------------
 // Sizes and Widths
@@ -32,7 +36,7 @@ $px500:     #0099e5;
 
 $container-width-mob: 100%;
 $container-width-tab: calc(100% - 60px);
-$container-width:     calc(100% - 60px);
+$container-width    : calc(100% - 60px);
 
 //-----------------------------------------------
 // Typography
@@ -43,9 +47,9 @@ $container-width:     calc(100% - 60px);
 
 
 // Font Variables
-$unica:  'Unica One', 'Helvetica Neue', Helvetica, sans-serif;
-$lato:   'Lato', 'ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
+$unica: 'Unica One', 'Helvetica Neue', Helvetica, sans-serif;
+$lato : 'Lato', 'ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
 
 // Weight Variables
-$reg:   400;
-$bold:  700;
+$reg  : 400;
+$bold : 700;

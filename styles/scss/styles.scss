@@ -2,47 +2,15 @@
 
 // Vendor Files - Remember to rename these from *.css to *.scss before adding here.
 @import "vendor/normalize";
-@import "vendor/bootstrap";
-@import "vendor/component";
-@import "vendor/lightbox";
 
 // Your Files Go Here
 @import "components/variables";
 @import "components/responsive";
 @import "components/global";
 
-/* color pallete
-
-cyan: #00bcd4
-Black: #000000
-
-*/
-
-/*font-face*/
-
-@font-face {
-    font-family: 'Mensch';
-    src: url('../fonts/mensch/mensch-wf.eot');
-    src: url('../fonts/mensch/mensch-wf.eot?#iefix') format('embedded-opentype'), url('../fonts/mensch/mensch-wf.woff') format('woff'), url('../fonts/mensch/mensch-wf.ttf') format('truetype'), url('../fonts/mensch/mensch-wf.svg#MenschMenschRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Intro';
-    src: url('../fonts/Intro/intro-webfont.eot');
-    src: url('../fonts/Intro/intro-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Intro/intro-webfont.woff2') format('woff2'), url('../fonts/Intro/intro-webfont.woff') format('woff'), url('../fonts/Intro/intro-webfont.ttf') format('truetype'), url('../fonts/Intro/intro-webfont.svg#intro_regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'blanch_caps';
-    src: url('../fonts/blanch/blanch_caps.eot');
-    src: url('../fonts/blanch/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/blanch/blanch_caps-webfont.woff2') format('woff2'), url('../fonts/blanch/blanch_caps-webfont.woff') format('woff'), url('../fonts/blanch/blanch_caps.otf') format('truetype'), url('../fonts/blanch/blanch_caps.svg#intro_regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "vendor/bootstrap";
+@import "vendor/component";
+@import "vendor/lightbox";
 
 
 /*General*/
@@ -84,7 +52,6 @@ body {
     left: 30px;
     top: 25px;
 }
-
 
 /*Typography*/
 
@@ -441,136 +408,6 @@ footer{
   background: #222;
   position: relative;
   top: 10em;
-}
-
-footer #contact{
-  padding: 10px 0 0;
-	margin: 10px auto;
-}
-
-footer p {
-    color: #bbb;
-}
-
-footer #contact p a{
-	border-bottom: 1px solid #bbb;
-	padding-bottom: 3px;
-	color: #bbb;
-  transition: all 0.3s ease-in-out;
-  -ms-transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -mos-transition: 0.3s ease-in-out;
-}
-
-footer #contact p a:hover {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-
-footer #contact p a, a:hover, a:visited:hover, a:visited {
-    text-decoration: none;
-}
-
-
-/* --------------- LINKEDIN */
-
-.linkedin {
-    display: inline-block;
-    position: relative;
-    text-indent: -9999px;
-    width: 25px;
-    height: 25px;
-    background: url(../icons/Linkedin_bw.svg) no-repeat;
-}
-
-.linkedin span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url(../icons/Linkedin_color.svg) no-repeat;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s;
-    -moz-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-}
-
-.linkedin:hover span {
-    opacity: 1;
-}
-
-
-/* --------------- Facebook */
-
-.facebook {
-    display: inline-block;
-    position: relative;
-    text-indent: -9999px;
-    width: 25px;
-    height: 25px;
-    background: url(../icons/Facebook_bw.svg) no-repeat;
-}
-
-.facebook span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url(../icons/Facebook_color.svg) no-repeat;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s;
-    -moz-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-}
-
-.facebook:hover span {
-    opacity: 1;
-}
-
-
-/* --------------- Behance */
-
-.behance {
-    display: inline-block;
-    position: relative;
-    text-indent: -9999px;
-    width: 25px;
-    height: 25px;
-    background: url(../icons/Behance_bw.svg) no-repeat;
-}
-
-.behance span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url(../icons/Behance_color.svg) no-repeat;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s;
-    -moz-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-}
-
-.behance:hover span {
-    opacity: 1;
-}
-
-footer #contact #social-icons table {
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-#social-icons table tr td {
-    margin: 20px auto;
-    padding: 0 10px;
-}
-
-footer #copywrite {
-    margin: 0 auto;
-    padding: 20px 0 10px;
 }
 
 .cd-img-replace {

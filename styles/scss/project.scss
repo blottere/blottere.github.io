@@ -16,12 +16,9 @@ Your Files Go Here*/
     padding-top: 30px;
 
     .container {
-        max-width: 100%;
-        @include breakpoint(phone-lg) {
-            max-width: 1002px;
-        }
-        /*
 
+
+        /*
 
         Banner Styles */
         .banner {
@@ -30,7 +27,6 @@ Your Files Go Here*/
             position: relative;
 
             .banner-image{
-              background-color: $arts;
               height: 350px;
               img {
                 padding: 30px;
@@ -73,6 +69,7 @@ Your Files Go Here*/
 
         Project Content Styles */
         .project-content {
+            padding-top: 30px;
             #section-1 {
                 margin: 0 auto;
                 display: flex;
@@ -108,7 +105,6 @@ Your Files Go Here*/
                     h4 {
                         font-family: $unica;
                         text-transform: uppercase;
-                        color: $red;
                         font-size: 1.1em;
                         letter-spacing: 2px;
                         margin: 12px 0 6px;
@@ -151,7 +147,6 @@ Your Files Go Here*/
                 h3 {
                     font-family: $lato;
                     text-transform: uppercase;
-                    color: $red;
                     text-align: center;
                     font-size: 1.4em;
                     letter-spacing: 2px;
@@ -160,7 +155,6 @@ Your Files Go Here*/
                 h4 {
                     font-family: $unica;
                     text-transform: uppercase;
-                    color: $red;
                     font-size: 1.2em;
                     letter-spacing: 2px;
                     margin: 48px 0 6px;
@@ -213,7 +207,7 @@ Your Files Go Here*/
                 }
 
                 .quote {
-                    color: $td;
+                    color: $brand-pink;
                     font-style: italic;
                     font-size: 1.3em;
                     margin: 30px 60px;
@@ -288,11 +282,15 @@ Your Files Go Here*/
                 .proj-nav {
 
                     .proj-prev{
-                        transform:translateX(12px);
+                        @include breakpoint(tablet){
+                            transform:translateX(12px);
+                        }
                     }
 
                     .proj-next{
-                        transform:translateX(-12px);
+                        @include breakpoint(tablet){
+                            transform:translateX(-12px);
+                        }
                     }
 
                     .proj-next,
@@ -318,20 +316,24 @@ Your Files Go Here*/
                         }
                         .proj-title {
                             color: $white;
-                            background: rgba(0,0,0,0.6);
                             text-decoration: none;
                             font-family: $unica;
                             text-transform: uppercase;
                             letter-spacing: 1px;
                             font-size: 1.2em;
-                            padding: 0 4px;
                             text-align: center;
-                            line-height: 200px;
                             position: absolute;
-                            top:0; left:0; right:0; bottom:0;
-                            opacity:0;
+                            width: 100%;
+                            padding-top: 10px;
                             transition: 0.2s all ease-in-out;
-                            transform: scale(0.9);
+                            bottom: 10px;
+
+                            @include breakpoint(tablet){
+                                transform: scale(0.9);
+                                opacity:0;
+                                bottom: -32px;
+                                color: $black;
+                            }
                         }
 
                         &:hover{ // proj-prev,proj-next
@@ -416,5 +418,27 @@ Your Files Go Here*/
                 }
             }
         }
+    }
+}
+
+
+
+// Project Specific Changes
+
+.thanksDoc{
+    .banner-image{
+        background-color: $td-green;
+    }
+    h3, h4{
+        color: $td-blue;
+    }
+}
+
+.arts{
+    .banner-image{
+        background-color: $arts-pink;
+    }
+    h3, h4{
+        color: $arts-prpl;
     }
 }
