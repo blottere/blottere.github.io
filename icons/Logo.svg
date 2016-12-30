@@ -4,6 +4,9 @@
 		.pav_logo{
 			height: 500px;
 			cursor:pointer;
+			transition: .4s all cubic-bezier(.62,.01,.77,.96);
+			-o-transition: .4s all cubic-bezier(.62,.01,.77,.96);
+			-moz-transition: .4s all cubic-bezier(.62,.01,.77,.96);
 		}
 
 		.logo{
@@ -28,6 +31,10 @@
 			transition: .6s all cubic-bezier(.62,.01,.77,.96);
 			-o-transition: .6s all cubic-bezier(.62,.01,.77,.96);
 			-moz-transition: .6s all cubic-bezier(.62,.01,.77,.96);
+		}
+
+		.pav_logo:hover{
+			transform: translateY(-12px);
 		}
 
 		.pav_logo:hover .p{
