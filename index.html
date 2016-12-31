@@ -50,7 +50,7 @@
 					<nav>
 						<ul class="list-inline">
 							<li>
-								<a href="#top">About</a>
+								<a href="#About">About</a>
 							</li>
 							<li>
 								<a href="#Portfolio">Work</a>
@@ -59,13 +59,13 @@
 								<a href="#">Gallery</a>
 							</li>
 							<li>
-								<a href="asset/resume.pdf">Resume</a>
+								<a href="asset/resume.pdf" target="_blank">Resume</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 				<!--end of navbar-->
-				<div class="container cd-section" id="top">
+				<div class="container cd-section" id="About">
 					<div id="topcontent">
 						<div id="img_me" class="img-responsive">
 							<!--<img class="img-responsive" class="pull-left" src="images/me_hero.png" alt="" width="344" height="600"> -->
@@ -90,7 +90,7 @@
 			<div>
 				<ul id="cd-vertical-nav">
 					<li>
-						<a href="#top" data-number="1">
+						<a href="#About" data-number="1">
 							<span class="cd-dot"></span>
 							<span class="cd-label">Intro</span>
 						</a>
@@ -194,52 +194,16 @@
 				</div>
 			</footer>
 			<!--end of footer-->
-			<script src="scripts/vendor/lightbox-plus-jquery.min.js"></script>
-			<script src="scripts/vendor/bootstrap.min.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-			<script src="scripts/vendor/masonry.pkgd.min.js"></script>
-			<script src="scripts/vendor/imagesloaded.js"></script>
-			<script src="scripts/vendor/classie.js"></script>
-			<script src="scripts/vendor/AnimOnScroll.js"></script>
-			<script>
-				new AnimOnScroll(document.getElementById('grid'),
-				{
-					minDuration: 0.4,
-					maxDuration: 0.7,
-					viewportFactor: 0.2
-				});
-			</script>
-			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<script type="text/javascript">
-				if (matchMedia)
-				{
-					var mq = window.matchMedia("(max-width: 700px)");
-					console.log(window.innerWidth);
-					mq.addListener(widthchange);
-					widthchange(mq);
-				}
-				// media query change
-				function widthchange(mq)
-				{
-					var ul = $('#list');
-					ul.children().each(function(i, li)
-					{
-						ul.prepend(li)
-					});
-				}
-				$(document).ready(function()
-				{
-					if (window.innerWidth > 700)
-					{
-						widthchange(mq);
-					};
-				});
-			</script>
-			<!-- Include all compiled plugins (below), or include individual files as needed -->
 		</div>
 		<!--end of container-fluid-->
 		<!--google analytics-->
+		<script src="scripts/vendor/lightbox-plus-jquery.min.js"></script>
+		<script src="scripts/vendor/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="scripts/vendor/masonry.pkgd.min.js"></script>
+		<script src="scripts/vendor/imagesloaded.js"></script>
+		<script src="scripts/vendor/classie.js"></script>
+		<script src="scripts/vendor/AnimOnScroll.js"></script>
 		<script>
 			(function(i, s, o, g, r, a, m)
 			{
@@ -258,18 +222,31 @@
 			ga('send', 'pageview');
 		</script>
 		<script type="text/javascript">
-			$(window).scroll(function()
+			function widthchange(n)
 			{
-				if ($(document).scrollTop() > 50)
+				var i = $("#list");
+				i.children().each(function(n, e)
 				{
-					$('header').addClass('shrink');
-				}
-				else
+					i.prepend(e)
+				})
+			}
+			if ($(window).scroll(function()
 				{
-					$('header').removeClass('shrink');
-				}
+					$(document).scrollTop() > 50 ? $("header").addClass("shrink") : $("header").removeClass("shrink")
+				}), new AnimOnScroll(document.getElementById("grid"),
+				{
+					minDuration: .4,
+					maxDuration: .7,
+					viewportFactor: .2
+				}), matchMedia)
+			{
+				var mq = window.matchMedia("(max-width: 700px)");
+				console.log(window.innerWidth), mq.addListener(widthchange), widthchange(mq)
+			}
+			$(document).ready(function()
+			{
+				window.innerWidth > 700 && widthchange(mq)
 			});
-		</script>
 		</script>
 		<script src="scripts/vendor/main.js"></script>
 	</body>
