@@ -49,14 +49,19 @@ Your Files Go Here*/
             .branding{
                 width: calc(100%-120px);
                 display: block;
-                text-align: center;
+                text-align: left;
                 line-height: 50px;
                 font-family: $unica;
                 text-transform: uppercase;
                 font-size: 1.6em;
-                padding: 0 60px;
+                padding: 0 0 0 80px;
                 position: relative;
                 margin: 0 auto;
+
+                @include breakpoint(phone-lg){
+                    text-align: center;
+                    padding: 0 60px;
+                }
             }
         }
     }
@@ -83,17 +88,17 @@ Your Files Go Here*/
         .banner {
             position: relative;
             margin: 0 auto;
-            position: relative;
             padding-top: 30px;
 
             .banner-image{
               height: 350px;
+              position: relative;
+
               img {
-                padding: 30px;
-                width: 50%;
-                max-width: 300px;
+                padding: 40px;
+                max-height: 200px;
                 margin-bottom: 30px;
-                margin: 0 auto;
+                margin: auto;
                 display: block;
               }
             }
@@ -102,26 +107,26 @@ Your Files Go Here*/
                 text-align: center;
                 width: 100%;
                 position: absolute;
-                bottom: calc(24px + 30px);
+                bottom: calc(24px + 20px);
+
+                .banner-title {
+                    font-family: $lato;
+                    font-size: 1.6em;
+                    font-weight: $bold;
+                    padding-bottom: 8px;
+                }
+
+                .banner-tagline {
+                    font-family: $unica;
+                    text-transform: uppercase;
+                    font-size: 1.25em;
+                    opacity: 0.6;
+                    line-height: 1.4;
+                }
             }
 
             .light-text{
               color: $white;
-            }
-
-            .banner-title {
-                font-family: $lato;
-                font-size: 1.6em;
-                font-weight: $bold;
-                padding-bottom: 8px;
-            }
-
-            .banner-tagline {
-                font-family: $unica;
-                text-transform: uppercase;
-                font-size: 1.25em;
-                opacity: 0.6;
-                line-height: 1.4;
             }
         }
         /*
@@ -368,7 +373,6 @@ Your Files Go Here*/
                         width: 25%;
                         height: 100%;
                         min-width: 200px;
-                        border: 1px solid $grey;
                         transition: 0.2s all ease-in-out;
                         position: relative;
 
