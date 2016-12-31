@@ -88,7 +88,7 @@ h2{
 
 .desc p {
     color: #333;
-    font-size: 22px; 
+    font-size: 22px;
     font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans serif;
 }
 
@@ -129,27 +129,6 @@ h2{
     position: relative;
     top: 10em;
 }
-
-footer p {
-    font-family: 'lato', 'Helvetica Neue', 'Helvetica', serif, 'open sans';
-    font-size: 14px;
-}
-
-footer p strong {
-    font-family: 'lato bold', 'Helvetica Neue', 'Helvetica', serif, 'open sans';
-    font-size: 18px;
-    font-weight: 700px;
-}
-
-footer #contact p {
-    font-size: 22px;
-    padding-bottom: 20px;
-}
-
-footer #copywrite p, footer #copywrite p strong {
-    font-size: 12px;
-}
-
 
 /*Header*/
 
@@ -405,7 +384,6 @@ footer{
   margin: 0 auto;
   height: auto;
   width: auto;
-  background: #222;
   position: relative;
   top: 10em;
 }
