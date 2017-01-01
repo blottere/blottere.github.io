@@ -13,18 +13,18 @@
         <div class="left">
             <div class="c01" id="the-problem">
                 <h4>The Problem</h4>
-                <p>Public transportation bus drivers don’t have a reliable system to communicate effectively with each other and with dispatch, while the passengers suffer long wait times due to low frequency of buses in small cities.</p>
+                <p>Yelp’s current method of presenting reviews and ratings to the users is seemingly tedious and ineffective. Yelp is looking to invest in machine learning and Conversational UI to boost its business margin while providing their mobile user base a good experience in finding their choice of food.</p>
             </div>
 
             <div class="c02" id="approach">
                 <h4>Approach</h4>
-                <p>User interviews, field observation, affinity diagraming and bodystorming.</p>
+                <p>User interviews, affinity diagramming, paper prototyping and usability testing.</p>
             </div>
 
             <div class="c04" id="my-role">
                 <h4>My Role</h4>
-                <p>I organised the workflow of the team and supervised the Concept Sketching and Prototyping phases.</P>
-                  </p> Every team member shared an equal amount of work during every stage of the design process.</p>
+                <p>I was the team facilitator. I moderated the workflow of the team and supervised the design process as a whole.
+                   Every team member shared an equal amount of work during every stage of the design process.</p>
             </div>
         </div>
 
@@ -33,10 +33,10 @@
             <div class="c03" id="the-team">
                 <h4>The Team</h4>
                 <ul>
-                    <li>Pavithra Ramamurthy<em> - Prototyping and Concept Sketching</em></li>
-                    <li>Philip Begel<em> - Usability Testing and Presentation</em></li>
-                    <li>Peggy Lu<em> - User Research</em></li>
-                    <li>Sanjana Mathur<em> - Design Documentation</em></li>
+                    <li>Pavithra Ramamurthy</li>
+                    <li>Sean Smith</li>
+                    <li>Nicole Annicetti</li>
+                    <li>Vikas Jangam</li>
                 </ul>
             </div>
 
@@ -47,82 +47,86 @@
     <div id="section-2">
         <h3>Solution</h3>
         <p>
-            <bigWord>ARTS (Auto Rapid Transport System)</bigWord>, an autonomous system that gathers real time information through vehicle to vehicle and vehicle to infrastructure communication (traffic signal, other buses, main system) to provide bus stop and route prioritizations in real time to the bus drivers. The prioritization will be facilitated by the demand at a bus stop and individual user wait times. </p>
+            <bigWord>Yelpy, the food expert</bigWord> is a conversation UI bot that provides food choices to its users based on Yelp’s reviews and ratings. It also leverages machine learning capabilities to study user behaviour and provide personalised recommendations. In this design Yelpy is integrated into BTownMenus, a local food delivery service application based in the college town of Bloomington, Indiana. </p>
+
+
+<h4>The beginning...</h4>
 <p>
-Each bus would operate on its designated route till an infrastructural breakdown, during which the autonomous system would create a new route for the buses to cover before they can loop back to their normal routes.
+  The design prompt asked my team to explore alternatives to Yelp’s current method of providing ratings and reviews using conversational UI.  Our goal would be to improve the experience of the user when they’re looking for something to eat on BTownMenus.com.</p>
+
+<p>
+  BTownMenus is a popularly used local delivery service in Bloominton, Indiana that links restaurants which particularly appeal to college students and late-night purchases and delivery.
+</p>
+
+        <h4>Whom we spoke to...</h4>
+
+        <p>We began by trying to understand how the users currently experienced BTownMenus and whether they found yelp’s review feature on BtownMenus application to be helpful.</p>
+        <p>
+          Through our initial research we garnered that Indiana University’s graduate and undergraduate students made up a huge portion of BTownMenu’s <bigWord>primary users.</bigWord> We recorded elaborate interviews about their experience in using BTownMenus and Yelp reviews. Using a casual conversational approach we questioned them on their food choices, how much time they generally spent while ordering food, what motivated them to make their food choices, whether they felt appeal in trying new kinds of food and if so then on what basis they made these choices. Our goal was to understand if they ever utilized Yelp reviews, and when they found the need to use them.
         </p>
+        <p>The inputs we acquired from the different interviews was immense and comprehensive. In order to make sense of all the data we had, we created detailed mind maps and visually represented them. This helped us view clear patterns of use cases within our research.
+      </p>
+      <img src="images/folio-imgs/yelpy/mindmap.png" title="mindmap" class="full-width" alt="Image of our Mind Mapping" />
+      <div class="image-sub">Mind Mapping of our Research Data</div>
 
-<h4>The Process</h4>
-<p>
-  Mercedes Benz’s Research and Development was ready to launch a fleet of autonomous vehicles ranging from private vehicles such as cars to a variety of public transportation vehicles such as buses, trucks and taxis. Each vehicles also brought a range of considerations and setback issues such as safety, trust, ethics, control and efficiency. Mercedes Benz wanted us to pick one of their vehicles and come up with a design solution that speaks to these very specific problems.
-
-</p>
-        <h4>Where we looked…</h4>
-
-        <p>We wanted to gain clear understanding of what autonomous vehicles were, the capabilities of an autonomous vehicle and an up to date information of where the current trends of autonomous vehicles stood in terms of usage, applicability and feasibility as a mainstream product. We began by aggregating and studying articles on autonomous vehicles, with currently existing autonomous features (e.g. cruise control, automatic parking, pedestrian and vehicle detection, etc.) as well as autonomous vehicles that are being tested such as Mercedes Benz CityPilot Bus, Self-driving Uber, Google Self-driving Car, Tesla’s Model S auto pilot, etc.
-We also conducted research on the disruptive issues that are floating in the market surrounding autonomous vehicles through articles and writings including  Batya Friedman (Professor in the Information School at the University of Washington) and Steven Shladover, a researcher at the Partners for Advanced Transportation Technology at the University of California, Berkeley.</p>
-<div class="image-grid">
-<div class="cols_50">
-  <p>With the information we gained, we performed a rigorous phase of affinity diagramming detailing the problems that we felt were consistent with autonomous vehicles and normal buses in general. We made several assumptions based on our own experiences of taking public buses in different locations inside USA.</p>
-</div>
-<div class="cols_50 image">
-    <img src="images/folio-imgs/ARTS/affinity.jpg" title="Affinity Diagram" alt="Image of our Affinity Diagram" />
-    <div class="image-sub">Affinity Diagram of our Predesposition</div>
-</div>
-        </div>
           <p>
-            We mapped out several problematic areas but to validate these problems based on our text book research and assumptions we decided to split up and interview our users.
+            Based on our mind map we drew several <bigWord>insights</bigWord> on what the users required and how to help them utilise Yelp’s features better.
           </p>
+          <ul class="bullets">
+            <li>Most of the users did not use Yelp reviews because they found Yelp tedious to use, or were not aware of its presence on the site.</li>
+            <li>Users would be more likely to trust suggestions from other customers over the restaurant or business’ suggestions. Some users were skeptical about restaurant recommendations thinking they had some sort of business motive. </li>
+            <li>Users care about quality. Seeing a review will give them a first-person perspective on the food experience of a restaurant.</li>
+            <li>Current format of Yelp’s reviews on BTownMenus is inconspicuous, without form, and convoluted. Due to this the relevancy has dropped.</li>
+          </ul>
 
-        <h4>Whom we spoke to…</h4>
+<p>Our goal became very clear. We needed to make the Yelp reviews and ratings more relevant through conversational UI, and we would need do it in a transparent way.</p>
 
-        <p>Based on our initial assumptions we began speaking to <bigWord>passengers</bigWord>, the layman who takes the service everyday to get from point A to point B.
-</p>
+<p>Our primary user research provided us with a good insight about our target audience. We gained an understanding about their background, lifestyle, activities and behaviour. Based on our study, we came up with two personas Megan Boyle and Matt Wheeler who represented the full range of our target demographic.</p>
+
+        <h4>What we did...</h4>
+
+        <p>We took to the whiteboard and began by debating on different approaches to solving this issue through conversational UI.</p>
 
       <p>
-        We constrained our initial design to Bloomington, Indiana since our users were most easily accessible within this geographical constraint. Bloomington is a college town in Indiana where the primary passengers comprises of graduate and undergraduate students. The rest of the users were a combination of instructors, office workers and shopkeepers. This constraint later helped us pay attention to specific problem areas of small city commutes.
+        We came up with ‘Yelpy’, our food expert who would provide popular reviews through a conversation, while passively studying user behaviour through machine learning and eventually providing better recommendations. He would have to be a non-intrusive bot to avoid overstepping on the user boundaries, while still being able to encourage people to have a conversation. Our main focus was to make sure that Yelpy behaves as an effective tool in helping users find and choose their food better, quicker, and more easily without any limitations.
       </p>
 
 <p>
-  We did a round of the city bus stops, both in popular and less popular routes and spoke to a dozen passengers. Our questions to our users were wide in variety such as what was their personal choice of transportation?, Why did they ride the bus services?, How did their commuting experience change through the day? Did they find their commute to be pleasant? Why and Why not?
+  The key factors we explored with our design were
 </p>
+<ul class="bullets">
+  <li>The conversation style in which Yelpy would interact with its users.</li>
+<li>Where, when and how Yelpy would be integrated into BTownMenus.</li>
+</ul>
 <p>
-  We synthesized our findings based on our initial research through a round of meticulous mind mapping.
+  Based on our secondary research on effective incorporation of conversational UI as a tool we designed Yelpy with very specific capabilities.
 </p>
+<div class="image-grid">
+  <div class="cols_66">
+        <p>We generated a variety of ideas for the conversation flow and explored the personality traits of our bot. We gave a specific focus to the language style that yelpy would use in order to enable the users to easily identify and connect comfortably with him. We used casual phrases like “Looks like bomb!,” “More pls!,” “What else?,” and emoticons like “bomb” and “smileys” as the mode of communication.</p>
 
-        <img src="images/folio-imgs/ARTS/mindmap.jpg" class="full-width" title="MindMap Whiteboard" alt="Image of our mind mapping exercise on a whiteboard"/>
+        <p>An important feature that we placed is the intended delay between each of Yelp’s responses. This again ties to the “human touch” aspect of the conversation.</p>
 
-        <div class="image-sub">Mind Mapping our Research Data</div>
+        <p>We limited the number of Yelpy’s suggestions within each conversational phase in order to avoid overwhelming the users and to keep the interface clean.</p>
 
-        <p>The best part of the design process is when you can take the key insights and visualise different ways of solving the problem. The team and I got together and went over several rounds of <bigWord>Round Robin Sketching</bigWord> to formulate as many solutions as we could. Later we went over each solution and discussed various pros and cons of the designs.  We formulated a main idea that we all agreed on and went to the users to validate our ideas through preliminary user tests. Our design generally raised a lot of concerns. For starters, an autonomous bus pod design forced the users to imagine a system that currently did not exist. We drew several insights based on our preliminary test findings that served as an eye opener.</p>
-        <ul class="bullets">
-          <li>
-            The users weren’t ready to fully trust an autonomous bus system yet.
-          </li>
-
-  <li>
-    The current road systems and city layout aren’t designed to accommodate autonomous buses within the constraints of its current infrastructure.
-  </li>
-<li>
-  A fully functional autonomous vehicle would probably become a common mode of transportation much into the future, so it is impossible to accurately imagine how a smart city might have developed to accommodate it.
-</li>
-        </ul>
-
-        <p>We realised that we needed to look into the near future and design to smartly integrate the autonomous capabilities in stages. </p>
-
-        <p>We split up again and began talking to the other set of primary users of a regular bus system, <bigWord>the drivers.</bigWord> We interviewed a couple of drivers who drove the popular routes of Bloomington. Our previous findings indicated that low-frequency and over crowded buses was a major pain point for passengers. Yet, bus systems were understood to have standard schedules and higher frequencies during peak hours. We realised that we needed to understand the other side of the entire system better. We needed to be able to pinpoint where and how this gap occurred within the transit system.
-</p>
-  <div class="image-grid">
-  <img src="images/folio-imgs/ARTS/pavindriver.jpg" title="Driver Interview" alt="Image of our interview with our driver"/>
-  <img src="images/folio-imgs/ARTS/sanjanadriver.jpg" title="Driver Interview" alt="Image of our interview with our driver"/>
+        <p>Yelpy would only give recommendations from the current restaurant that a user is viewing at a time. For example, when the user is navigating in Arby’s restaurant page, the recommendations popping up will solely belong to the same restaurant. This is to avoid confusion and not surprise the user when the link redirects them to the second recommended restaurant's page.</p>
+        </div>
+<div class="cols_33">
+<img src="images/folio-imgs/yelpy/Btownmenu_integration.jpg" title="BTown Menu Sketch" alt="Image of the interface sketch of Yelpy within BTownMenus app"/>
+</div>
 </div>
 
-<div class="image-sub">Driver Interviews</div>
+<p>When Yelpy runs out of popular recommendations at a restaurant  for a particular food type then he would suggest popular choices from other restaurants. This would especially provide choices to people with a specific type of diet.</p>
 
-        <div class="quote">"I sometimes don't get to take breaks. I mean, today is a bit better. I got 6 minutes before my next trip begins" <span class="quote-sub">- P1, Bus Driver, Bloomington Transit[User Interview]</span></div>
+<img src="images/folio-imgs/yelpy/navigate.png" title="Navigate" alt="Image of Yelpy's search case suggestions" />
+<div class="image-sub">Yelpy's recommendations</div>
 
-        <p>In our interviews with the drivers we asked them to give us an idea of what a normal day of work looked like, what their schedules were like, how they made decisions during delays or increase in traffic or emergencies, when they get to take breaks, their shift hours, etc. We also asked each of them to walk us through the controls on a driver’s console to help us understand their experience a little better.
-</p>
+        <p>Yelpy would sense when users add food choices from multiple restaurants to their carts and provides a heads up in order to avoid confusion and frustration among users. We wanted to incorporate this into our design to account for Yelpy’s suggestion capabilities by keeping users aware of their actions.</p>
+        
+        <img src="images/folio-imgs/yelpy/cart.png" title="Multiple items" alt="Image of Multiple items cart" />
+        <div class="image-sub">Yelp's warning message when multiple items are in Cart</div>
+
+          <p>All the conversations that Yelpy has can only be responded with clickable responses. We made this design choice based on the following factors that we validated through user testing and interviews.</p>
 
 <p>
   The <bigWord>key findings</bigWord> we garnered from these interviews were that

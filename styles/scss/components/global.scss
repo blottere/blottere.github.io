@@ -76,6 +76,20 @@ a{
 	}
 }
 
+.cols_75 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(phone-lg){
+	    width: calc(50% - 4px);
+	}
+
+	@include breakpoint(tablet) {
+		width: calc(75% - 4px);
+	}
+}
+
 .cols_33 {
 	width: 100%;
 	margin: 0;
@@ -83,6 +97,16 @@ a{
 
 	@include breakpoint(tablet) {
 		width: calc(33.333333% - 4px);
+	}
+}
+
+.cols_66 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(tablet) {
+		width: calc(66.66666% - 4px);
 	}
 }
 
