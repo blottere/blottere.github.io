@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('templates/partials/home_metadata.html')
+
+    <title>Thanks, Doc!</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+
+    <!--browser tab-->
+    <link rel="SHORTCUT ICON" href="images/Logo1.ico" type="image/x-icon" />
+    <link rel="ICON" href="images/Logo1.ico" type="image/ico" />
+
+</head>
+
+<body>
+    <div class="project">
+        @@include('templates/partials/project_nav.html')
+        <div class="container thanksDoc">
+                @@include('templates/content/thanksDoc_content.html')
+        </div>
+
+        @@include('templates/partials/project_footer.html',{
+            "prev":{
+                "link": "yelpy.html",
+                "title": "Yelpy!",
+                "image": "images/folio-imgs/yelpy/tile.png"
+            },
+
+            "next":{
+                "link": "arts.html",
+                "title": "Auto Rapid Transit",
+                "image": "images/folio-imgs/ARTS/tile.png"
+            }
+        })
+
+        @@include('templates/partials/footer.html')
+    </div>
+
+    @@include('templates/partials/analytics.html')
+</body>

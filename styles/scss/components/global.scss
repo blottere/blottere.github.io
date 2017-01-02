@@ -1,0 +1,253 @@
+//-----------------------------------------------
+// Document Setup
+//-----------------------------------------------
+html,
+body {
+	height: 100%;
+	background-color: white;
+}
+
+body {
+	background-color: white;
+	font-family: $lato;
+}
+
+body * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+//-----------------------------------------------
+// Common Elements
+//-----------------------------------------------
+.container {
+	width: $container-width-mob;
+	max-width: 100%;
+	margin: 0 auto;
+	@include breakpoint(tablet) {
+		max-width: 1032px;
+		width: $container-width-tab;
+		padding: 0 30px;
+	}
+	@include breakpoint(laptop){
+	    width: $container-width;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+//-----------------------------------------------
+// Aspect-Ratio Mixin from
+// https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+//-----------------------------------------------
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+//-----------------------------------------------
+// Grids - 4 Columns, Responsive
+//-----------------------------------------------
+.cols_25 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(phone-lg){
+	    width: calc(50% - 4px);
+	}
+
+	@include breakpoint(tablet) {
+		width: calc(25% - 4px);
+	}
+}
+
+.cols_75 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(phone-lg){
+	    width: calc(50% - 4px);
+	}
+
+	@include breakpoint(tablet) {
+		width: calc(75% - 4px);
+	}
+} 
+
+.cols_33 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(tablet) {
+		width: calc(33.333333% - 4px);
+	}
+}
+
+.cols_66 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(tablet) {
+		width: calc(66.66666% - 4px);
+	}
+}
+
+.cols_50 {
+	width: 100%;
+	display: inline-block;
+
+	@include breakpoint(tablet) {
+		width: calc(50% - 4px);
+	}
+}
+
+//-----------------------------------------------
+// Grids - 3 Columns, Responsive
+//-----------------------------------------------
+.grid-row {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	padding: 10px 0;
+
+	.icns_33 {
+		width: 100%;
+		margin: 0;
+		display: flex-box;
+		margin: 5px 0;
+		text-align: center;
+		@include breakpoint(tablet) {
+			width: calc(33.333%);
+		}
+	}
+	.icns_66 {
+		width: 100%;
+		height: auto;
+		margin: 5px 0;
+		display: flex-box;
+		@include breakpoint(tablet) {
+			width: calc(66.666%);
+		}
+	}
+}
+
+//-----------------------------------------------
+// Footer Styles
+//-----------------------------------------------
+
+footer{
+
+	background-color: $white;
+	padding: 40px 0;
+
+	.container{
+		h2{
+			font-family: $unica;
+			font-size: 1.3em;
+			font-weight: lighter;
+			color: $brand-pink;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.email{
+			font-family: $lato;
+			text-align: center;
+			padding-bottom: 12px;
+
+			a{
+				text-decoration: none;
+				color: $black;
+				opacity: 0.7;
+				font-size: 1.4em;
+				transition: 0.2s all ease-in-out;
+				position: relative;
+
+				&:after{
+					content:'';
+					display:block;
+					height: 2px;
+					width: 100%;
+					position: absolute;
+					left:0; bottom:-5px;
+					background-color: $black;
+				}
+
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+
+		.copyright{
+			color: $black;
+			text-align: center;
+			margin: 20px 0 0 0;
+		}
+
+		.social-icons{
+			display: flex;
+			height: 100px;
+			justify-content: center;
+			margin-top: 20px;
+
+			.icon{
+				display: block;
+				width: 36px;
+				margin: 10px 12px;
+
+				*{
+					transition: 0.1s all ease-in-out;
+				}
+
+				svg{
+					.logo-bg{
+						fill: $brand-pink;
+					}
+
+					.logo-text{
+						fill: $white;
+					}
+				}
+
+				&:hover{
+					svg{
+						.logo-text{
+							fill: $white;
+						}
+
+						.behance{
+							fill: $behance;
+						}
+
+						.facebook{
+							fill: $facebook;
+						}
+
+						.linkedin{
+							fill: $linkedin;
+						}
+					}
+				}
+			}
+		}
+	}
+}

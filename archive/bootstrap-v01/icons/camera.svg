@@ -1,0 +1,226 @@
+<svg id="camera" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 188.77 142.08">
+
+  <a xlink:href="https://500px.com/pavithraram" target="/_blank">
+  <defs>
+    <style>
+       .cls-2{
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+
+      #camera:hover .cls-3 {
+      stroke-miterlimit: 10;
+        fill: #fff;
+        stroke:#fff;
+      }
+
+      #camera:hover #button{
+      -webkit-animation: press 2s infinite;
+      animation: press 2s infinite;
+      transform-origin:top;
+      }
+
+      @-webkit-keyframes press{
+      0%{
+      transform:translate(0);
+      }
+      12%{
+      transform:translate(0);
+      }
+      15%{
+      transform:translate(0, 6px);
+      }
+      17%{
+      fill:#000;
+      }
+      19%{
+      fill:#fff;
+      }
+      23%{
+      fill:#ccc;
+      }
+      32%{
+      fill:#000;
+      }
+      25%{
+      transform:translate(0, 0);
+      }
+      57%{
+      fill:#000;
+      }
+      59%{
+      fill:#fff;
+      }
+      63%{
+      fill:#ccc;
+      }
+      72%{
+      fill:#000;
+      }
+      40%{
+      transform:translate(0);
+      }
+      52%{
+      transform:translate(0);
+      }
+      55%{
+      transform:translate(0, 6px);
+      }
+      65%{
+      transform:translate(0, 0);
+      }
+      }
+      #camera:hover #flash{
+      -webkit-animation: flash 2s infinite;
+      animation: flash 2s infinite;
+      transform-origin:top;
+      }
+
+      @-webkit-keyframes flash{
+      0%{
+      fill:#000;
+      }
+      12%{
+      fill:#000;
+      }
+      15%{
+      fill:#000;
+      }
+      17%{
+      fill:#fff;
+      }
+      28%{
+      fill:#fff;
+      }
+      30%{
+      fill:#000;
+      }
+      40%{
+      fill:#000;
+      }
+      52%{
+      fill:#000;
+      }
+      55%{
+      fill:#000;
+      }
+      57%{
+      fill:#fff;
+      }
+      63%{
+      fill:#fff;
+      }
+      70%{
+      fill:#000;
+      }
+      }
+
+      #camera:hover #cam{
+      -webkit-animation: cam 2s infinite;
+      animation: cam 2s infinite;
+      }
+
+      @-webkit-keyframes cam{
+      0%{
+      fill:#000;
+      }
+      12%{
+      fill:#000;
+      }
+      17%{
+      fill:#000;
+      }
+      19%{
+      fill:#fff;
+      }
+      23%{
+      fill:#ccc;
+      }
+      32%{
+      fill:#000;
+      }
+      40%{
+      fill:#000;
+      }
+      52%{
+      fill:#000;
+      }
+      57%{
+      fill:#000;
+      }
+      59%{
+      fill:#fff;
+      }
+      63%{
+      fill:#ccc;
+      }
+      72%{
+      fill:#000;
+      }
+      }
+      #camera:hover #opening{
+      -webkit-animation: open 2s infinite;
+      animation: open 2s infinite;
+      transform-origin:center;
+      }
+
+      @-webkit-keyframes open{
+      0%{
+      transform:scale(0);
+      opacity:0;
+      }
+      12%{
+      transform:scale(0);
+      opacity:0;
+      }
+      17%{
+      transform:scale(1);
+      opacity:1;
+      }
+      25%{
+      transform:scale(1);
+      opacity:1;
+      }
+      35%{
+      transform:scale(0);
+      }
+      40%{
+      transform:scale(0);
+      }
+      52%{
+      transform:scale(0);
+      }
+      57%{
+      transform:scale(1);
+      }
+      65%{
+      transform:scale(1);
+      opacity:1;
+      }
+      75%{
+       transform:scale(0);
+       opacity:0;
+      }
+      100%{
+      transform:scale(0);
+      opacity:0;
+      }
+      }
+    </style>
+  </defs>
+  <g id="cam">
+    <g>
+      <path d="M0,129V35.72c3.25-8.26,8.53-12,17.13-12,5.53,0,22.92-.19,24.07-0.11a9.82,9.82,0,0,0,6.7-1.81C52.56,18.11,65.82,1.26,70.22.36c2.55-.52,38.91-0.44,49.11,0,3.73,0.16,18,16.37,22.37,21.42a5.35,5.35,0,0,0,4.46,2c9-.08,18,0,27,0,9.52,0,15.59,6.12,15.6,15.71q0,22.09,0,44.18,0,21.23,0,42.46a16.19,16.19,0,0,1-16.07,16c-51.79-.2-103.57-0.1-155.36-0.1a16.93,16.93,0,0,1-4.63-.4C6.13,139.74,2.2,135.26,0,129Z"/>
+      <path id="outerlens" class="cls-2" d="M94.34,122.76a42.35,42.35,0,1,1,42.39-42.19C136.66,103.61,117.4,122.78,94.34,122.76Z"/>
+      <path id="flash" class="cls-1" d="M150.07,43.95c0,4.66.36,4.23-4.49,4.23s-4.22.4-4.22-4.73c0-4.47-.31-4,4.73-4C150.07,39.44,150.07,39.46,150.07,43.95Z"/>
+      <path id="innerlens" class="cls-2" d="M94.61,64.51A15.9,15.9,0,1,1,78.49,80.17,15.8,15.8,0,0,1,94.61,64.51Z"/>
+      <path id="opening" class="cls-3" d="M94.57,67.14A13.26,13.26,0,1,1,81.12,80.21,13.18,13.18,0,0,1,94.57,67.14Z"/>
+    </g>
+  </g>
+  <path id="button" d="M35.43,25.68H22.64c-2.26,0-2.05.16-2.05-1.64V17.32c0-1.81-.21-1.64,2.05-1.64H35.43c2.26,0,2.05-.16,2.05,1.64V24C37.48,25.85,37.69,25.68,35.43,25.68Z"/>
+  </a>
+</svg>

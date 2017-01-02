@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('templates/partials/home_metadata.html')
+
+    <title>Pavithra Ramamurthy || UX Design Portfolio</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!--for the masonry grid-->
+    <!-- <link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+    <script src="scripts/vendor/modernizr.custom.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/lightbox.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--browser tab-->
+
+    <link rel="SHORTCUT ICON" href="images/Logo1.ico" type="image/x-icon" />
+    <link rel="ICON" href="images/Logo1.ico" type="image/ico" />
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header>
+            <div id="identity">
+                <object class="scroldis">
+          <embed src="icons/Logo.svg">
+            </object>
+                <object class="scrolappy">
+          <embed src="icons/Logo1.svg" style="position: absolute; top: 0; left: 0;">
+        </object>
+            </div>
+            <!--end of identity-->
+
+            <div id="navbar" class="row">
+                <nav>
+                    <ul class="list-inline">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Portfolio">Work</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="asset/resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--end of navbar-->
+            <div class="container cd-section" id="About" >
+                <div id="topcontent">
+                    <div id="img_me" class="img-responsive">
+                        <!--<img class="img-responsive" class="pull-left" src="images/me_hero.png" alt="" width="344" height="600"> -->
+                    </div>
+                    <!--end of img-->
+                    <aside id="mainbar" class="carousel-caption">
+                        <div id="hello">HELLO!</div>
+                        <div>I am Pavithra Ramamurthy. <br> <br>I am an <i><strong>explorative </strong></i> designer. <br>To me, a great design does the thinking, <br> so you don't have to.</div>
+                    </aside>
+                </div>
+                <!--end of topcontent-->
+            </div>
+            <!--end of container-->
+        </header>
+        <div>
+            <ul id="cd-vertical-nav">
+                <li>
+                    <a href="#About" data-number="1">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Intro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Portfolio" data-number="2">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Work</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" data-number="3">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+
+        <div id="Portfolio" class="text-center cd-section">
+            <h1>Work</h1>
+            <ul class="grid effect-1" id="grid">
+
+                <li>
+                    <a href="yelpy.html"><img src="images/folio-imgs/yelpy/yelpy.png"></a>
+                </li>
+
+                <li>
+                    <a href="thanksdoc.html"><img src="images/folio-imgs/thanksdoc/thanksdoc.png"></a>
+                </li>
+
+                <li>
+                    <a href="arts.html"><img src="images/folio-imgs/arts.png"></a>
+                </li>
+
+                <li>
+                    <a href="citibank.html"><img src="images/folio-imgs/citibank.png"></a>
+                </li>
+            </ul>
+
+        </div>
+        <!--end of Portfolio-->
+        @@include('templates/partials/footer.html')
+        <!--end of footer-->
+    </div>
+    <!--end of container-fluid-->
+    <!--google analytics-->
+
+    <script src="scripts/vendor/lightbox-plus-jquery.min.js"></script>
+    <script src="scripts/vendor/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="scripts/vendor/masonry.pkgd.min.js"></script>
+    <script src="scripts/vendor/imagesloaded.js"></script>
+    <script src="scripts/vendor/classie.js"></script>
+    <script src="scripts/vendor/AnimOnScroll.js"></script>
+
+    @@include('templates/partials/analytics.html')
+
+    <script type="text/javascript">
+        @@include('scripts/homepage.js')
+    </script>
+    <script src="scripts/vendor/main.js"></script>
+</body>
+
+</html>
