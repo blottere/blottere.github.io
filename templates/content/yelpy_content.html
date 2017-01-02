@@ -1,10 +1,10 @@
 <div class="banner">
     <div class="banner-image">
-        <img src="images/folio-imgs/ARTS/banner.png" alt="ARTS Banner" title="ARTS"/>
+        <img src="images/folio-imgs/yelpy/banner.png" alt="Yelpy Banner" title="Yelpy"/>
     </div>
     <div class="banner-text light-text">
-        <div class="banner-title">Auto Rapid Transit System</div>
-        <div class="banner-tagline"></div>
+        <div class="banner-title"></div>
+        <div class="banner-tagline">A Conversational UI Bot</div>
     </div>
 </div>
 
@@ -102,18 +102,20 @@
   Based on our secondary research on effective incorporation of conversational UI as a tool we designed Yelpy with very specific capabilities.
 </p>
 <div class="image-grid">
-  <div class="cols_66">
-        <p>We generated a variety of ideas for the conversation flow and explored the personality traits of our bot. We gave a specific focus to the language style that yelpy would use in order to enable the users to easily identify and connect comfortably with him. We used casual phrases like “Looks like bomb!,” “More pls!,” “What else?,” and emoticons like “bomb” and “smileys” as the mode of communication.</p>
+    <div class="cols_66">
+        <p>We generated a variety of ideas for the conversation flow and explored the personality traits of our bot. We gave a specific focus to the language style that yelpy would use in order to enable the users to easily identify and connect comfortably
+            with him. We used casual phrases like “Looks like bomb!,” “More pls!,” “What else?,” and emoticons like “bomb” and “smileys” as the mode of communication.</p>
 
         <p>An important feature that we placed is the intended delay between each of Yelp’s responses. This again ties to the “human touch” aspect of the conversation.</p>
 
         <p>We limited the number of Yelpy’s suggestions within each conversational phase in order to avoid overwhelming the users and to keep the interface clean.</p>
 
-        <p>Yelpy would only give recommendations from the current restaurant that a user is viewing at a time. For example, when the user is navigating in Arby’s restaurant page, the recommendations popping up will solely belong to the same restaurant. This is to avoid confusion and not surprise the user when the link redirects them to the second recommended restaurant's page.</p>
-        </div>
-<div class="cols_33">
-<img src="images/folio-imgs/yelpy/Btownmenu_integration.jpg" title="BTown Menu Sketch" alt="Image of the interface sketch of Yelpy within BTownMenus app"/>
-</div>
+        <p>Yelpy would only give recommendations from the current restaurant that a user is viewing at a time. For example, when the user is navigating in Arby’s restaurant page, the recommendations popping up will solely belong to the same restaurant. This
+            is to avoid confusion and not surprise the user when the link redirects them to the second recommended restaurant's page.</p>
+    </div>
+    <div class="cols_33">
+        <img src="images/folio-imgs/yelpy/Btownmenu_integration.jpg" title="BTown Menu Sketch" alt="Image of the interface sketch of Yelpy within BTownMenus app" />
+    </div>
 </div>
 
 <p>When Yelpy runs out of popular recommendations at a restaurant  for a particular food type then he would suggest popular choices from other restaurants. This would especially provide choices to people with a specific type of diet.</p>
@@ -122,90 +124,101 @@
 <div class="image-sub">Yelpy's recommendations</div>
 
         <p>Yelpy would sense when users add food choices from multiple restaurants to their carts and provides a heads up in order to avoid confusion and frustration among users. We wanted to incorporate this into our design to account for Yelpy’s suggestion capabilities by keeping users aware of their actions.</p>
-        
-        <img src="images/folio-imgs/yelpy/cart.png" title="Multiple items" alt="Image of Multiple items cart" />
+
+        <div class="image-grid">
+          <div class="cols_33">
+            <img src="images/folio-imgs/yelpy/cart.png" title="Multiple items" alt="Image of Multiple items cart" />
+          </div>
+        </div>
         <div class="image-sub">Yelp's warning message when multiple items are in Cart</div>
 
           <p>All the conversations that Yelpy has can only be responded with clickable responses. We made this design choice based on the following factors that we validated through user testing and interviews.</p>
-
 <p>
-  The <bigWord>key findings</bigWord> we garnered from these interviews were that
 <ul class="bullets">
   <li>
-    Drivers are constantly multitasking between driving, communicating with dispatch and other drivers, checking for crowding inside the bus, checking for schedule delays and requests for passenger stops. This gets very difficult to manage and increases risk on the road.
-  </li>
-
-  <li>
-    Bus drivers heavily rely on communicating with dispatch for reroutes and emergency situations. This coordination usually takes time due to the manual nature of the communication process.
+    Our secondary research suggested that clickable texts are always more accessible than open ended text conversations
   </li>
   <li>
-    Because dispatch is often another driver or different people every time, there is no protocol or consistency and drivers generally feel that dispatch is unreliable. Often the bus drivers make decisions on the go or by manually coordinating on the radio.
+    Pre-determined options allow for faster response time, thus making the conversation more efficient
   </li>
   <li>
-    During delays or overcrowding, bus drivers use hand gestures to communicate with people at a stop to convey that they would be picked up by the next bus instead.
+    Limited size of the mobile screen does not always invite easy texting
+  </li>
+  <li>
+    We designed our interface such that the conversation can always be taken with a simple “yes”, “no” or “what else”
   </li>
 </ul>
 </p>
 
 <p>
-  Our interviews and observations gave us enough lead to build our <bigWord>personas</bigWord> representing both our set of users the drivers and the passengers.
+<strong>Integration of Yelpy into BTownMenus:</strong>
 </p>
 
-//insert personas//
 
-        <p>Based on our key findings we were able to pull specific insights that helped us conceptualize a possible solution for the main problems that we recognised.</p>
+        <p>We wanted to emphasize the importance of informed reviews and efficiency by incorporating common messaging techniques. We relied on user recognised patterns to integrate Yelpy into BTownMenu’s existing application. </p>
 
-        <p><bigWord>We understood that people need a reliable bus system where they could just travel comfortably from point A to B without having to wait for a long time during all times of the day.</bigWord></p>
+        <p>We changed the original layout of BtownMenus’ mobile app to bring more emphasise on Yelpy. We chose to redesign the top navigation bar to remove redundant features and utilize easily recognizable icons. When the user scrolls through restaurants, they will see a notification pop up next to Yelpy. If they click on Yelpy, a banner-like chat will appear to converse with the user. The user can then choose to engage in a conversation with Yelpy</p>
 <p>
-<bigWord>Drivers needed to Safely offload communication tasks while driving.</bigWord>
-</p>
+  Yelpy bot takes data from the plethora of Yelp restaurant reviews and presents them to users in a clear and concise text message. For example, saying “People are raving about ‘The Farm!’” If this restaurant interests the user, Yelpy will then suggests the most reviewed dishes from the restaurant. We wanted to provide the users with an accurate and condensed summary of the reviews on Yelp, through the ease of quick messages. Yelpy also uses machine learning techniques to remember user preferences and recommend better suggestions to the users (i.e. dietary restrictions). </p>
 
-        <p>We needed to figure how we could use Mercedez Benz’s autonomous vehicle features to solve for these very particular problem spaces.
-</p>
+  <div class="image-grid">
+      <img src="images/folio-imgs/yelpy/btownmenu.png" class="full-width" title="BTown Menu" alt="Image of Yelpy's integration into BTown Menus" />
+  <div class="image-sub">Yelpy's integration into BTown Menus</div>
+  </div>
 
-        <p>We began the round robin sketching process again! We had potentially explosive ideas from our exploration before, but now we were focusing on funneling down to the core aspect of solving the problem. At the end of the process we had a concrete idea that all of us wanted to explore and test.</p>
-
-        //StoryBoard//
-
-        <p>During our initial round of testing phase we walked our testers, both passengers and drivers through concept scenarios and specific situations to judge their responses. We also involved the testers in task based interactions using paper prototypes to record the usability of the interface itself.</p>
-
-        <img src="images/folio-imgs/ARTS/wireframe.png" class="full-width" title="ARTS Wireframe" alt="Image of the wireframe of ARTS" />
-
-        <div class="image-sub">Wireframe - ARTS</div>
-
-<h4>What we found…</h4>
-        <p>From testing passengers we realised that there was a certain learning curve to the interface. The passengers tended to think that the interface just provided a real time update of when their bus would arrive. They didn’t recognise that the bus was prioritising stops based on user demands till they rode the bus. Nevertheless, they liked the fact that they got realtime updates of the bus arrival times.
-</p>
-
-        <p>In our initial design of the driver’s interface, we had a visual map that would indicate route changes and allocated stops. While usability testing our design with our drivers we realised that the map interface showing priority stops along route can be a safety hazard if driver has to take quick looks at it.
-</p>
-<p>What more, the drivers are already aware and knowledgeable about different bus routes and streets, in which case a visual navigation system may be unnecessary.
-</p>
-
+          <h4>How we validated Yelpy...</h4>
 <p>
-We <bigWord>Concluded</bigWord> that a voice interface for receiving priority routes instead of a visual interface would be a more viable design modification for bus drivers. We also decided to have a brief animated introduction to the autonomous prioritization system on the passenger’s interface.
-</p>
-
-
-        <p>Based on these modifications we would like to run further high fidelity usability tests on a focused community utilising one or two bus lines while using a Mercedes Benz’s centrally controlled infrastructure to optimise the autonomous prioritisation.
-
+  We created several low fidelity paper prototypes of Yelpy’s UI interactions, to test the usability of the design among different target users. We made instances of the conversation itself to test out the effectiveness of the language and communication with the users. We also created multiple conversations on index cards to account for a variety of possible scenarios for the user to interact with.
 </p>
 <p>
-  We want to design for current infrastructure and put a better system in place in the coming years. And eventually fluidly transition from some specific autonomous functions (ie automated route-passenger prioritization system) to semi-autonomous aided functions (ie the prior system with autopilot) to fully autonomous (fully self driving incorporating the proposed system).
+  We scripted task based usability tests and used ‘think out loud’ method to test the experience of our design. I operated the interactive elements of the paper prototype while two of my teammates observed the test in progress and took notes. Another teammate video recorded the test. At the end of the test we asked the users several questions regarding their experience using the interface.
 </p>
-<img src="images/folio-imgs/ARTS/SCOPE.png" class="full-width" title="Scope" alt="Scope of the design" />
+<div class="image-grid">
+  <div class="cols_33">
+    <img src="images/folio-imgs/yelpy/prototype.png" title="prototype" alt="Image of a user interacting with the prototype" />
+  </div>
+   <div class="cols_33">
+     <img src="images/folio-imgs/yelpy/prototype2.png" title="prototype" alt="Image of a user interacting with the prototype" />
+   </div>
+  <div class="cols_33">
+     <img src="images/folio-imgs/yelpy/prototype3.png" title="prototype" alt="Image of a user interacting with the prototype" />
+  </div>
+</div>
+<div class="image-sub">User interacting with the paper prototypes</div>
+
+<div class="image-grid">
+  <div class="cols_66">
+    <p>
+      <strong>Search Case</strong>
+    </p>
+
+<p>
+  We also created low fidelity prototypes to test out special use cases like when a user searches for specific food types like vegan options, gluten free food, a specific dish, etc. When BtownMenus doesn’t recognize search options, Yelpy recognizes the term and opens a speech bubble with a question about the item that is searched for (eg: vegan) and makes a suggestion based on its reviews and ratings. This would be the only time that Yelpy would automatically pop up suggestions when it is not directly engaged by the users.
+</p>
+</div>
+  <div class="cols_33">
+   <img src="images/folio-imgs/yelpy/search.png" title="prototype" alt="Image of a search case" />
+   <div class="image-sub">prototype of the search case</div>
+ </div>
+</div>
+
+        <p>We conducted <bigWord>usability tests</bigWord> on a total of 4 students, three of them were undergraduates aging between 20 and 21 and a Ph. D graduate student who was 25 years old. We then studied the test results and made more design changes to support the usability of the interface.</p>
+
+
 
 <h4>The Team</h4>
-        <img src="images/folio-imgs/ARTS/teampic.jpg" class="full-width" title="Team Picture" alt="A Picture of the team." />
-        <div class="image-sub">FROM LEFT: PHILIP BEGEL, PAVITHRA RAMAMURTHY(ME), Sanjana Mathur & Peggy Lu</div>
+        <img src="images/folio-imgs/yelpy/teampic.jpg" class="full-width" title="Team Picture" alt="A Picture of the team." />
+        <div class="image-sub">FROM LEFT: PAVITHRA RAMAMURTHY(ME), Nicole Anicetti, Vikas Jangam & Sean Smith</div>
 
         <h4>What I Learnt</h4>
         <ul class="bullets">
-            <li>User experience designing is never a linear process and the users can help you validate your concept every step of the way
+            <li>All the information you would need in order to completely understand a platform can be gained through its users.
 </li>
-            <li>Ask questions, lots and lots of questions on every aspect of the problem space. Record these questions and work with your team to answer all of them throughout the design process. Then ask more questions.
+            <li>There are several approaches and directions that we could take to potentially solve a problem, but the key is to recognize the one idea that has the most potential.
 </li>
-<li>Design iteratively and be ready to chuck your ideas and go back to phase one if necessary.
+<li>It takes great team work and an open mind to testing out ideas iteratively to successfully design an ideal solution.
+</li>
+<li>Designing a conversational interface could easily become complex unless you are ready to embrace the constraints and focus on that one main problem that you need your design to solve in the simplest possible way.
 </li>
         </ul>
     </div>
