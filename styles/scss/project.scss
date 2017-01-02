@@ -161,10 +161,10 @@ Your Files Go Here*/
                 }
 
                 &:hover{
-                    // color: white;
+                    color: white;
 
                     &:after{
-                        background: $white;
+                        background: $red;
                         height: calc(100% + 3px);
                     }
                 }
