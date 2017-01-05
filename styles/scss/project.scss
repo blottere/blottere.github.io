@@ -13,8 +13,7 @@ Your Files Go Here*/
 @import "components/global";
 
 .project {
-
-    .top-nav{
+    .top-nav {
         .home-logo {
             svg {
                 width: auto;
@@ -31,23 +30,23 @@ Your Files Go Here*/
         position: fixed;
         z-index: 1000;
         background: $white;
-        box-shadow: 2px 0px 10px $grey;
+        box-shadow: 2px 0 10px $grey;
 
-        .container{
+        .container {
             position: relative;
             display: block;
             height: 100%;
-            padding:0;
-            margin:0;
+            padding: 0;
+            margin: 0;
             width: 100%;
 
-            svg{
+            svg {
                 height: 90%;
                 margin-left: 20px;
                 position: absolute;
             }
 
-            .branding{
+            .branding {
                 width: calc(100%-120px);
                 display: block;
                 text-align: left;
@@ -58,8 +57,7 @@ Your Files Go Here*/
                 padding: 0 0 0 80px;
                 position: relative;
                 margin: 0 auto;
-
-                @include breakpoint(phone-lg){
+                @include breakpoint(phone-lg) {
                     text-align: center;
                     padding: 0 60px;
                 }
@@ -67,10 +65,10 @@ Your Files Go Here*/
         }
     }
 
-    .top-nav.hidden-phone{
+    .top-nav.hidden-phone {
         width: 48px;
         padding: 20px;
-        box-shadow: 2px 0px 10px transparent;
+        box-shadow: 2px 0 10px transparent;
         background: transparent;
         position: fixed;
         z-index: 1000;
@@ -78,11 +76,9 @@ Your Files Go Here*/
 
     .container {
         padding-top: 60px;
-
-        @include breakpoint(laptop){
+        @include breakpoint(laptop) {
             padding-top: 0;
         }
-
         /*
 
         Banner Styles */
@@ -91,17 +87,16 @@ Your Files Go Here*/
             margin: 0 auto;
             padding-top: 30px;
 
-            .banner-image{
-              height: 350px;
-              position: relative;
+            .banner-image {
+                height: 350px;
+                position: relative;
 
-              img {
-                padding: 40px;
-                max-height: 200px;
-                margin-bottom: 30px;
-                margin: auto;
-                display: block;
-              }
+                img {
+                    padding: 40px;
+                    max-height: 200px;
+                    margin: auto;
+                    display: block;
+                }
             }
 
             .banner-text {
@@ -126,8 +121,8 @@ Your Files Go Here*/
                 }
             }
 
-            .light-text{
-              color: $white;
+            .light-text {
+                color: $white;
             }
         }
         /*
@@ -137,13 +132,13 @@ Your Files Go Here*/
         .project-content {
             padding-top: 30px;
 
-            a{
+            a {
                 color: $red;
                 position: relative;
                 transition: 0.1s all ease-in-out;
-                padding:0 2px;
+                padding: 0 2px;
 
-                &:visited{
+                &:visited {
                     color: $red;
                 }
 
@@ -152,7 +147,8 @@ Your Files Go Here*/
                     position: absolute;
                     width: 100%;
                     height: 1px;
-                    left:0; bottom: -2px;
+                    left: 0;
+                    bottom: -2px;
                     border-radius: 1px;
                     display: block;
                     background: $red;
@@ -160,10 +156,10 @@ Your Files Go Here*/
                     z-index: -10;
                 }
 
-                &:hover{
+                &:hover {
                     color: white;
 
-                    &:after{
+                    &:after {
                         background: $red;
                         height: calc(100% + 3px);
                     }
@@ -290,18 +286,21 @@ Your Files Go Here*/
                     padding: 0;
                     text-align: center;
 
-                    p{
-                      text-align: left;
+                    p {
+                        text-align: left;
                     }
-
-                    @include breakpoint(laptop){
+                    @include breakpoint(laptop) {
                         padding: 15px 0 0;
                     }
 
-                    .cols_50, .cols_33, .cols_25, .cols_75, .cols_66 {
-                        vertical-align:middle;
+                    .cols_25,
+                    .cols_33,
+                    .cols_50,
+                    .cols_66,
+                    .cols_75 {
+                        vertical-align: middle;
 
-                        img{
+                        img {
                             width: calc(100% - 24px);
                             max-width: 100%;
                             height: auto;
@@ -309,7 +308,7 @@ Your Files Go Here*/
                         }
                     }
 
-                    .image-sub{
+                    .image-sub {
                         margin: 12px 0;
                     }
                 }
@@ -394,16 +393,15 @@ Your Files Go Here*/
                 justify-content: center;
 
                 .proj-nav {
-
-                    .proj-prev{
-                        @include breakpoint(tablet){
-                            transform:translateX(12px);
+                    .proj-prev {
+                        @include breakpoint(tablet) {
+                            transform: translateX(12px);
                         }
                     }
 
-                    .proj-next{
-                        @include breakpoint(tablet){
-                            transform:translateX(-12px);
+                    .proj-next {
+                        @include breakpoint(tablet) {
+                            transform: translateX(-12px);
                         }
                     }
 
@@ -416,17 +414,18 @@ Your Files Go Here*/
                         transition: 0.2s all ease-in-out;
                         position: relative;
 
-                        &:hover{
-                            transform:translateX(0px);
+                        &:hover {
+                            transform: translateX(0px);
                         }
 
-                        .project-image{
+                        .project-image {
                             width: 100%;
                             display: block;
-                            height:100%;
+                            height: 100%;
                             background-size: cover;
                             background-position: center;
                         }
+
                         .proj-title {
                             color: $white;
                             text-decoration: none;
@@ -440,17 +439,18 @@ Your Files Go Here*/
                             padding-top: 10px;
                             transition: 0.2s all ease-in-out;
                             bottom: 10px;
-
-                            @include breakpoint(tablet){
+                            @include breakpoint(tablet) {
                                 transform: scale(0.9);
-                                opacity:0;
+                                opacity: 0;
                                 bottom: -32px;
                                 color: $black;
                             }
                         }
 
-                        &:hover{ // proj-prev,proj-next
-                            .proj-title{
+                        &:hover {
+                            // proj-prev,proj-next
+
+                            .proj-title {
                                 opacity: 1;
                                 transform: scale(0.95);
                             }
@@ -481,16 +481,16 @@ Your Files Go Here*/
                 height: 96px;
                 justify-content: center;
 
-                .home:after{
-                    content: 'Home'
+                .home:after {
+                    content: 'Home';
                 }
 
-                .gallery:after{
-                    content: 'Gallery'
+                .gallery:after {
+                    content: 'Gallery';
                 }
 
-                .resume:after{
-                    content: 'Resume'
+                .resume:after {
+                    content: 'Resume';
                 }
 
                 .icon {
@@ -502,25 +502,25 @@ Your Files Go Here*/
                     position: relative;
                     transition: 0.2s all ease-in;
 
-                    &:after{
+                    &:after {
                         display: block;
                         position: absolute;
                         width: 100%;
                         transform: translateY(0px);
-                        opacity:0;
+                        opacity: 0;
                         transition: 0.2s all ease-in;
                         color: $black;
                         padding: 5px 0;
                         border-radius: 4px;
                     }
 
-                    &:hover{
+                    &:hover {
                         transform-origin: bottom right;
                         transform: translateY(-8px);
 
-                        &:after{
+                        &:after {
                             transform: translateY(3px);
-                            opacity:0.8;
+                            opacity: 0.8;
                         }
                     }
 
@@ -532,43 +532,147 @@ Your Files Go Here*/
         }
     }
 }
-
-
-
 // Project Specific Changes
-
-.thanksDoc{
-    .banner-image{
+.thanksDoc {
+    .banner-image {
         background-color: $td-green;
     }
-    h3, h4{
+
+    h3,
+    h4 {
         color: $td-blue;
     }
 }
 
-.arts{
-    .banner-image{
+.arts {
+    .banner-image {
         background-color: $arts-pink;
     }
-    h3, h4{
+
+    h3,
+    h4 {
         color: $arts-prpl;
     }
 }
 
-.yelpy{
-    .banner-image{
+.yelpy {
+    .banner-image {
         background-color: $yelp-red;
     }
-    h3, h4{
+
+    h3,
+    h4 {
         color: $yelp-red;
     }
 }
 
-.citibank{
-    .banner-image{
+.citibank {
+    .banner-image {
         background-color: $citi-blue;
     }
-    h3, h4{
+
+    h3,
+    h4 {
         color: $citi-red;
+    }
+}
+//about me page styles//
+.project .aboutMe {
+    h4 {
+        color: $red;
+        font-family: $unica;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        margin: 48px 0 6px;
+        text-align: center;
+    }
+
+    strong {
+        font-weight: $bold;
+    }
+
+    .project-content #section-2 {
+        img {
+            display: block;
+            max-width: 100%;
+            margin-top: 12px;
+            border-radius: 4px;
+            margin: 0 auto;
+            padding: 2em 0;
+
+            &.full-width {
+                max-width: 100%;
+            }
+            @include breakpoint(phone-lg) {
+                max-width: 80%;
+            }
+        }
+
+        .gallery-icon {
+            height: 350px;
+            text-align: center;
+
+            a:after, a:hover:after{
+                background-color: transparent;
+            }
+
+            svg {
+                height: 100%;
+                width: auto;
+                transition: 0.5s all ease-in-out;
+
+                @for $i from 1 through 7 {
+                    #p#{$i}{
+                        opacity: 0;
+                        transition: 0.3s all ease-in-out;
+                        transition-delay: $i * 0.05s;
+                    }
+                }
+
+                &:hover{
+                    transform: scale(1.03);
+                    #p1,#p2,#p3,#p4,#p5,#p6,#p7{
+                        opacity: 1;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.footer-about {
+    background: transparent;
+    padding: 0;
+    margin: 48px 0 24px;
+
+    .container {
+        .email a {
+            color: $black;
+            opacity: 1;
+            transition: 0.1s all ease-in-out;
+
+            &:after {
+                background-color: transparent;
+            }
+
+            &:hover {
+                color: $brand-pink;
+            }
+        }
+
+        h4 {
+            padding: 2em 0;
+            color: $red;
+            font-family: $unica;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            margin: 0 0 6px;
+            text-align: center;
+        }
     }
 }
