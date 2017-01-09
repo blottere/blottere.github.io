@@ -166,6 +166,14 @@ header #identity .scroldis {
     visibility: inherit;
 }
 
+header #identity .scroldis svg.pav_logo{
+    height: 100%;
+}
+
+header #identity .scroldis svg.pav_logo:hover{
+    transform: translateY(0px);
+}
+
 header #identity .scrolappy {
     opacity: 0;
     visibility: hidden;

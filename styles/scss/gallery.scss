@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*
+
+
+Vendor Files - Remember to rename these from *.css to *.scss before adding here. */
+@import "vendor/normalize";
+/*
+
+
+Your Files Go Here*/
+@import "components/variables";
+@import "components/responsive";
+@import "components/global";
+
+
+.container {
+    #btn{
+        display: block;
+        height: 20px;
+        width: 100px;
+        background-color: $red;
+    }
+    div#masonry {
+        column-count: 3;
+        column-gap: 5px;
+
+        img{
+            break-inside: avoid;
+            transition: 0.2s all ease-in-out;
+        }
+
+        img.a.hide{
+            display:none;
+        }
+
+    }
+}

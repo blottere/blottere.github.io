@@ -19,6 +19,49 @@ body * {
 }
 
 //-----------------------------------------------
+// Logo Styles
+//-----------------------------------------------
+.pav_logo{
+	height: 500px;
+	cursor:pointer;
+	transition: .4s all cubic-bezier(.62,.01,.77,.96);
+	-o-transition: .4s all cubic-bezier(.62,.01,.77,.96);
+	-moz-transition: .4s all cubic-bezier(.62,.01,.77,.96);
+
+	.logo{
+		fill:#000;
+		fill-opacity:0;
+		stroke: black;
+		stroke-width: 7px;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		transition: 1s all cubic-bezier(.62,.01,.77,.96);
+		-o-transition: 1s all cubic-bezier(.62,.01,.77,.96);
+		-moz-transition: 1s all cubic-bezier(.62,.01,.77,.96);
+	}
+
+	.house{
+		stroke-dasharray: 393;
+		stroke-dashoffset: 394;
+	}
+
+	.p{
+		stroke-dasharray: 416;
+		stroke-dashoffset: 0;
+		transition: .6s all cubic-bezier(.62,.01,.77,.96);
+		-o-transition: .6s all cubic-bezier(.62,.01,.77,.96);
+		-moz-transition: .6s all cubic-bezier(.62,.01,.77,.96);
+	}
+
+	&:hover{
+		transform: translateY(-12px);
+
+		.p{stroke-dashoffset: 417;}
+		.house{stroke-dashoffset: 0;}
+	}
+}
+
+//-----------------------------------------------
 // Common Elements
 //-----------------------------------------------
 .container {

@@ -79,13 +79,23 @@ Your Files Go Here*/
         @include breakpoint(laptop) {
             padding-top: 0;
         }
+        /*projtitle styles */
+        .projtitle{
+            h5{
+            color: $grey;
+            font-family: unica one;
+            text-transform: uppercase;
+            padding: 0;
+            text-align: center;
+            font-weight: lighter;
+            letter-spacing: 2px;
+        }
+        }
         /*
-
         Banner Styles */
         .banner {
             position: relative;
             margin: 0 auto;
-            padding-top: 30px;
 
             .banner-image {
                 height: 350px;
