@@ -47,7 +47,7 @@ Your Files Go Here*/
             }
 
             .branding {
-                width: calc(100%-120px);
+                width: calc(100% - 120px);
                 display: block;
                 text-align: left;
                 line-height: 50px;
@@ -82,14 +82,19 @@ Your Files Go Here*/
         /*projtitle styles */
         .projtitle{
             h5{
-            color: $grey;
-            font-family: unica one;
-            text-transform: uppercase;
-            padding: 0;
-            text-align: center;
-            font-weight: lighter;
-            letter-spacing: 2px;
-        }
+                color: $grey;
+                font-family: $unica;
+                text-transform: uppercase;
+                padding: 60px 0 20px;
+                margin: 0;
+                text-align: center;
+                font-weight: lighter;
+                letter-spacing: 2px;
+
+                @include breakpoint(tablet){
+                    padding: 20px 0 20px;
+                }
+            }
         }
         /*
         Banner Styles */
@@ -103,9 +108,13 @@ Your Files Go Here*/
 
                 img {
                     padding: 40px;
-                    max-height: 200px;
+                    max-height: 150px;
                     margin: auto;
                     display: block;
+
+                    @include breakpoint(tablet){
+                        max-height: 200px;
+                    }
                 }
             }
 
