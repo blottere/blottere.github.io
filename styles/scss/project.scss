@@ -92,7 +92,7 @@ Your Files Go Here*/
                 font-weight: lighter;
                 letter-spacing: 2px;
 
-                @include breakpoint(tablet){
+                @include breakpoint(laptop){
                     padding: 20px 0 20px;
                 }
             }
@@ -553,7 +553,7 @@ Your Files Go Here*/
     }
 }
 // Project Specific Changes
-.thanksDoc {
+.container.thanksDoc {
     .banner-image {
         background-color: $td-green;
     }
@@ -564,7 +564,7 @@ Your Files Go Here*/
     }
 }
 
-.arts {
+.container.arts {
     .banner-image {
         background-color: $arts-pink;
     }
@@ -575,7 +575,7 @@ Your Files Go Here*/
     }
 }
 
-.yelpy {
+.container.yelpy {
     .banner-image {
         background-color: $yelp-red;
     }
@@ -586,7 +586,7 @@ Your Files Go Here*/
     }
 }
 
-.citibank {
+.container.citibank {
     .banner-image {
         background-color: $citi-blue;
     }
@@ -594,6 +594,22 @@ Your Files Go Here*/
     h3,
     h4 {
         color: $citi-red;
+    }
+}
+
+.container.aboutMe {
+    .banner {
+        padding-top: 30px;
+        .banner-image {
+            background: #fffffd url('../images/folio-imgs/mybanner.jpg') no-repeat bottom;
+            background-size: cover;
+            height: 350px;
+
+            @include breakpoint(laptop){
+                background-size: 80%;
+                height: 500px;
+            }
+        }
     }
 }
 //about me page styles//
