@@ -40,10 +40,18 @@ Your Files Go Here*/
             margin: 0;
             width: 100%;
 
-            svg {
-                height: 90%;
-                margin-left: 20px;
+            a{
+                display: block;
                 position: absolute;
+                width: 80px;
+                height: 100%;
+                z-index: 10;
+
+                svg {
+                    height: 90%;
+                    margin-left: 20px;
+                    position: absolute;
+                }
             }
 
             .branding {
@@ -109,13 +117,10 @@ Your Files Go Here*/
 
                 img {
                     padding: 40px;
-                    max-height: 150px;
+                    max-height: 200px;
                     margin: auto;
                     display: block;
-
-                    @include breakpoint(tablet){
-                        max-height: 200px;
-                    }
+                    max-width: calc(100% - 80px);
                 }
             }
 
@@ -600,9 +605,10 @@ Your Files Go Here*/
 .container.aboutMe {
     .banner {
         padding-top: 30px;
+
         .banner-image {
-            background: #fffffd url('../images/folio-imgs/mybanner.jpg') no-repeat bottom;
-            background-size: cover;
+            background: url('../images/folio-imgs/mybanner.jpg') no-repeat center;
+            background-size: contain;
             height: 350px;
 
             @include breakpoint(laptop){
@@ -661,9 +667,13 @@ Your Files Go Here*/
 
                 @for $i from 1 through 7 {
                     #p#{$i}{
-                        opacity: 0;
+                        opacity: 0.8;
                         transition: 0.3s all ease-in-out;
                         transition-delay: $i * 0.05s;
+
+                        @include breakpoint(tablet){
+                            opacity: 0;
+                        }
                     }
                 }
 
