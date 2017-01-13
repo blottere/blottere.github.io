@@ -6,40 +6,68 @@
     <title>Pavithra Ramamurthy | Gallery</title>
     <link rel="stylesheet" href="styles/gallery.css">
 
-    <!--browser tab-->
-    <link rel="SHORTCUT ICON" href="images/Logo1.ico" type="image/x-icon" />
-    <link rel="ICON" href="images/Logo1.ico" type="image/ico" />
+
 </head>
-
 <body>
-
     <div class="container">
-        <div id="btn">
-
+        <div class="controls">
+            <button class="filter" data-filter=".category-photo">Photos</button>
+            <button class="filter" data-filter=".category-art">Art</button>
+            <button class="filter" data-filter="all">All</button>
         </div>
-            <div id="masonry">
+
+        <div class="gallery">
+            <div class="mix category-photo">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/1.jpg">
-                <img id="a" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/2.jpg">
+            </div>
+            <div class="mix category-photo">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/2.jpg">
+            </div>
+            <div class="mix category-photo">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/3.jpg">
+            </div>
+            <div class="mix category-art">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/4.jpg">
+            </div>
+            <div class="mix category-photo">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/6.jpg">
+            </div>
+            <div class="mix category-art">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/8.jpg">
+            </div>
+            <div class="mix category-photo">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/9.jpg">
+            </div>
+            <div class="mix category-art">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/7.jpg">
             </div>
+        </div>
     </div>
-    <script>
-    var button = document.getElementById('btn'); // Assumes element with id='button'
 
-button.onclick = function() {
-    console.log("click");
-    var div = document.getElementById('a');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-};
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+    <script src="scripts/vendor/mixitup.min.js"></script>
+    <script>
+
+    var mixer = mixitup('.gallery', {
+        animation:{
+            animateResizeContainer: true,
+            animateResizeTargets: true,
+            effects: 'fade',
+            duration: 300,
+
+        }
+    });
+
+
+
+    // $(function(){
+    //   $('.gallery').mixItUp({
+    //     animation: {
+    //       animateResizeContainer: false,
+    //       effects: 'fade rotateX(-45deg) translateY(-10%)'
+    //     }
+    //   });
+    // })
     </script>
 </body>

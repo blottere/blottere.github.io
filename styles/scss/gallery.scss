@@ -3,35 +3,43 @@
 
 
 Vendor Files - Remember to rename these from *.css to *.scss before adding here. */
-@import "vendor/normalize";
+// @import "vendor/normalize";
 /*
 
 
 Your Files Go Here*/
 @import "components/variables";
-@import "components/responsive";
+// @import "components/responsive";
 @import "components/global";
 
-
 .container {
-    #btn{
-        display: block;
-        height: 20px;
-        width: 100px;
-        background-color: $red;
+    .controls {
+        text-align: center;
+
+        button {
+            display: inline-block;
+            background: white;
+            border: 0;
+            margin: 0 0 2%;
+            font-family: $unica;
+            font-weight: 300;
+            font-size: 18px;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: 0 none;
+        }
     }
-    div#masonry {
+
+    .gallery {
         column-count: 3;
         column-gap: 5px;
+        width: 100%;
+        // max-height: 900px;
 
-        img{
+        img {
             break-inside: avoid;
             transition: 0.2s all ease-in-out;
         }
-
-        img.a.hide{
-            display:none;
-        }
-
     }
 }
