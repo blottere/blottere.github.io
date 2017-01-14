@@ -192,6 +192,83 @@ a{
 	}
 }
 
+
+
+//-----------------------------------------------
+// Project Navigation
+//-----------------------------------------------
+
+.top-nav {
+	.home-logo {
+		svg {
+			width: auto;
+			height: 100%;
+		}
+	}
+}
+
+.top-nav.visible-phone {
+	display: block;
+	height: 60px;
+	padding: 20px 0 10px;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	background: $white;
+	box-shadow: 2px 0 10px $grey;
+
+	.container {
+		position: relative;
+		display: block;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+
+		a{
+			display: block;
+			position: absolute;
+			width: 80px;
+			height: 100%;
+			z-index: 10;
+
+			svg {
+				height: 90%;
+				margin-left: 20px;
+				position: absolute;
+			}
+		}
+
+		.branding {
+			width: calc(100% - 120px);
+			display: block;
+			text-align: left;
+			line-height: 50px;
+			font-family: $unica;
+			text-transform: uppercase;
+			font-size: 1.6em;
+			padding: 0 0 0 80px;
+			position: relative;
+			margin: 0 auto;
+			@include breakpoint(phone-lg) {
+				text-align: center;
+				padding: 0 60px;
+			}
+		}
+	}
+}
+
+.top-nav.hidden-phone {
+	width: 48px;
+	height: 50px;
+	padding: 20px;
+	box-shadow: 2px 0 10px transparent;
+	background: transparent;
+	position: fixed;
+	z-index: 1000;
+}
+
+
 //-----------------------------------------------
 // Footer Styles
 //-----------------------------------------------

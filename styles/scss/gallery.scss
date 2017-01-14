@@ -3,14 +3,15 @@
 
 
 Vendor Files - Remember to rename these from *.css to *.scss before adding here. */
-// @import "vendor/normalize";
+@import "vendor/normalize";
 /*
 
 
 Your Files Go Here*/
 @import "components/variables";
-// @import "components/responsive";
+@import "components/responsive";
 @import "components/global";
+
 
 .container {
     .controls {
@@ -21,25 +22,35 @@ Your Files Go Here*/
             background: white;
             border: 0;
             margin: 0 0 2%;
-            font-family: $unica;
+            font-family: arial;
             font-weight: 300;
             font-size: 18px;
             padding: 0.5em 1em;
             border-radius: 5px;
             cursor: pointer;
             outline: 0 none;
+            text-transform: uppercase;
         }
     }
 
     .gallery {
         column-count: 3;
-        column-gap: 5px;
+        column-gap: 3px;
         width: 100%;
-        // max-height: 900px;
 
-        img {
+        .mix {
+            display: inline-block;
             break-inside: avoid;
-            transition: 0.2s all ease-in-out;
+
+            img{
+                padding:0;
+                margin:0;
+            }
         }
+    }
+
+
+    .fluidbox__overlay{
+        background-color: black;
     }
 }

@@ -30,53 +30,70 @@
 		<link rel="SHORTCUT ICON" href="images/Logo1.ico" type="image/x-icon" />
 		<link rel="ICON" href="images/Logo1.ico" type="image/ico" />
 		<title>Pavithra Ramamurthy | Gallery</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/css/fluidbox.min.css">
 		<link rel="stylesheet" href="styles/gallery.css"> </head>
 	<body>
 		<div class="container">
 			<div class="controls">
-				<button class="filter" data-filter=".category-photo">Photos</button>
-				<button class="filter" data-filter=".category-art">Art</button>
+				<button class="filter" data-filter=".photo">Photos</button>
+				<button class="filter" data-filter=".art">Art</button>
 				<button class="filter" data-filter="all">All</button>
 			</div>
 			<div class="gallery">
-				<div class="mix category-photo">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/1.jpg"> </div>
-				<div class="mix category-photo">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/2.jpg"> </div>
-				<div class="mix category-photo">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/3.jpg"> </div>
-				<div class="mix category-art">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/4.jpg"> </div>
-				<div class="mix category-photo">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/6.jpg"> </div>
-				<div class="mix category-art">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/8.jpg"> </div>
-				<div class="mix category-photo">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/9.jpg"> </div>
-				<div class="mix category-art">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/7.jpg"> </div>
+				<div class="mix art">
+					<img src="../images/gallery/art/boy.jpg"> </div>
+				<div class="mix art">
+					<img src="../images/gallery/art/corn.jpg"> </div>
+				<div class="mix photo">
+					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/3.jpg">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/3.jpg">
+					</a>
+				</div>
+				<div class="mix art">
+					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/4.jpg">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/4.jpg">
+					</a>
+				</div>
+				<div class="mix photo">
+					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/6.jpg">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/6.jpg">
+					</a>
+				</div>
+				<div class="mix art">
+					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/8.jpg">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/8.jpg">
+					</a>
+				</div>
+				<div class="mix photo">
+					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/9.jpg">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/9.jpg">
+					</a>
+				</div>
+				<div class="mix art">
+					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/7.jpg">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/7.jpg">
+					</a>
+				</div>
 			</div>
 		</div>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 		<script src="scripts/vendor/mixitup.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
 		<script>
-			var mixer = mixitup('.gallery',
+			$('.gallery').mixItUp(
 			{
 				animation:
 				{
-					animateResizeContainer: true,
-					animateResizeTargets: true,
+					duration: 350,
 					effects: 'fade',
-					duration: 300,
+					easing: 'ease',
 				}
 			});
-			// $(function(){
-			//   $('.gallery').mixItUp({
-			//     animation: {
-			//       animateResizeContainer: false,
-			//       effects: 'fade rotateX(-45deg) translateY(-10%)'
-			//     }
-			//   });
-			// })
+			$(function()
+			{
+				$('.mix a').fluidbox();
+			});
 		</script>
 	</body>
