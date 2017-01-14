@@ -12,6 +12,51 @@ Your Files Go Here*/
 @import "components/responsive";
 @import "components/global";
 
+// Project Specific Changes
+.container.thanksDoc {
+    .banner-image, .button {
+        background-color: $td-green;
+    }
+
+    h3,
+    h4 {
+        color: $td-blue;
+    }
+}
+
+.container.arts {
+    .banner-image, .button {
+        background-color: $arts-pink;
+    }
+
+    h3,
+    h4 {
+        color: $arts-prpl;
+    }
+}
+
+.container.yelpy {
+    .banner-image, .button {
+        background-color: $yelp-red;
+    }
+
+    h3,
+    h4 {
+        color: $yelp-red;
+    }
+}
+
+.container.citibank {
+    .banner-image, .button {
+        background-color: $citi-blue;
+    }
+
+    h3,
+    h4 {
+        color: $citi-red;
+    }
+}
+
 .project {
     .container {
         padding-top: 60px;
@@ -87,38 +132,49 @@ Your Files Go Here*/
         .project-content {
             padding-top: 30px;
 
-            a {
-                color: $red;
-                position: relative;
-                transition: 0.1s all ease-in-out;
-                padding: 0 2px;
+            // a {
+            //     color: $red;
+            //     position: relative;
+            //     transition: 0.1s all ease-in-out;
+            //     padding: 0 2px;
+            //
+            //     &:visited {
+            //         color: $red;
+            //     }
+            //
+            //     &:after {
+            //         content: '';
+            //         position: absolute;
+            //         width: 100%;
+            //         height: 1px;
+            //         left: 0;
+            //         bottom: -2px;
+            //         border-radius: 1px;
+            //         display: block;
+            //         background: $red;
+            //         transition: 0.1s all ease-in-out;
+            //         z-index: -10;
+            //     }
+            //
+            //     &:hover {
+            //         color: white;
+            //
+            //         &:after {
+            //             background: $red;
+            //             height: calc(100% + 3px);
+            //         }
+            //     }
+            // }
 
-                &:visited {
-                    color: $red;
-                }
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 1px;
-                    left: 0;
-                    bottom: -2px;
-                    border-radius: 1px;
-                    display: block;
-                    background: $red;
-                    transition: 0.1s all ease-in-out;
-                    z-index: -10;
-                }
-
-                &:hover {
-                    color: white;
-
-                    &:after {
-                        background: $red;
-                        height: calc(100% + 3px);
-                    }
-                }
+            .button{
+                font-family: $unica;
+                text-transform: uppercase;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 2px;
+                transition: 0.2s all ease-in-out;
+                color: black;
+                box-shadow: 0px 2px 5px #DDD;
             }
 
             #section-1 {
@@ -305,9 +361,15 @@ Your Files Go Here*/
                 }
 
                 .prototypes {
-                    height: 700px;
+                    height: 300px;
                     display: flex;
-                    // justify-content: center;
+
+                    @include breakpoint(phone-md){
+                        height: 400px;
+                    }
+                    @include breakpoint(tablet){
+                        height: 700px;
+                    }
 
                     .frameWrapper {
                         display: inline;
@@ -332,6 +394,28 @@ Your Files Go Here*/
                             transform: scale(0.7);
                             transform-origin: 50% 0 0;
                             margin: 0 auto;
+                        }
+                    }
+
+                    .image-grid{
+                        height: auto;
+                        width: 100%;
+                        padding-bottom: 20px;
+
+                        .cols_50{
+                            height: 100%;
+                            @include breakpoint(phone-md){
+                                height: 100%;
+                                width: calc(50% - 4px);
+                            }
+                            @include breakpoint(tablet){
+                                height: 100%;
+                            }
+
+                            a img{
+                            height: 80%;
+                            width: auto;
+                            }
                         }
                     }
                 }
@@ -493,50 +577,6 @@ Your Files Go Here*/
                 }
             }
         }
-    }
-}
-// Project Specific Changes
-.container.thanksDoc {
-    .banner-image {
-        background-color: $td-green;
-    }
-
-    h3,
-    h4 {
-        color: $td-blue;
-    }
-}
-
-.container.arts {
-    .banner-image {
-        background-color: $arts-pink;
-    }
-
-    h3,
-    h4 {
-        color: $arts-prpl;
-    }
-}
-
-.container.yelpy {
-    .banner-image {
-        background-color: $yelp-red;
-    }
-
-    h3,
-    h4 {
-        color: $yelp-red;
-    }
-}
-
-.container.citibank {
-    .banner-image {
-        background-color: $citi-blue;
-    }
-
-    h3,
-    h4 {
-        color: $citi-red;
     }
 }
 
