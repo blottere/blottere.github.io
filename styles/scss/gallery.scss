@@ -20,7 +20,11 @@ Your Files Go Here*/
 .container{
     .controls {
             text-align: center;
-            padding-top: 30px;
+            padding-top: 110px;
+
+            @include breakpoint(laptop){
+                padding-top: 30px;
+            }
 
             button {
                 display: inline-block;
