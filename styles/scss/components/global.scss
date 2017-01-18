@@ -105,6 +105,20 @@ a{
 //-----------------------------------------------
 // Grids - 4 Columns, Responsive
 //-----------------------------------------------
+.cols_20 {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+	@include breakpoint(phone-lg){
+	    width: calc(50% - 4px);
+	}
+
+	@include breakpoint(tablet) {
+		width: calc(20% - 4px);
+	}
+}
+
 .cols_25 {
 	width: 100%;
 	margin: 0;
