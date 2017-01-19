@@ -12,12 +12,7 @@ Your Files Go Here*/
 @import "components/responsive";
 @import "components/global";
 
-.column { float: left; padding:0 3px; }
-.size-1of1 { width: calc(100% - 6px); }
-.size-1of2 { width: calc(50% - 6px); }
-.size-1of3 { width: calc(33.333% - 6px); }
 
-.container{
     .controls {
             text-align: center;
             padding-top: 110px;
@@ -41,6 +36,7 @@ Your Files Go Here*/
                 text-transform: uppercase;
             }
         }
+        /*
     #grid{
         &[data-columns]::before{
             content: '3 .column.size-1of2';
@@ -53,5 +49,17 @@ Your Files Go Here*/
         .mix{
             padding: 1px 0;
         }
-    }
-}
+        */
+
+        #grid {
+            column-count: 4;
+            column-gap: 2px;
+
+            .mix{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    
