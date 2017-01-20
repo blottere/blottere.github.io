@@ -586,12 +586,10 @@ Your Files Go Here*/
 
         .banner-image {
             background: url('../images/folio-imgs/mybanner.jpg') no-repeat center;
-            background-size: contain;
-            height: 350px;
+            background-size: cover;
 
             @include breakpoint(laptop){
-                background-size: 80%;
-                height: 500px;
+                background-size: 100%;
             }
         }
     }
