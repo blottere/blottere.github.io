@@ -12,54 +12,75 @@ Your Files Go Here*/
 @import "components/responsive";
 @import "components/global";
 
+.controls {
+    text-align: center;
+    padding-top: 110px;
+    @include breakpoint(laptop) {
+        padding-top: 30px;
+    }
 
-    .controls {
-            text-align: center;
-            padding-top: 110px;
+    button {
+        display: inline-block;
+        background: white;
+        border: 0;
+        margin: 0 0 2%;
+        font-family: $unica;
+        font-weight: 300;
+        font-size: 18px;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: 0 none;
+        text-transform: uppercase;
+    }
+}
 
-            @include breakpoint(laptop){
-                padding-top: 30px;
-            }
+#grid {
+    width: 100%;
+    display: block;
+    .mix, .grid-sizer {
+        float:left;
+        width: calc(50% - 12px);
+        margin: 0 6px 0;
+        cursor: pointer;
 
-            button {
-                display: inline-block;
-                background: white;
-                border: 0;
-                margin: 0 0 2%;
-                font-family: $unica;
-                font-weight: 300;
-                font-size: 18px;
-                padding: 0.5em 1em;
-                border-radius: 5px;
-                cursor: pointer;
-                outline: 0 none;
-                text-transform: uppercase;
-            }
+        @include breakpoint(tablet){
+            width: calc(25% - 12px);
         }
-        /*
-    #grid{
-        &[data-columns]::before{
-            content: '3 .column.size-1of2';
 
-            @include breakpoint(tablet){
-                content: '3 .column.size-1of3';
-            }
+        @include breakpoint(laptop){
+            width: calc(20% - 12px);
         }
 
-        .mix{
-            padding: 1px 0;
+        img {
+            width: 100%;
+            height: auto;
         }
-        */
+    }
 
-        #grid {
-            column-count: 4;
-            column-gap: 2px;
+    .width-2{
+        width: calc(100% - 12px);
 
-            .mix{
-                width: 100%;
-                img{
-                    width: 100%;
-                }
-            }
+        @include breakpoint(tablet){
+            width: calc(50% - 12px);
         }
-    
+
+        @include breakpoint(laptop){
+            width: calc(40% - 12px);
+        }
+    }
+}
+
+/*
+
+
+FluidBox Styles */
+
+.fluidbox__overlay {
+    background-color: hsla(0,0%,0%,.85);
+}
+
+.fluidbox__ghost {
+    padding:0;
+    margin: 0;
+}
