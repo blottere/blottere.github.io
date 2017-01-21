@@ -233,13 +233,12 @@ a{
 	}
 }
 
-
-
 //-----------------------------------------------
 // Project Navigation
 //-----------------------------------------------
 
 .top-nav {
+	z-index: 1001;
 	.home-logo {
 		svg {
 			width: auto;
@@ -254,7 +253,7 @@ a{
 	padding: 20px 0 10px;
 	width: 100%;
 	position: fixed;
-	z-index: 1000;
+	z-index: 1001;
 	background: $white;
 	box-shadow: 2px 0 10px $grey;
 
@@ -306,7 +305,7 @@ a{
 	box-shadow: 2px 0 10px transparent;
 	background: transparent;
 	position: fixed;
-	z-index: 1000;
+	z-index: 1001;
 }
 
 

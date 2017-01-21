@@ -6,7 +6,7 @@
     <title>Pavithra Ramamurthy | Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/css/fluidbox.min.css">
     <link rel="stylesheet" href="styles/gallery.css">
-</head>
+</head> 
 <body>
     @@include('templates/partials/project_nav.html')
         <div class="controls">
@@ -177,6 +177,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
     <script>
 
     // Isotope
@@ -218,5 +220,9 @@
                 loader: true
             });
         });
+
+        // Headroom
+
+        $(".controls").headroom();
     </script>
 </body>

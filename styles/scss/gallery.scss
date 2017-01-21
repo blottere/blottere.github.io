@@ -24,16 +24,18 @@ Your Files Go Here*/
 }
 
 // Navigation Changes
-.top-nav.hidden-phone {
-    background: rgba(0,0,0,0.2);
-    border-radius: 0 0 4px 0;
-}
+.top-nav{
+    &.hidden-phone {
+        background: rgba(0,0,0,0.2);
+        border-radius: 0 0 4px 0;
+    }
 
-.top-nav.visible-phone {
-    background: $black;
+    &.top-nav.visible-phone {
+        background: $black;
 
-    .branding{
-        color: white;
+        .branding{
+            color: white;
+        }
     }
 }
 
@@ -46,8 +48,15 @@ body{
 
 .controls {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 90px;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: black;
+    top:0;
+    transition: 0.3s all ease-in-out;
+
     @include breakpoint(laptop) {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -96,13 +105,17 @@ body{
             transform:scaleX(1);
         }
     }
+
+    &.headroom--unpinned{
+        top:-120px;
+    }
 }
 
 #grid {
     width: 100%;
     display: block;
     background-color: black;
-    padding-bottom: 50px;
+    padding: 100px 0 50px;
     .mix, .grid-sizer {
         float:left;
         width: calc(50% - 4px);
@@ -145,9 +158,6 @@ footer{
         }
     }
 }
-
-
-
 
 /*
 

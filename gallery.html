@@ -34,7 +34,7 @@
 		<link rel="stylesheet" href="styles/gallery.css"> </head>
 	<body>
 		<!-- Mobile Nav -->
-		<div class="top-nav visible-phone visible-tablet" style="z-index:1000;">
+		<div class="top-nav visible-phone visible-tablet">
 			<div class="container">
 				<a href="/" class="home-logo">
 					<svg class="pav_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147.26 143.301">
@@ -48,7 +48,7 @@
 			</div>
 		</div>
 		<!-- Desktop Nav -->
-		<div class="top-nav hidden-phone hidden-tablet" style="z-index:1000;">
+		<div class="top-nav hidden-phone hidden-tablet">
 			<a href="/" class="home-logo">
 				<svg class="pav_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147.26 143.301">
 					<g class="cntn">
@@ -396,6 +396,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
 		<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 		<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
 		<script>
 			// Isotope
 			var $grid = $('#grid').imagesLoaded(function()
@@ -444,5 +446,7 @@
 					loader: true
 				});
 			});
+			// Headroom
+			$(".controls").headroom();
 		</script>
 	</body>

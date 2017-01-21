@@ -67,7 +67,8 @@ gulp.task('css', function() {
             browsers: ['last 4 versions']
         }))
         .pipe(cssNano({
-            reduceIdents: false
+            reduceIdents: false,
+            zindex: false
         }))
         .pipe(gulp.dest('styles'))
         .pipe(browserSync.stream());
