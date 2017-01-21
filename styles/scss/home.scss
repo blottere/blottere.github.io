@@ -279,7 +279,7 @@ nav{
                 width: calc(100% - 20px);
                 padding: 10px;
 
-                @include breakpoint(phone-lg){
+                @include breakpoint(tablet){
                     width: calc(50% - 20px);
                 }
             }

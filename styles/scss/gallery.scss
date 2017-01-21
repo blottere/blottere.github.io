@@ -115,7 +115,12 @@ body{
     width: 100%;
     display: block;
     background-color: black;
-    padding: 100px 0 50px;
+    padding: 160px 0 50px;
+
+    @include breakpoint(laptop){
+        padding: 100px 0 50px;
+    }
+
     .mix, .grid-sizer {
         float:left;
         width: calc(50% - 4px);
