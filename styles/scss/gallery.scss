@@ -12,46 +12,89 @@ Your Files Go Here*/
 @import "components/responsive";
 @import "components/global";
 
+.pav_logo{
+    .logo, .house{
+        stroke: white;
+    }
+    &:hover{
+        .logo, .house{
+            stroke: $brand-pink;
+        }
+    }
+}
 
+// Navigation Changes
 .top-nav.hidden-phone {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.2);
     border-radius: 0 0 4px 0;
 }
-/*
-border-bottom: 2px solid $grey;
-border-right: 2px solid $grey;
-*/
+
+.top-nav.visible-phone {
+    background: $black;
+
+    .branding{
+        color: white;
+    }
+}
+
+// Gallery Styles
+html{background-color: $black;}
 
 body{
     background-color: black;
 }
 
-.pav_logo .logo{
-    fill: white;
-    stroke: white;
-}
-
 .controls {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 100px;
+    overflow: hidden;
     @include breakpoint(laptop) {
-        padding-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     button {
         display: inline-block;
         background: black;
         border: 0;
-        margin: 0 0 2%;
+        margin: 20px 10px;
         color: white;
         font-family: $unica;
         font-weight: 400;
         font-size: 24px;
-        padding: 1em 2em 2em;
+        padding: 0;
         border-radius: 5px;
         cursor: pointer;
         outline: 0 none;
         text-transform: uppercase;
+        position: relative;
+        transition: 0.2s all ease-in-out;
+
+        @include breakpoint(laptop){
+            margin: 20px 30px;
+        }
+
+        &.selected{
+            color: $brand-pink;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0; bottom: -5px;
+            background-color: white;
+            width: 100%;
+            text-align: center;
+            height: 2px;
+            margin: 0 auto;
+            transition: 0.2s all ease-in-out;
+            transform:scaleX(0);
+            transform-origin: center;
+        }
+
+        &:hover:after{
+            transform:scaleX(1);
+        }
     }
 }
 
@@ -59,6 +102,7 @@ body{
     width: 100%;
     display: block;
     background-color: black;
+    padding-bottom: 50px;
     .mix, .grid-sizer {
         float:left;
         width: calc(50% - 4px);
@@ -68,10 +112,6 @@ body{
 
         @include breakpoint(tablet){
             width: calc(25% - 4px);
-        }
-
-        @include breakpoint(laptop){
-            width: calc(20% - 4px);
         }
 
         img {
@@ -87,13 +127,27 @@ body{
         @include breakpoint(tablet){
             width: calc(50% - 4px);
         }
+    }
+}
 
-        @include breakpoint(laptop){
-            width: calc(40% - 4px);
+footer{
+    background-color: $black;
+
+    .container{
+        .email a{
+            color: $white;
+
+            &:after{background-color: $white;}
+        }
+
+        .copyright{
+            color: $white;
         }
     }
-    
 }
+
+
+
 
 /*
 

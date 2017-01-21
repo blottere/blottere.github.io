@@ -10,9 +10,9 @@
 <body>
     @@include('templates/partials/project_nav.html')
         <div class="controls">
+            <button class="filter selected" data-filter="*">All</button>
             <button class="filter" data-filter=".photo">Photos</button>
-            <button class="filter" data-filter=".art">Art</button>
-            <button class="filter" data-filter="*">All</button>
+            <button class="filter" data-filter=".art">Art</button>    
         </div>
         <div id="grid">
             <div class="grid-sizer"></div>
@@ -196,6 +196,21 @@
         $('.controls').on( 'click', 'button', function() {
           var filterValue = $(this).attr('data-filter');
           $grid.isotope({ filter: filterValue });
+        });
+
+        // set selected menu items
+           var $optionSets = $('.controls'),
+               $optionLinks = $optionSets.find('button');
+
+               $optionLinks.click(function(){
+                  var $this = $(this);
+        	  // don't proceed if already selected
+        	  if ( $this.hasClass('selected') ) {
+        	      return false;
+        	  }
+           var $optionSet = $this.parents('.controls');
+           $optionSet.find('.selected').removeClass('selected');
+           $this.addClass('selected');
         });
 
         // FluidBox
