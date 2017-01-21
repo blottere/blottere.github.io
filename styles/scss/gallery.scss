@@ -14,29 +14,40 @@ Your Files Go Here*/
 
 
 .top-nav.hidden-phone {
-    background: rgba(255,255,255,0.6);
-    border-right: 2px solid $grey;
-    border-bottom: 2px solid $grey;
+    background: rgba(0,0,0,0.1);
     border-radius: 0 0 4px 0;
+}
+/*
+border-bottom: 2px solid $grey;
+border-right: 2px solid $grey;
+*/
 
+body{
+    background-color: black;
+}
+
+.pav_logo .logo{
+    fill: white;
+    stroke: white;
 }
 
 .controls {
     text-align: center;
-    padding-top: 110px;
+    padding-top: 10px;
     @include breakpoint(laptop) {
         padding-top: 30px;
     }
 
     button {
         display: inline-block;
-        background: white;
+        background: black;
         border: 0;
         margin: 0 0 2%;
+        color: white;
         font-family: $unica;
-        font-weight: 300;
-        font-size: 18px;
-        padding: 0.5em 1em;
+        font-weight: 400;
+        font-size: 24px;
+        padding: 1em 2em 2em;
         border-radius: 5px;
         cursor: pointer;
         outline: 0 none;
@@ -47,6 +58,7 @@ Your Files Go Here*/
 #grid {
     width: 100%;
     display: block;
+    background-color: black;
     .mix, .grid-sizer {
         float:left;
         width: calc(50% - 4px);
@@ -80,6 +92,7 @@ Your Files Go Here*/
             width: calc(40% - 4px);
         }
     }
+    
 }
 
 /*
