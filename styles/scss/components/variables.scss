@@ -34,7 +34,7 @@ $px500      : #0099e5;
 // Sizes and Widths
 //-----------------------------------------------
 
-$container-width-mob: 100%;
+$container-width-mob: calc(100% - 20px);
 $container-width-tab: calc(100% - 60px);
 $container-width    : calc(100% - 60px);
 

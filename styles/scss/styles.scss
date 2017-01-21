@@ -265,9 +265,15 @@ nav ul li a:link, nav ul li a:visited {
   max-width: 65%;
 }
 
-#Portfolio #grid li{
-  padding: 1em;
-  width: 50%;
+#Portfolio #grid li {
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+
+    @include breakpoint(tablet){
+        padding: 20px;
+        width: calc(50% - 40px);
+    }
 }
 
 iframe{

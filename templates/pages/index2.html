@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('templates/partials/home_metadata.html')
+
+    <title>Pavithra Ramamurthy || UX Design Portfolio</title>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="home-logo">
+                @@include('icons/Logo.svg')
+            </a>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="#work">Work</a></li>
+                <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a href="asset/resume.pdf">Resume</a></li>
+            </ul>
+
+            <div class="branding hidden-laptop hidden-desktop">Pavithra Ramamurthy</div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <section class="about-me">
+            <div class="image-bg"></div>
+            <div class="caption">
+                <div class="hello">HELLO!</div>
+                <div>I am Pavithra Ramamurthy. <br> <br>I am an <i><strong>explorative </strong></i> designer. <br>To me, a great design does the thinking, <br> so you don't have to.</div>
+            </div>
+        </section>
+
+        <section id="work" class="work">
+            <h1>Work</h1>
+            <div class="work-masonry">
+                <div class="grid-sizer"></div>
+                <div class="work-item">
+                    <a href="yelpy.html"><img src="images/folio-imgs/yelpy/yelpy.png"></a>
+                </div>
+
+                <div class="work-item">
+                    <a href="thanksdoc.html"><img src="images/folio-imgs/thanksdoc/thanksdoc.png"></a>
+                </div>
+
+                <div class="work-item">
+                    <a href="arts.html"><img src="images/folio-imgs/arts.png"></a>
+                </div>
+
+                <div class="work-item">
+                    <a href="citibank.html"><img src="images/folio-imgs/citibank.png"></a>
+                </div>
+            </div>
+            <h1>Animation Showreel</h1>
+            <div class="reel videoWrapper">
+                <iframe src="https://player.vimeo.com/video/94690942" width="640" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+
+        </section>
+    </div>
+
+    @@include('templates/partials/footer.html')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+    // Header Shrinking
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('nav').addClass('shrink');
+        } else {
+            $('nav').removeClass('shrink');
+        }
+    });
+
+    $('.work-masonry').masonry({
+      itemSelector: '.work-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+
+    // HREF Smooth Scroll
+    function scrollTo() {
+    	$('a[href^="#"]:not([href="#"])').on('click',function (e) {
+    	    e.preventDefault();
+
+    	    var $target = $(this.hash);
+
+    	    $('html, body').stop().animate({
+    	        scrollTop: $target.offset().top - 100
+    	    }, 600, 'swing');
+    	})
+    	return false;
+    }
+
+    scrollTo();
+    </script>
+</body>
+</html>

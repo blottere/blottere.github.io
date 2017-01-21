@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+// Vendor Files - Remember to rename these from *.css to *.scss before adding here.
+@import "vendor/normalize";
+
+// Your Files Go Here
+@import "components/variables";
+@import "components/responsive";
+@import "components/global";
+
+
+// Commons
+
+h1{
+    font-family:  $unica;
+    font-size: 1.2em;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    margin: 10px auto;
+    font-weight:normal;
+}
+
+
+// Navigation Styles
+nav{
+    display: block;
+	height: 45px;
+	padding: 25px 30px 30px;
+	width: calc(100% - 55px);
+	position: fixed;
+	z-index: 1000;
+	background: $white;
+    transition: all .3s ease-in-out;
+
+    @include breakpoint(laptop){
+        background: white;
+    }
+
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        left:0;
+        bottom:-30px;
+        background: $black;
+        height: 50px;
+        z-index: -10;
+        transition: all .3s ease-in-out;
+
+        @include breakpoint(laptop){
+            height: 0;
+            display: none;
+        }
+    }
+
+    * {transition: all .3s ease-in-out;}
+
+    .nav-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+
+        .home-logo {
+            position: absolute;
+            left:0;
+            height: 100%;
+
+    		svg {
+    			width: auto;
+    			height: 100%;
+
+                &:hover{
+                    transform: translateY(-8px);
+                }
+    		}
+    	}
+
+        // Navigation Item Styles
+        .nav-list{
+            display: flex;
+            position: absolute;
+            top:60px;
+            left:0;
+            padding:0;
+            margin:0;
+            height: 40px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            @include breakpoint(laptop){
+                top:0;
+                height: 100%;
+                justify-content: center;
+            }
+
+            .nav-item{
+                list-style: none;
+                padding:0;
+                font-family: $unica;
+                text-transform: uppercase;
+                font-size: 1.2em;
+                text-align: center;
+                flex-shrink: 1;
+
+                @include breakpoint(laptop){
+                    padding: 20px 80px 20px;
+                    font-size: 1.6em;
+                }
+
+                a{
+                    color: $white;
+                    position: relative;
+
+                    @include breakpoint(laptop){
+                        color: $black;
+                    }
+
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 0; bottom: -5px;
+                        background-color: $black;
+                        width: 100%;
+                        text-align: center;
+                        height: 2px;
+                        margin: 0 auto;
+                        transition: 0.2s all ease-in-out;
+                        transform:scaleX(0);
+                        transform-origin: center;
+                    }
+                    &:hover:after{
+                        transform:scaleX(1);
+                    }
+                }
+            }
+        }
+
+        // Mobile Nav Styles
+        .branding{
+            font-family: $unica;
+            color: $black;
+            text-transform: uppercase;
+            font-size: 1.6em;
+            text-align: center;
+            padding: 0 45px;
+            width:calc(100% - 45px);
+            letter-spacing: 2px;
+            overflow: visible;
+            white-space: nowrap;
+        }
+    }
+
+    // Shrunken Nav Styles
+    &.shrink{
+        height: 40px;
+        background: $black;
+        padding: 20px 30px 20px;
+
+        &:after{
+            bottom: -50px;
+        }
+
+        .nav-container{
+            .home-logo svg{
+                .logo, .house {stroke: $white;}
+            }
+
+            .nav-list a{
+                color: $white;
+
+                &:after{
+                    background-color: $white;
+                }
+
+                @include breakpoint(laptop){
+                    color: $white;
+                }
+            }
+
+            .branding {
+                color: $white;
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+.container{
+    .about-me{
+        padding-top: 120px;
+        position: relative;
+
+        .image-bg{
+            background: url('../images/me.png') center center no-repeat;
+            background-size: contain;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 60px auto 30px;
+            opacity: 0.85;
+
+            @include breakpoint(tablet){
+                width: 95%;
+                height: 800px;
+                margin: 0 auto;
+            }
+        }
+
+        .caption{
+            line-height: 1.75em;
+            font-family: $lato;
+            font-size: 1.3em;
+            text-align: center;
+            color: $black;
+            text-shadow: none;
+            position: relative;
+            width: 100%;
+            padding-bottom: 40px;
+
+            .hello{
+                font-family: $unica;
+                font-size: 2em;
+                color: $brand-pink;
+                padding: 10px;
+            }
+
+            strong{
+                color: $brand-pink;
+            }
+
+            @include breakpoint(tablet){
+                position: absolute;
+                color: $white;
+                font-size: 1.2em;
+                top: 320px;
+
+                .hello{
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+
+    .work{
+        display: block;
+
+        .work-masonry{
+            padding: 0 0 30px;
+            margin:0;
+            width: 100%;
+            height: 100%;
+
+            .grid-sizer, .work-item{
+                float:left;
+                width: calc(100%-20px);
+                padding: 10px;
+
+                @include breakpoint(phone-lg){
+                    width: calc(50% - 20px);
+                }
+            }
+        }
+
+        .videoWrapper{
+            margin-bottom: 120px;
+        }
+    }
+}
