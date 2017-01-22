@@ -25,7 +25,8 @@ var gulp = require('gulp'),
 
     // Utils
     plumber = require('gulp-plumber'),
-    stripComments = require('gulp-strip-comments');
+    stripComments = require('gulp-strip-comments'),
+    notify = require('gulp-notify');
 
 // BrowserSync Static Server ------------------
 
@@ -59,8 +60,25 @@ gulp.task('html', function() {
 
 // Styles -------------------------------------
 gulp.task('css', function() {
+
+    var onError = function(err) {
+        notify.onError({
+                    title:    "SCSS Error",
+                    subtitle: [
+                                '<%= error.relativePath %>',
+                                '<%= error.line %>'
+                              ].join(':'),
+                    message:  "<%= error.messageOriginal %>",
+                    open: 'file://<%= error.file %>',
+                    onLast: true,
+                    sound:    "Beep"
+                })(err);
+
+        this.emit('end');
+    };
+
     return gulp.src('styles/scss/*.{scss,css}')
-        .pipe(plumber())
+        .pipe(plumber({errorHandler: onError}))
         .pipe(sass()) // SASS Preprocessor
         .pipe(combineMQ()) // Combine all Media Queries
         .pipe(prefix({
