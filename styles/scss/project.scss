@@ -57,6 +57,18 @@ Your Files Go Here*/
     }
 }
 
+.container.fourkites {
+    .banner-image, .button {
+        background-color: $fourkites-yellow;
+    }
+
+    h3,
+    h4 {
+        color: $fourkites-blue;
+    }
+}
+
+
 .project {
     .container {
         padding-top: 60px;
