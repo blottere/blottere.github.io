@@ -58,11 +58,14 @@ Your Files Go Here*/
 }
 
 .container.fourkites {
-    .banner-image, .button {
+    .button {
         background-color: $fourkites-yellow;
     }
+    .banner-image{
+        background: $fourkites-yellow url("../images/folio-imgs/FourKites/tile.png") repeat right top;
+    }
 
-    h3,
+    h3, 
     h4 {
         color: $fourkites-blue;
     }
