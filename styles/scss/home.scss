@@ -72,8 +72,9 @@ nav{
             position: absolute;
             left:0;
             height: 100%;
+            z-index: 1000;
 
-    		svg {
+    		svg.pav_logo {
     			width: auto;
     			height: 100%;
 
@@ -123,7 +124,7 @@ nav{
                     font-size: 1.6em;
                 }
 
-                a{
+                a {
                     color: $white;
                     position: relative;
 
@@ -144,6 +145,7 @@ nav{
                         transform:scaleX(0);
                         transform-origin: center;
                     }
+
                     &:hover:after{
                         transform:scaleX(1);
                     }
@@ -179,6 +181,10 @@ nav{
         .nav-container{
             .home-logo svg{
                 .logo, .house {stroke: $white;}
+
+                &:hover{
+                    .logo, .house {stroke: $brand-pink;}
+                }
             }
 
             .nav-list a{
@@ -186,6 +192,10 @@ nav{
 
                 &:after{
                     background-color: $white;
+                }
+
+                &:hover{
+                    color: $brand-pink;
                 }
 
                 @include breakpoint(laptop){
