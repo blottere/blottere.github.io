@@ -267,6 +267,12 @@ nav{
 
     .work{
         display: block;
+        width: 100%;
+        margin: 0 auto;
+
+        @include breakpoint(tablet){
+            width: 80%;
+        }
 
         .work-masonry{
             padding: 0 0 30px;
