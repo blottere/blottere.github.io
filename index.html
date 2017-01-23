@@ -169,6 +169,7 @@
 		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
+		<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 		<script>
 			// Header Shrinking
 			$("nav").headroom(
@@ -179,11 +180,16 @@
 				}
 			});
 			// Masonry Grid Layout
-			$('.work-masonry').masonry(
+			var $grid = $('.work-masonry').masonry(
 			{
 				itemSelector: '.work-item',
 				columnWidth: '.grid-sizer',
 				percentPosition: true
+			});
+			// layout Masonry after each image loads
+			$grid.imagesLoaded().progress(function()
+			{
+				$grid.masonry('layout');
 			});
 			// HREF Smooth Scroll
 			$(document).ready(function scrollTo()
