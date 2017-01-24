@@ -226,6 +226,11 @@ Your Files Go Here*/
                 bigWord {
                     font-size: 1.2em;
                     font-weight: $bold;
+                    color: $black;
+                }
+
+                .bullets{
+                    color: $grey;
                 }
 
                 bold {
@@ -251,6 +256,10 @@ Your Files Go Here*/
                 p {
                     font-size: 1em;
                     color: $black;
+                }
+
+                strong{
+                    color: $grey;
                 }
 
                 img {
