@@ -46,11 +46,13 @@ $container-width    : calc(100% - 60px);
 
 // Google Fonts Import
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
 // Font Variables
 $unica: 'Unica One', 'Helvetica Neue', Helvetica, sans-serif;
 $lato : 'Lato', 'ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
+$opensans : 'Open Sans', sans-serif;
 
 // Weight Variables
 $reg  : 400;

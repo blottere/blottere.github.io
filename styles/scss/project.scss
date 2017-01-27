@@ -221,7 +221,8 @@ Your Files Go Here*/
                 margin: 0 auto;
                 width: 95%;
                 font-size: 1em;
-                line-height: 1.5;
+                letter-spacing: .03em;
+                line-height: 2em;
 
                 bigWord {
                     font-size: 1.2em;
@@ -250,12 +251,14 @@ Your Files Go Here*/
                     text-transform: uppercase;
                     font-size: 1.2em;
                     letter-spacing: 2px;
-                    margin: 48px 0 6px;
+                    margin: 20px 0 6px;
+                    text-align: left;
                 }
 
                 p {
                     font-size: 1em;
                     color: $black;
+                    font-family: $opensans;
                 }
 
                 strong{
