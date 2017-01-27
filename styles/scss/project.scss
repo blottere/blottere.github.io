@@ -165,6 +165,8 @@ Your Files Go Here*/
                 flex-flow: row wrap;
                 // width: %;
                 font-size: 0.95em;
+                letter-spacing: .03em;
+                
                 width: 90%;
                 @include breakpoint(tablet) {
                     width: 100%;
