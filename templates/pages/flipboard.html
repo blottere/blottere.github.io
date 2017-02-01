@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('templates/partials/home_metadata.html')
+    <title>Flipboard Interaction Design</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/css/fluidbox.min.css">
+
+</head>
+
+<body>
+    <div class="project">
+        @@include('templates/partials/project_nav.html')
+        <div class="container flipboard">
+                @@include('templates/content/flipboard_content.html')
+        </div>
+
+        @@include('templates/partials/project_footer.html',{
+            "prev":{
+                "link": "arts.html",
+                "title": "Auto Rapid Transit",
+                "image": "images/folio-imgs/ARTS/tile.png"
+            },
+
+            "next":{
+                "link": "fourkites.html",
+                "title": "Fourkites",
+                "image": "images/folio-imgs/FourKites/fourkitestile.png"
+            }
+        })
+
+        @@include('templates/partials/footer.html')
+    </div>
+
+    @@include('templates/partials/analytics.html')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="scripts/vendor/salvattore.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
+    <script>$(function () {
+        $('.mix a').fluidbox();
+    });
+    </script>
+</body>
