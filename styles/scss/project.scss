@@ -62,7 +62,7 @@ Your Files Go Here*/
         background-color: $fourkites-yellow;
     }
     .banner-image{
-        background: $fourkites-yellow url("../images/folio-imgs/FourKites/tile.png") repeat right top;
+        background: $fourkites-yellow url("../images/folio-imgs/FourKites/bg_tile.png") repeat right top;
     }
 
     h3,
@@ -76,7 +76,11 @@ Your Files Go Here*/
         background-color: $flipboard-red;
     }
     .banner-image{
-        background: $flipboard-red;
+        background: white;
+        border: 6px solid $flipboard-red;
+    }
+    .banner-title{
+        color: $flipboard-red;
     }
 
     h3,
