@@ -71,6 +71,19 @@ Your Files Go Here*/
     }
 }
 
+.container.flipboard {
+    .button {
+        background-color: $flipboard-red;
+    }
+    .banner-image{
+        background: $flipboard-red;
+    }
+
+    h3,
+    h4 {
+        color: $flipboard-red2;
+    }
+}
 
 .project {
     .container {
@@ -166,7 +179,7 @@ Your Files Go Here*/
                 // width: %;
                 font-size: 0.95em;
                 letter-spacing: .03em;
-                
+
                 width: 90%;
                 @include breakpoint(tablet) {
                     width: 100%;
@@ -226,6 +239,16 @@ Your Files Go Here*/
                 letter-spacing: .03em;
                 line-height: 2em;
 
+                &.set-width{
+                    width: 100%;
+                    @include breakpoint(phone-lg){
+                        width: 90%;
+                    }
+                    @include breakpoint(tablet){
+                        width: 75%;
+                    }
+                }
+
                 bigWord {
                     font-size: 1.2em;
                     font-weight: $bold;
@@ -261,6 +284,7 @@ Your Files Go Here*/
                     font-size: 1em;
                     color: $black;
                     font-family: $opensans;
+                    padding-bottom: 30px;
                 }
 
                 strong{
