@@ -435,11 +435,11 @@ Your Files Go Here*/
                         }
 
                         &.inv-td-mobile {
-                            width: auto;
-                            transform: scale(0.7);
-                            transform-origin: 0 0 0;
-                            position: relative;
-                            right: 15%;
+                            width: 100%;
+                            iframe{
+                                transform: scale(0.7);
+                                transform-origin: 0 0 0;
+                            }
                         }
 
                         &.inv-ypy-mobile {
