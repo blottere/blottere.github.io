@@ -17,6 +17,9 @@ Your Files Go Here*/
     .banner-image, .button {
         background-color: $td-green;
     }
+    .button{
+        color: $black;
+    }
 
     h3,
     h4 {
@@ -27,6 +30,9 @@ Your Files Go Here*/
 .container.arts {
     .banner-image, .button {
         background-color: $arts-pink;
+    }
+    .button{
+        color: $white;
     }
 
     h3,
@@ -39,6 +45,9 @@ Your Files Go Here*/
     .banner-image, .button {
         background-color: $yelp-red;
     }
+    .button{
+        color: $white;
+    }
 
     h3,
     h4 {
@@ -50,6 +59,9 @@ Your Files Go Here*/
     .banner-image, .button {
         background-color: $citi-blue;
     }
+    .button{
+        color: $white;
+    }
 
     h3,
     h4 {
@@ -60,6 +72,7 @@ Your Files Go Here*/
 .container.fourkites {
     .button {
         background-color: $fourkites-yellow;
+        color: $black;
     }
     .banner-image{
         background: $fourkites-yellow url("../images/folio-imgs/FourKites/bg_tile.png") repeat right top;
@@ -74,6 +87,7 @@ Your Files Go Here*/
 .container.flipboard {
     .button {
         background-color: $flipboard-red;
+        color: $black;
     }
     .banner-image{
         background: $flipboard-red;
@@ -167,7 +181,7 @@ Your Files Go Here*/
                 padding: 10px 20px;
                 border-radius: 2px;
                 transition: 0.2s all ease-in-out;
-                color: black;
+                // color: black;
                 box-shadow: 0px 2px 5px #DDD;
             }
 
@@ -396,6 +410,7 @@ Your Files Go Here*/
                 .prototypes {
                     height: 300px;
                     display: flex;
+                    justify-content: center;
 
                     @include breakpoint(phone-md){
                         height: 400px;
@@ -407,11 +422,16 @@ Your Files Go Here*/
                     .frameWrapper {
                         display: inline;
                         width: 50%;
+                        margin: 0 auto;
 
                         &.inv-td-board {
-                            transform: scale(0.7);
-                            transform-origin: 0 0 0;
-                            width: auto;
+                            width: 100%;
+                            height: 100%;
+
+                            iframe{
+                                transform: scale(0.7);
+                                transform-origin: 50% 0 0;
+                            }
                         }
 
                         &.inv-td-mobile {

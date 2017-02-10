@@ -5,6 +5,7 @@
     @@include('templates/partials/home_metadata.html')
 
     <title>Yelpy, the food expert!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/css/fluidbox.min.css">
     <link rel="stylesheet" href="styles/project.css">
 
 </head>
@@ -28,10 +29,18 @@
                 "title": "Flipboard",
                 "image": "images/folio-imgs/flipboard/tile.png"
             }
-        }) 
+        })
 
         @@include('templates/partials/footer.html')
     </div>
 
     @@include('templates/partials/analytics.html')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="scripts/vendor/salvattore.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
+    <script>$(function () {
+        $('.fluid').fluidbox();
+    });
+    </script>
 </body>
