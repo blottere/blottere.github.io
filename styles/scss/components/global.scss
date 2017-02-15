@@ -277,6 +277,7 @@ footer{
 			text-transform: uppercase;
 		}
 
+
 		.email{
 			font-family: $lato;
 			text-align: center;
@@ -310,6 +311,13 @@ footer{
 			color: $black;
 			text-align: center;
 			margin: 20px 0 0 0;
+		}
+
+		.mycode{
+			font-size: .85em;
+			color: $grey;
+			text-align: center;
+			
 		}
 
 		.social-icons{
